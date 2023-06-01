@@ -1,0 +1,13 @@
+export const BLACK = '#32312D';
+export const WHITE = '#FFF';
+export const YELLOW = '#DABB01';
+export const MAGENTA = '#EF8599';
+export const PURPLE = '#A07ABA';
+export const GREEN = '#48A265';
+export const GREEN_LIGHT = '#48A265';
+export const BACKGROUND = '#E6E0CC';
+export const FONT_DARK1 = '#4C4944';
+export const FONT_DARK2 = '#6B603D';
+export const FONT_DARK3 = '#786E4D';
+export const FONT_LIGHT1 = '#F8F8F8';
+export const FONT_LIGHT2 = '#98958D';
