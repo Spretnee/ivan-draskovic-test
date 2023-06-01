@@ -4,14 +4,17 @@ import styles from './styles';
 
 type TextProps = {
   children: string | React.ReactNode;
-  as: 'H1' | 'H2' | 'H3' | 'H4';
+  type: 'H1' | 'H2' | 'H3' | 'H4';
   style?: TextStyle;
 };
 
-const Text = ({children = '', as = 'H1', style, ...restProps}: TextProps) => (
-  <RNText style={[styles[as], style]} {...restProps}>
+export const Text = ({
+  children = '',
+  type = 'H1',
+  style,
+  ...restProps
+}: TextProps) => (
+  <RNText style={[styles.default, styles[type], style]} {...restProps}>
     {children}
   </RNText>
 );
-
-export default Text;

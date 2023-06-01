@@ -5,6 +5,7 @@ export const MAGENTA = '#EF8599';
 export const PURPLE = '#A07ABA';
 export const GREEN = '#48A265';
 export const GREEN_LIGHT = '#48A265';
+export const GRAY = '#867D5D';
 export const BACKGROUND = '#E6E0CC';
 export const FONT_DARK1 = '#4C4944';
 export const FONT_DARK2 = '#6B603D';
