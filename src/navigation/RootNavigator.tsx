@@ -4,20 +4,19 @@ import {NavigationContainer} from '@react-navigation/native';
 import {HomeScreen} from '../screens/HomeScreen';
 import {theme} from '../theme/theme';
 import PlayerScreen from '../screens/PlayerScreen/PlayerScreen';
+import {RootStackParamList} from './types';
+import {Text, View} from 'react-native';
 
-export type StackParamList = {
-  Home: undefined;
-  Player?: {userId: string};
-};
-
-const Stack = createNativeStackNavigator<StackParamList>();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export const RootNavigator = () => {
   return (
     <NavigationContainer theme={theme}>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Home" options={{}} component={HomeScreen} />
-        <Stack.Screen name="Player" options={{}} component={PlayerScreen} />
+      <Stack.Navigator
+        initialRouteName="Home"
+        screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Player" component={PlayerScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
