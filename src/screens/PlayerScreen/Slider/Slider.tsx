@@ -1,4 +1,4 @@
-import {View, Text} from 'react-native';
+import {View, Text, SliderProps} from 'react-native';
 import React from 'react';
 import {Slider as OriginSlider} from '@miblanchard/react-native-slider';
 import {styles} from './Slider.styles';

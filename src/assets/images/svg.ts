@@ -97,3 +97,22 @@ export const THIRTY_FORWARD = `<svg width="25" height="24" viewBox="0 0 25 24" f
 <path d="M11.8666 17C10.9368 17 10.2 16.6611 9.65628 15.9834C9.11257 15.3056 8.84072 14.3091 8.84072 12.9939C8.84072 11.6949 9.11257 10.7065 9.65628 10.0287C10.2 9.34291 10.9328 9 11.8548 9C12.7767 9 13.5016 9.34291 14.0296 10.0287C14.5654 10.7065 14.8333 11.6989 14.8333 13.0061C14.8333 14.3212 14.5694 15.3177 14.0414 15.9955C13.5135 16.6652 12.7885 17 11.8666 17ZM11.8666 15.6808C12.7806 15.6808 13.2377 14.7932 13.2377 13.0182C13.2377 12.0903 13.1116 11.4085 12.8594 10.9728C12.6152 10.5371 12.2842 10.3192 11.8666 10.3192C11.4411 10.3192 11.0983 10.5371 10.8383 10.9728C10.5782 11.4085 10.4482 12.0862 10.4482 13.0061C10.4482 13.9259 10.5782 14.6036 10.8383 15.0393C11.0983 15.467 11.4411 15.6808 11.8666 15.6808Z" fill="#4C4944"/>
 </svg>
 `;
+
+export const PLAY_SMALL = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.166656 0L18.8333 12L0.166656 24V0Z" fill="#32312D"/>
+</svg>`;
+export const PAUSE_SMALL = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.66667 2.66666H4V13.3333H6.66667V2.66666Z" fill="#32312D"/>
+<path d="M12 2.66666H9.33337V13.3333H12V2.66666Z" fill="#32312D"/>
+</svg>
+`;
+export const PAUSE = `<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.66667 2.66666H4V13.3333H6.66667V2.66666Z" fill="#32312D"/>
+<path d="M12 2.66666H9.33337V13.3333H12V2.66666Z" fill="#32312D"/>
+</svg>
+`;
+export const CLOSE = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4L4 12" stroke="#32312D" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M4 4L12 12" stroke="#32312D" stroke-linecap="square" stroke-linejoin="round"/>
+</svg>
+`;

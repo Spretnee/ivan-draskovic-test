@@ -35,10 +35,16 @@ const styles = StyleSheet.create({
     fontSize: 10,
     lineHeight: 19,
   },
+
   H6: {
     fontFamily: FONT_BOLD,
     fontSize: 12,
     lineHeight: 16,
+  },
+  H7: {
+    fontFamily: FONT_BOLD,
+    lineHeight: 20,
+    fontSize: 12,
   },
 });
 

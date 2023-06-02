@@ -4,7 +4,7 @@ import styles from './Text.styles';
 
 type CustomTextProps = {
   children: string | React.ReactNode;
-  type: 'H1' | 'H2' | 'H3' | 'H3_BOLD' | 'H4' | 'H5' | 'H6';
+  type: 'H1' | 'H2' | 'H3' | 'H3_BOLD' | 'H4' | 'H5' | 'H6' | 'H7';
   style?: TextStyle;
   numberOfLines?: number;
 };

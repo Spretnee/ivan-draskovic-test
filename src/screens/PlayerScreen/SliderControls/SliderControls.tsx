@@ -11,7 +11,7 @@ import {Text} from '../../../components/Text';
 
 export const SliderControls = () => {
   return (
-    <>
+    <View>
       <View style={styles.container}>
         <SvgXml xml={FIFTEEN_BACK} />
         <SvgXml xml={PLAY_BUTTON} />
@@ -37,6 +37,6 @@ export const SliderControls = () => {
         type="H3_BOLD">
         4x
       </Text>
-    </>
+    </View>
   );
 };
