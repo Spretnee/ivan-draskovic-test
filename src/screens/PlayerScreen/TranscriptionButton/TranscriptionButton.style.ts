@@ -9,5 +9,7 @@ export const styles = StyleSheet.create({
     paddingVertical: 8,
     paddingHorizontal: 12,
     width: 120,
+    marginBottom: 56,
+    marginTop: 20,
   },
 });
