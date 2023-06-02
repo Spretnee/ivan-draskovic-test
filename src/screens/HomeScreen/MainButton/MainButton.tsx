@@ -1,7 +1,7 @@
 import {Pressable} from 'react-native';
 import {SvgXml} from 'react-native-svg';
 import {CHEVRON_RIGHT} from '../../../assets/images/svg';
-import {WHITE} from '../../../constants/colors';
+import {styles} from './MainButton.style';
 
 export const MainButton = ({navigation}: any) => {
   return (
@@ -9,15 +9,7 @@ export const MainButton = ({navigation}: any) => {
       onPress={() => {
         navigation.navigate('Player');
       }}
-      style={{
-        backgroundColor: WHITE,
-        paddingHorizontal: 16,
-        paddingVertical: 12,
-        width: 56,
-        height: 48,
-        borderRadius: 2,
-        alignSelf: 'flex-end',
-      }}>
+      style={styles.mainButton}>
       <SvgXml xml={CHEVRON_RIGHT} />
     </Pressable>
   );
