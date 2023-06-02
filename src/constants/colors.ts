@@ -1,6 +1,7 @@
 export const BLACK = '#32312D';
 export const WHITE = '#FFF';
 export const YELLOW = '#DABB01';
+export const BEIGE = '#CBC4AC';
 export const MAGENTA = '#EF8599';
 export const PURPLE = '#A07ABA';
 export const GREEN = '#48A265';
