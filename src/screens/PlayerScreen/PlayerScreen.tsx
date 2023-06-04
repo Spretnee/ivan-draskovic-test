@@ -1,5 +1,5 @@
 import {View, Pressable} from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import {ScreenPropsPlayer} from '../../navigation/types';
 import {Header} from './Header';
 import {BottomBar} from './BottomBar';
@@ -18,7 +18,9 @@ import {EpisodeTitle} from './EpisodeTitle';
 import {SliderControls} from './SliderControls/SliderControls';
 import {Description} from './Description/Description';
 
-const PlayerScreen = ({navigation}: ScreenPropsPlayer) => {
+const PlayerScreen = ({route, navigation}: ScreenPropsPlayer) => {
+  console.log('Player Data', route.params);
+
   return (
     <View style={{flex: 1}}>
       <Header />
