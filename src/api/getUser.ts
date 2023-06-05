@@ -12,7 +12,6 @@ export const getUser = async (
       AUTH_ENDPOINT,
       qs.stringify(credentials),
     );
-    console.log('default header', baseUrl.defaults.headers);
     storeAccessToken(response.data.access_token);
     return response.data;
   } catch (error) {

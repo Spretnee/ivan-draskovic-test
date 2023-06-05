@@ -10,7 +10,6 @@ export const MainButton = ({navigation}: any) => {
     <Pressable
       onPress={() => {
         navigation.navigate('Player');
-        console.log('ddd');
       }}
       style={styles.mainButton}>
       <SvgXml xml={CHEVRON_RIGHT} />

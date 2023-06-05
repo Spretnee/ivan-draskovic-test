@@ -106,9 +106,22 @@ export const PAUSE_SMALL = `<svg width="16" height="16" viewBox="0 0 16 16" fill
 <path d="M12 2.66666H9.33337V13.3333H12V2.66666Z" fill="#32312D"/>
 </svg>
 `;
-export const PAUSE = `<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.66667 2.66666H4V13.3333H6.66667V2.66666Z" fill="#32312D"/>
-<path d="M12 2.66666H9.33337V13.3333H12V2.66666Z" fill="#32312D"/>
+export const PAUSE = `<svg width="19px" height="24px" viewBox="-1 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>pause [#1010]</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+
+</defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-67.000000, -3765.000000)" fill="#000000">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M11,3613 L13,3613 L13,3605 L11,3605 L11,3613 Z M15,3613 L17,3613 L17,3605 L15,3605 L15,3613 Z" id="pause-[#1010]">
+
+</path>
+            </g>
+        </g>
+    </g>
 </svg>
 `;
 export const CLOSE = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
