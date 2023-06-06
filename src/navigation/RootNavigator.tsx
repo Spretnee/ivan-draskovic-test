@@ -21,7 +21,11 @@ export const RootNavigator = () => {
       <Stack.Navigator
         initialRouteName="Home"
         screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          initialParams={{episode}}
+        />
         <Stack.Screen
           name="Player"
           component={PlayerScreen}

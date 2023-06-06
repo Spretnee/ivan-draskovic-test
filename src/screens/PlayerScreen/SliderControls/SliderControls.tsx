@@ -1,5 +1,5 @@
-import {ActivityIndicator, AppStateStatus, View} from 'react-native';
-import React, {useEffect, useState} from 'react';
+import {ActivityIndicator, AppStateStatus, Pressable, View} from 'react-native';
+import React, {useContext, useEffect, useState} from 'react';
 import {styles} from './SliderControls.styles';
 import {SvgXml} from 'react-native-svg';
 import {
@@ -9,70 +9,47 @@ import {
   THIRTY_FORWARD,
 } from '../../../assets/images/svg';
 import {Text} from '../../../components/Text';
-import TrackPlayer, {
-  Event,
-  State,
-  useTrackPlayerEvents,
-} from 'react-native-track-player';
+import TrackPlayer from 'react-native-track-player';
+import {PlayerStateContext} from '../../../providers/PlayerStateProvider';
+import PlaybackSpeedControl from './PlaybackSpeedControl';
+import {GREEN} from '../../../constants/colors';
 
-export const SliderControls = () => {
-  const [playerState, setPlayerState] = useState<null | State>(null);
-  const events = [Event.PlaybackState, Event.PlaybackError];
+type SliderControlsProps = {
+  jumpForward: () => void;
+  jumpBack: () => void;
+  play: () => void;
+  pause: () => void;
+};
 
-  useTrackPlayerEvents(events, event => {
-    if (event.type === Event.PlaybackError) {
-      console.warn('An error occured while playing the current track.');
-    }
-    if (event.type === Event.PlaybackState) {
-      setPlayerState(event.state);
-    }
-  });
-
-  const isPlaying = playerState === State.Playing;
+export const SliderControls = ({
+  jumpBack,
+  jumpForward,
+  play,
+  pause,
+}: SliderControlsProps) => {
+  const {isPlaying, isBuffering, isConnecting} = useContext(PlayerStateContext);
 
   return (
     <View>
       <View style={styles.container}>
-        <SvgXml xml={FIFTEEN_BACK} onPress={() => {}} />
-
-        {!isPlaying ? (
-          <SvgXml
-            onPress={() => {
-              TrackPlayer.play();
-            }}
-            xml={PLAY_BUTTON}
-          />
+        <SvgXml xml={FIFTEEN_BACK} onPress={jumpBack} />
+        {isBuffering || isConnecting ? (
+          <View style={{justifyContent: 'center', alignItems: 'center'}}>
+            <ActivityIndicator
+              color={GREEN}
+              size={'small'}
+              style={{alignSelf: 'center'}}
+            />
+          </View>
+        ) : !isPlaying ? (
+          <SvgXml onPress={play} xml={PLAY_BUTTON} />
         ) : (
-          <SvgXml
-            onPress={() => {
-              TrackPlayer.pause();
-            }}
-            xml={PAUSE}
-          />
+          <SvgXml onPress={pause} xml={PAUSE} />
         )}
 
-        <SvgXml xml={THIRTY_FORWARD} />
+        <SvgXml onPress={jumpForward} xml={THIRTY_FORWARD} />
+        <PlaybackSpeedControl />
       </View>
-      <Text
-        style={{position: 'absolute', bottom: '36%', right: 16}}
-        type="H3_BOLD">
-        1x
-      </Text>
-      <Text
-        style={{position: 'absolute', bottom: '36%', right: 16}}
-        type="H3_BOLD">
-        1.5x
-      </Text>
-      <Text
-        style={{position: 'absolute', bottom: '36%', right: 16}}
-        type="H3_BOLD">
-        2x
-      </Text>
-      <Text
-        style={{position: 'absolute', bottom: '36%', right: 16}}
-        type="H3_BOLD">
-        4x
-      </Text>
     </View>
   );
 };

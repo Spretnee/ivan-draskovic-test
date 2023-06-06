@@ -98,15 +98,10 @@ export const THIRTY_FORWARD = `<svg width="25" height="24" viewBox="0 0 25 24" f
 </svg>
 `;
 
-export const PLAY_SMALL = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.166656 0L18.8333 12L0.166656 24V0Z" fill="#32312D"/>
-</svg>`;
-export const PAUSE_SMALL = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.66667 2.66666H4V13.3333H6.66667V2.66666Z" fill="#32312D"/>
-<path d="M12 2.66666H9.33337V13.3333H12V2.66666Z" fill="#32312D"/>
-</svg>
+export const PLAY_SMALL = `<svg width="20px" height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M716.8 512l-384-256v512z" fill="#000000" fill-rule="evenodd"/></svg>`;
+export const PAUSE_SMALL = `<svg width="20px" height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M307.2 256h153.6v512H307.2V256zm256 512h153.6V256H563.2v512z" fill="#000000" fill-rule="evenodd"/></svg>
 `;
-export const PAUSE = `<svg width="19px" height="24px" viewBox="-1 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+export const PAUSE = `<svg width="19px" height="20px" viewBox="-1 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     
     <title>pause [#1010]</title>
     <desc>Created with Sketch.</desc>
@@ -124,8 +119,5 @@ export const PAUSE = `<svg width="19px" height="24px" viewBox="-1 0 8 8" version
     </g>
 </svg>
 `;
-export const CLOSE = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 4L4 12" stroke="#32312D" stroke-linecap="square" stroke-linejoin="round"/>
-<path d="M4 4L12 12" stroke="#32312D" stroke-linecap="square" stroke-linejoin="round"/>
-</svg>
+export const CLOSE = `<svg width="16px" height="16px" viewBox="0 0 16 16" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" id="svg8"><metadata id="metadata5"><rdf:RDF><cc:Work><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/><dc:title/><dc:date>2021</dc:date><dc:creator><cc:Agent><dc:title>Timothée Giet</dc:title></cc:Agent></dc:creator><cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/></cc:Work><cc:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/"><cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/><cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/><cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/><cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/><cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/><cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/></cc:License></rdf:RDF></metadata><rect transform="rotate(45)" ry="0" y="-1" x="4.3137083" height="2" width="14" id="rect1006" style="opacity:1;vector-effect:none;fill:#373737;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.20000005;stroke-opacity:1"/><rect transform="rotate(-45)" ry="0" y="10.313708" x="-7" height="2" width="14" id="rect1006-5" style="opacity:1;vector-effect:none;fill:#373737;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.20000005;stroke-opacity:1"/></svg>
 `;

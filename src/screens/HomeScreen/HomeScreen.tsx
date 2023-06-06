@@ -9,7 +9,7 @@ import {BottomPlayer} from './BottomPlayer/BottomPlayer';
 import {useGetEpisode} from '../../api/hooks/useGetEpisode';
 import {getEpisode} from '../../api/getEpisode';
 
-export const HomeScreen = ({navigation}: ScreenPropsHome) => {
+export const HomeScreen = ({navigation, route}: ScreenPropsHome) => {
   return (
     <View style={styles.title}>
       <Title />

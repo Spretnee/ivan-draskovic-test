@@ -1,36 +1,32 @@
 import {View, Pressable} from 'react-native';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {ScreenPropsPlayer} from '../../navigation/types';
 import {Header} from './Header';
 import {BottomBar} from './BottomBar';
-import {Text} from '../../components/Text';
-import {FONT_DARK2} from '../../constants/colors';
-import {SvgXml} from 'react-native-svg';
-import {
-  FIFTEEN_BACK,
-  PLAY_BUTTON,
-  THIRTY_FORWARD,
-} from '../../assets/images/svg';
 import {TranscriptionButton} from './TranscriptionButton';
 import {Slider} from './Slider';
 import {Image} from './Image/Image';
 import {EpisodeTitle} from './EpisodeTitle';
 import {SliderControls} from './SliderControls/SliderControls';
 import {Description} from './Description/Description';
+import TrackPlayer, {Track} from 'react-native-track-player';
+import {Episode} from '../../api/types';
+import {addPlaylist} from './utils/addPlaylist';
 
 const PlayerScreen = ({route, navigation}: ScreenPropsPlayer) => {
-  console.log('Player Data', route.params);
+  const {episode} = route.params;
+  console.log(episode);
+  addPlaylist(episode);
 
   return (
     <View style={{flex: 1}}>
       <Header />
       <View style={{paddingVertical: 32, paddingHorizontal: 21}}>
-        <Image />
-        <EpisodeTitle title={'how long can putin last?'} />
+        <Image uri={episode.image} />
+        <EpisodeTitle title={episode.title} />
         <Slider />
-        <SliderControls />
         <TranscriptionButton />
-        <Description />
+        <Description description={episode.summary} />
       </View>
       <BottomBar />
     </View>

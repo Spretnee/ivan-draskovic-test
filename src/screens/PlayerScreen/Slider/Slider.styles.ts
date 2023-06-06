@@ -5,4 +5,7 @@ export const styles = StyleSheet.create({
     alignItems: 'stretch',
     justifyContent: 'center',
   },
+  times: {flexDirection: 'row', justifyContent: 'space-between', top: -10},
+  thumbNailStyle: {height: 20, width: 4, borderRadius: 0},
+  trackStyle: {height: 12},
 });

@@ -2,7 +2,7 @@ import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {Episode} from '../api/types';
 
 export type RootStackParamList = {
-  Home: undefined;
+  Home: {episode: Episode};
   Player: {episode: Episode};
 };
 

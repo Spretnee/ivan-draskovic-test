@@ -6,8 +6,10 @@ import TrackPlayer, {
 } from 'react-native-track-player';
 import {PLAYLIST_DATA} from './src/constants';
 import {useEffect} from 'react';
+import {PlayerStateProvider} from './src/providers/PlayerStateProvider';
 
 const queryClient = new QueryClient();
+const options = {};
 
 const setupTrackPlayer = async () => {
   try {
@@ -16,11 +18,21 @@ const setupTrackPlayer = async () => {
       android: {
         appKilledPlaybackBehavior: AppKilledPlaybackBehavior.ContinuePlayback,
       },
-      capabilities: [Capability.Pause, Capability.Play],
-      compactCapabilities: [Capability.Play, Capability.Pause],
+      capabilities: [
+        Capability.Pause,
+        Capability.Play,
+        Capability.Stop,
+        Capability.JumpBackward,
+        Capability.JumpForward,
+      ],
+      compactCapabilities: [
+        Capability.Play,
+        Capability.Pause,
+        Capability.Stop,
+        Capability.JumpBackward,
+        Capability.JumpForward,
+      ],
     });
-
-    await TrackPlayer.add(PLAYLIST_DATA);
   } catch (e) {
     console.error('Track player setup error', e);
   }
@@ -30,9 +42,12 @@ const App = () => {
   useEffect(() => {
     setupTrackPlayer();
   }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
-      <RootNavigator />
+      <PlayerStateProvider>
+        <RootNavigator />
+      </PlayerStateProvider>
     </QueryClientProvider>
   );
 };
