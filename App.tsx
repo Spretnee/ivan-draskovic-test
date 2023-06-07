@@ -4,7 +4,6 @@ import TrackPlayer, {
   AppKilledPlaybackBehavior,
   Capability,
 } from 'react-native-track-player';
-import {PLAYLIST_DATA} from './src/constants';
 import {useEffect} from 'react';
 import {PlayerStateProvider} from './src/providers/PlayerStateProvider';
 
@@ -24,6 +23,7 @@ const setupTrackPlayer = async () => {
         Capability.Stop,
         Capability.JumpBackward,
         Capability.JumpForward,
+        Capability.Stop,
       ],
       compactCapabilities: [
         Capability.Play,
@@ -31,6 +31,7 @@ const setupTrackPlayer = async () => {
         Capability.Stop,
         Capability.JumpBackward,
         Capability.JumpForward,
+        Capability.Stop,
       ],
     });
   } catch (e) {
