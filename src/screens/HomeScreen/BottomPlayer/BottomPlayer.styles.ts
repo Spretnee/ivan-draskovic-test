@@ -9,16 +9,16 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 21,
     paddingTop: 18,
   },
-  podcastInfo: {flexDirection: 'row'},
-  textPublicationUpperCase: {
-    lineHeight: 14,
-    color: FONT_LIGHT2,
-    textTransform: 'uppercase',
-  },
-  textPublicationCapitalized: {
-    lineHeight: 14,
-    color: FONT_LIGHT2,
-    textTransform: 'capitalize',
-  },
-  title: {lineHeight: 12, color: BLACK, textTransform: 'capitalize'},
+  // podcastInfo: {flexDirection: 'row'},
+  // textPublicationUpperCase: {
+  //   lineHeight: 14,
+  //   color: FONT_LIGHT2,
+  //   textTransform: 'uppercase',
+  // },
+  // textPublicationCapitalized: {
+  //   lineHeight: 14,
+  //   color: FONT_LIGHT2,
+  //   textTransform: 'capitalize',
+  // },
+  // title: {lineHeight: 12, color: BLACK, textTransform: 'capitalize'},
 });

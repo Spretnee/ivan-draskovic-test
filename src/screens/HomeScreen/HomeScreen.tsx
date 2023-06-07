@@ -6,8 +6,8 @@ import Logo from './Logo/Logo';
 import {ScreenPropsHome} from '../../navigation/types';
 
 import {BottomPlayer} from './BottomPlayer/BottomPlayer';
-import {useGetEpisode} from '../../api/hooks/useGetEpisode';
-import {getEpisode} from '../../api/getEpisode';
+import {useGetEpisode} from '../../hooks/useGetEpisode';
+import {getEpisode} from '../../api/episodes';
 
 export const HomeScreen = ({navigation, route}: ScreenPropsHome) => {
   return (

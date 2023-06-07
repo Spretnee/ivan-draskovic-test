@@ -1,27 +1,6 @@
 import {createContext} from 'react';
-import {
-  State,
-  Event,
-  usePlaybackState,
-  useProgress,
-} from 'react-native-track-player';
-
-type ChildrenType = {
-  children: React.ReactNode;
-};
-
-type PlayerStateContextType = {
-  isPlaying: boolean;
-  isReady: boolean;
-  isPaused: boolean;
-  isIdle: boolean;
-  isBuffering: boolean;
-  isConnecting: boolean;
-
-  progressBarBuffered: number;
-  progressBarPosition: number;
-  progressBarDuration: number;
-};
+import {State, usePlaybackState, useProgress} from 'react-native-track-player';
+import {PlayerStateContextType, ChildrenType} from './types';
 
 const PlayerStateContext = createContext<PlayerStateContextType>({
   isPlaying: false,
@@ -34,8 +13,6 @@ const PlayerStateContext = createContext<PlayerStateContextType>({
   progressBarPosition: 0,
   progressBarDuration: 0,
 });
-
-const events = [Event.PlaybackState, Event.PlaybackError];
 
 const PlayerStateProvider = ({children}: ChildrenType) => {
   const {buffered, duration, position} = useProgress();
@@ -52,7 +29,6 @@ const PlayerStateProvider = ({children}: ChildrenType) => {
     progressBarPosition: position,
     progressBarDuration: duration,
   };
-  console.log(playbackState);
   return (
     <PlayerStateContext.Provider value={context}>
       {children}

@@ -12,7 +12,6 @@ export const BottomBarActions = () => {
   return (
     <View style={styles.container}>
       <SvgXml xml={FOLDER} />
-      {/* TODO:change SVG for play pause  */}
       <SvgXml xml={MOVE_FORWARD} />
       <SvgXml xml={THREE_DOT_MENU} />
     </View>

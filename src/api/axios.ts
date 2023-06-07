@@ -1,13 +1,13 @@
 import axios from 'axios';
-import {retrieveAccessToken} from './keychain';
+import {retrieveAccessToken} from '../utils/keychain';
 import {BASE_URL} from './constants';
 
-export const baseUrl = axios.create({
+export const apiClient = axios.create({
   baseURL: BASE_URL,
   headers: {'content-type': 'application/x-www-form-urlencoded'},
 });
 
-baseUrl.interceptors.request.use(
+apiClient.interceptors.request.use(
   async config => {
     if (config.headers) {
       const token = await retrieveAccessToken();

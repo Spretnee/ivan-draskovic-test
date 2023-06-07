@@ -1,5 +1,5 @@
 import {useContext, useState} from 'react';
-import {PlayerStateContext} from '../../../../providers/PlayerStateProvider';
+import {PlayerStateContext} from '../providers/PlayerStateProvider';
 import {NumberArray} from 'react-native-svg';
 import TrackPlayer from 'react-native-track-player';
 
@@ -24,6 +24,8 @@ export const useControls = (position: number) => {
 
   const play = async () => await TrackPlayer.play();
   const pause = async () => await TrackPlayer.pause();
+  const reset = async () =>
+    await TrackPlayer.reset().then(() => TrackPlayer.add([]));
   return {
     play,
     pause,
@@ -32,5 +34,6 @@ export const useControls = (position: number) => {
     handlePosition,
     value,
     onSlidingComplete,
+    reset,
   };
 };

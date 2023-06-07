@@ -1,4 +1,4 @@
-export type GetUserResponse = {
+export type AuthUser = {
   about_me: null | string;
   access_token: string;
   bundlr_email: string;
@@ -15,7 +15,7 @@ export type GetUserResponse = {
   username: string;
 };
 
-export type GetUserProps = {
+export type AuthUserProps = {
   username: string;
   password: string;
 };

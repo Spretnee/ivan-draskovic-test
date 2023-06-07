@@ -6,14 +6,13 @@ import {theme} from '../theme/theme';
 import PlayerScreen from '../screens/PlayerScreen/PlayerScreen';
 import {RootStackParamList} from './types';
 import {CREDENTIALS, EPISODE_ID} from '../api/constants';
-import {useGetUser} from '../api/hooks/useGetUser';
-import {useGetEpisode} from '../api/hooks/useGetEpisode';
+import {useAuthUser} from '../hooks/useAuthUser';
+import {useGetEpisode} from '../hooks/useGetEpisode';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export const RootNavigator = () => {
-  const {data: user} = useGetUser(CREDENTIALS);
-
+  const {data: user} = useAuthUser(CREDENTIALS);
   const {data: episode} = useGetEpisode(EPISODE_ID);
 
   return (

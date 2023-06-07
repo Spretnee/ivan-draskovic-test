@@ -1,4 +1,4 @@
-import {View, Pressable} from 'react-native';
+import {View, Pressable, ScrollView, SafeAreaView} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import {ScreenPropsPlayer} from '../../navigation/types';
 import {Header} from './Header';
@@ -7,21 +7,22 @@ import {TranscriptionButton} from './TranscriptionButton';
 import {Slider} from './Slider';
 import {Image} from './Image/Image';
 import {EpisodeTitle} from './EpisodeTitle';
-import {SliderControls} from './SliderControls/SliderControls';
 import {Description} from './Description/Description';
-import TrackPlayer, {Track} from 'react-native-track-player';
-import {Episode} from '../../api/types';
 import {addPlaylist} from './utils/addPlaylist';
 
-const PlayerScreen = ({route, navigation}: ScreenPropsPlayer) => {
+const PlayerScreen = ({route}: ScreenPropsPlayer) => {
   const {episode} = route.params;
   console.log(episode);
   addPlaylist(episode);
 
   return (
-    <View style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1}}>
       <Header />
-      <View style={{paddingVertical: 32, paddingHorizontal: 21}}>
+      <View
+        style={{
+          paddingVertical: 32,
+          paddingHorizontal: 21,
+        }}>
         <Image uri={episode.image} />
         <EpisodeTitle title={episode.title} />
         <Slider />
@@ -29,7 +30,7 @@ const PlayerScreen = ({route, navigation}: ScreenPropsPlayer) => {
         <Description description={episode.summary} />
       </View>
       <BottomBar />
-    </View>
+    </SafeAreaView>
   );
 };
 

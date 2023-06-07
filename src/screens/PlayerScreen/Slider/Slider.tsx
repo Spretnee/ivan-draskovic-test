@@ -9,7 +9,7 @@ import {Slider as OriginSlider} from '@miblanchard/react-native-slider';
 import {styles} from './Slider.styles';
 import {GREEN, GREEN_LIGHT} from '../../../constants/colors';
 import {useProgress} from 'react-native-track-player';
-import {useControls} from './hooks/useControls';
+import {useControls} from '../../../hooks/useControls';
 import {Text} from '../../../components/Text';
 import {formatTime} from './utils/formatTime';
 import {SliderControls} from '../SliderControls/SliderControls';
