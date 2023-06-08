@@ -8,6 +8,7 @@ import {RootStackParamList} from './types';
 import {CREDENTIALS, EPISODE_ID} from '../api/constants';
 import {useAuthUser} from '../hooks/useAuthUser';
 import {useGetEpisode} from '../hooks/useGetEpisode';
+import {storeAccessToken} from '../utils/keychain';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -23,12 +24,12 @@ export const RootNavigator = () => {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          initialParams={{episode}}
+          initialParams={{episode, user}}
         />
         <Stack.Screen
           name="Player"
           component={PlayerScreen}
-          initialParams={{episode}}
+          initialParams={{episode, user}}
         />
       </Stack.Navigator>
     </NavigationContainer>

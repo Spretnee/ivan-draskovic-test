@@ -12,7 +12,6 @@ import {addPlaylist} from './utils/addPlaylist';
 
 const PlayerScreen = ({route}: ScreenPropsPlayer) => {
   const {episode} = route.params;
-  console.log(episode);
   addPlaylist(episode);
 
   return (

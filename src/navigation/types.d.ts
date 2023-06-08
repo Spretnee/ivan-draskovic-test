@@ -1,9 +1,9 @@
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {Episode} from '../api/types';
+import {AuthUser, Episode} from '../api/types';
 
 export type RootStackParamList = {
-  Home: {episode: Episode};
-  Player: {episode: Episode};
+  Home: {episode: Episode; user: AuthUser};
+  Player: {episode: Episode; user: AuthUser};
 };
 
 export type ScreenPropsHome = NativeStackScreenProps<

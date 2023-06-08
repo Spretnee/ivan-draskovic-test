@@ -9,3 +9,4 @@ export const BASE_URL =
   'https://development-backend-rest-api-dot-bundlr-beta.uw.r.appspot.com';
 export const AUTH_ENDPOINT = `/api/auth`;
 export const EPISODE_ENDPOINT = `/api/episodes`;
+export const SEARCH_ENDPOINT = '/api/search/';

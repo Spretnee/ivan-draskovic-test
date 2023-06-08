@@ -42,6 +42,6 @@ export const BottomPlayer = () => {
       </>
     );
   } else {
-    return;
+    return <View></View>;
   }
 };
