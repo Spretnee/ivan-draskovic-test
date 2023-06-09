@@ -1,25 +1,40 @@
 import {apiClient} from './axios';
 import {AUTH_ENDPOINT, EPISODE_ENDPOINT, EPISODE_ID} from './constants';
-import {AuthUser, AuthUserProps, Episode} from './types';
-import {storeAccessToken} from '../utils/keychain';
 
-export const getEpisode = async (id: string) => {
-  const response = await apiClient.get<Episode>(`${EPISODE_ENDPOINT}/${id}`);
-  return response.data;
-};
+export interface GetPodcastEpisodeResponse {
+  data: Data;
+}
 
-export const authUser = async (
-  credentials: AuthUserProps,
-): Promise<AuthUser | undefined> => {
-  const qs = require('qs');
+export interface Data {
+  getPodcastEpisode: GetPodcastEpisode;
+}
+
+export interface GetPodcastEpisode {
+  uuid: string;
+  name: string;
+  imageUrl: any;
+  podcastSeries: string;
+  datePublished: string;
+  description: string;
+  audioUrl: string;
+}
+export const getPodcastEpisode = async (uuid: string) => {
   try {
-    const response = await apiClient.post(
-      AUTH_ENDPOINT,
-      qs.stringify(credentials),
-    );
-    storeAccessToken(response.data.access_token);
-    return response.data;
-  } catch (error) {
-    console.error(error);
+    const response = await apiClient.post<GetPodcastEpisodeResponse>('', {
+      query: `{
+                getPodcastEpisode(uuid: "29bd1071-5fc6-4217-9361-2da32b2cd98d") {
+                  uuid
+                  name
+                  imageUrl
+                  description
+                  audioUrl
+                }
+              }
+              `,
+    });
+
+    return response.data.data.getPodcastEpisode;
+  } catch (e) {
+    console.error(e);
   }
 };
