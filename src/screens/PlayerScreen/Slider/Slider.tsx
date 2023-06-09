@@ -16,7 +16,7 @@ import {SliderControls} from '../SliderControls/SliderControls';
 import {PlayerStateContext} from '../../../providers/PlayerStateProvider';
 
 export const Slider = () => {
-  const {progressBarBuffered, progressBarPosition, progressBarDuration} =
+  const {progressBarPosition, progressBarDuration} =
     useContext(PlayerStateContext);
   const {
     handlePosition,

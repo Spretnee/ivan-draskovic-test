@@ -5,7 +5,7 @@ import {Text} from '../../../components/Text';
 import {Episode} from '../../../api/types';
 
 type DescriptionProps = {
-  description: Episode['summary'];
+  description: Episode['summary'] | undefined;
 };
 
 export const Description = ({description}: DescriptionProps) => {

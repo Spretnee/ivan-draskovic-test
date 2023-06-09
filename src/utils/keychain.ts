@@ -1,8 +1,10 @@
 import * as KeyChain from 'react-native-keychain';
 
-export const storeAccessToken = async (accessToken: string) => {
+export const storeAccessToken = async (accessToken: string | undefined) => {
   try {
-    await KeyChain.setGenericPassword('accessToken', accessToken);
+    if (accessToken) {
+      return await KeyChain.setGenericPassword('accessToken', accessToken);
+    }
   } catch (error) {}
 };
 
@@ -20,5 +22,17 @@ export const retrieveAccessToken = async () => {
 export const deleteToken = async () => {
   try {
     await KeyChain.resetGenericPassword();
+  } catch (error) {}
+};
+
+export const checkTokenValidity = async (accessToken: string | undefined) => {
+  try {
+    const storedToken = await retrieveAccessToken();
+    if (storedToken === accessToken) {
+      console.log('isti');
+      return true;
+    } else {
+      return false;
+    }
   } catch (error) {}
 };

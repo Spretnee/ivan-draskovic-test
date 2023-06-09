@@ -7,19 +7,19 @@ import {ScreenPropsHome} from '../../navigation/types';
 import {BottomPlayer} from './BottomPlayer/BottomPlayer';
 import {SearchBar} from '../../components/SearchBar/SearchBar';
 import {FieldValues} from 'react-hook-form';
-import {search} from '../../api/podcasts';
-import {useSearch} from '../../hooks/useSearch';
+// import {search} from '../../api/podcasts';
+// import {useSearch} from '../../hooks/useSearch';
 
 export const HomeScreen = ({navigation, route}: ScreenPropsHome) => {
-  const handleSearch = async (searchText: FieldValues) => {
-    search(searchText.searchText);
-  };
+  // const handleSearch = async (searchText: FieldValues) => {
+  //   search(searchText.searchText);
+  // };
 
   return (
     <View style={styles.title}>
       <Title />
-      <Text>{route.params.user?.first_name}</Text>
-      <SearchBar onSearch={handleSearch} />
+
+      {/* <SearchBar onSearch={handleSearch} /> */}
       <View style={styles.bottomSection}>
         <Logo />
         <MainButton navigation={navigation} />
