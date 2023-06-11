@@ -24,6 +24,8 @@ const setupTrackPlayer = async () => {
         Capability.JumpBackward,
         Capability.JumpForward,
         Capability.Stop,
+        Capability.SkipToNext,
+        Capability.SkipToPrevious,
       ],
       compactCapabilities: [
         Capability.Play,
@@ -32,6 +34,8 @@ const setupTrackPlayer = async () => {
         Capability.JumpBackward,
         Capability.JumpForward,
         Capability.Stop,
+        Capability.SkipToNext,
+        Capability.SkipToPrevious,
       ],
     });
   } catch (e) {

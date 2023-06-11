@@ -6,6 +6,12 @@ module.exports = async function () {
   TrackPlayer.addEventListener(Event.RemoteStop, () => TrackPlayer.reset());
   TrackPlayer.addEventListener(Event.RemoteSeek, () => TrackPlayer.seekBy());
   TrackPlayer.addEventListener(Event.RemoteStop, () => TrackPlayer.stop());
+  TrackPlayer.addEventListener(Event.RemotePrevious, () =>
+    TrackPlayer.skipToPrevious(),
+  );
+  TrackPlayer.addEventListener(Event.RemoteNext, () =>
+    TrackPlayer.skipToNext(),
+  );
 
   TrackPlayer.addEventListener(
     Event.RemoteJumpBackward,
