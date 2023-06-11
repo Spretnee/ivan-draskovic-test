@@ -4,11 +4,11 @@ import {
   View,
   useAnimatedValue,
 } from 'react-native';
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {Slider as OriginSlider} from '@miblanchard/react-native-slider';
 import {styles} from './Slider.styles';
 import {GREEN, GREEN_LIGHT} from '../../../constants/colors';
-import {useProgress} from 'react-native-track-player';
+import TrackPlayer, {Track, useProgress} from 'react-native-track-player';
 import {useControls} from '../../../hooks/useControls';
 import {Text} from '../../../components/Text';
 import {formatTime} from './utils/formatTime';
@@ -25,6 +25,8 @@ export const Slider = () => {
     onSlidingComplete,
     pause,
     play,
+    next,
+    previous,
     value,
   } = useControls(progressBarPosition);
 
@@ -50,6 +52,8 @@ export const Slider = () => {
         <Text type={'H5'}>{formatTime(progressBarDuration)}</Text>
       </View>
       <SliderControls
+        next={next}
+        previous={previous}
         play={play}
         pause={pause}
         jumpBack={jumpBack15}

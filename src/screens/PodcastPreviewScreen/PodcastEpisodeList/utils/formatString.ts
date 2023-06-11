@@ -1,7 +1,7 @@
-export const formatString = (string: string) => {
-  if (string.length <= 6) {
-    return '';
-  } else {
-    return string.slice(3, -3);
-  }
+export const formatString = (string: string | undefined) => {
+  const regex = /<[^>]+>/g;
+
+  const formattedString = string?.replace(regex, '');
+
+  return formattedString;
 };

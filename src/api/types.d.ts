@@ -3,10 +3,10 @@ export interface GetPodcastSeriesResponse {
 }
 
 export interface Data {
-  getPodcastSeries: GetPodcastSeries;
+  getPodcastSeries: PodcastSeriesType;
 }
 
-export interface GetPodcastSeries {
+export interface PodcastSeriesType {
   uuid: string;
   name: string;
   datePublished: number;

@@ -18,12 +18,11 @@ import {addPlaylist} from './utils/addPlaylist';
 import {useGetPodcastEpisode} from '../../hooks/useGetEpisode';
 import {EPISODE_ID} from '../../api/constants';
 import {GREEN} from '../../constants/colors';
+import TrackPlayer, {Track} from 'react-native-track-player';
 
 const PlayerScreen = ({route}: ScreenPropsPlayer) => {
-  const {data: episode} = useGetPodcastEpisode(
-    `a098b77c-6ba3-4783-8381-94bc81328460`,
-  );
-  // TODO: solve  GetPodcastEpisode | undefined
+  const {episode} = route.params;
+
   return (
     <SafeAreaView style={{flex: 1}}>
       <Header />

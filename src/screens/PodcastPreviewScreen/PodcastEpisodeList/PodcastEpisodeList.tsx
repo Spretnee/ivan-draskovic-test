@@ -1,18 +1,20 @@
-import {View} from 'react-native';
+import {View, Text, FlatList} from 'react-native';
 import React from 'react';
-import {PodcastEpisodeListType} from './types';
-import {Text} from '../../../components/Text';
-import {styles} from './PodcastEpisodeList.styles';
-import {formatString} from './utils/formatString';
+import {PodcastEpisode} from './PodcastEpiode';
+import {Episode, PodcastSeriesType} from '../../../api/types';
 
-const PodcastEpisodeList = ({name, description}: PodcastEpisodeListType) => {
+type PodcastEpisodeListProps = {
+  episodes: Episode[] | undefined;
+};
+
+const PodcastEpisodeList = ({episodes}: PodcastEpisodeListProps) => {
   return (
-    <View style={styles.container}>
-      <Text type={'H3'}>{name}</Text>
-      <Text type={'H5'} numberOfLines={2}>
-        {formatString(description)}
-      </Text>
-    </View>
+    <FlatList
+      style={{marginBottom: 40}}
+      data={episodes}
+      renderItem={({item}) => <PodcastEpisode episode={item} />}
+      keyExtractor={item => item.name}
+    />
   );
 };
 

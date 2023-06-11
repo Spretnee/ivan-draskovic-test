@@ -22,7 +22,7 @@ export const getPodcastEpisode = async (uuid: string) => {
   try {
     const response = await apiClient.post<GetPodcastEpisodeResponse>('', {
       query: `{
-                getPodcastEpisode(uuid: "29bd1071-5fc6-4217-9361-2da32b2cd98d") {
+                getPodcastEpisode(uuid: "${uuid}") {
                   uuid
                   name
                   imageUrl
