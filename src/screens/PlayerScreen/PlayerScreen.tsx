@@ -5,7 +5,7 @@ import {
   SafeAreaView,
   ActivityIndicator,
 } from 'react-native';
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {ScreenPropsPlayer} from '../../navigation/types';
 import {Header} from './Header';
 import {BottomBar} from './BottomBar';
@@ -19,9 +19,14 @@ import {useGetPodcastEpisode} from '../../hooks/useGetEpisode';
 import {EPISODE_ID} from '../../api/constants';
 import {GREEN} from '../../constants/colors';
 import TrackPlayer, {Track} from 'react-native-track-player';
+import {INITIAL_TRACK} from '../../constants/player';
+import {PlayerContext} from '../../providers/PlayerProvider';
 
-const PlayerScreen = ({route}: ScreenPropsPlayer) => {
-  const {episode} = route.params;
+const PlayerScreen = () => {
+  const {currentTrack, controls, progressBarDuration, progressBarPosition} =
+    useContext(PlayerContext);
+
+  //TODO: const {controls,currentTrack} = usePlayer(queue:Track[])
 
   return (
     <SafeAreaView style={{flex: 1}}>
@@ -31,11 +36,15 @@ const PlayerScreen = ({route}: ScreenPropsPlayer) => {
           paddingVertical: 32,
           paddingHorizontal: 21,
         }}>
-        <Image uri={episode?.imageUrl} />
-        <EpisodeTitle title={episode?.name} />
-        <Slider />
+        {/* <Image url={currentTrack?.artwork} /> */}
+        <EpisodeTitle title={currentTrack?.title} />
+        <Slider
+          controls={controls}
+          duration={progressBarDuration}
+          position={progressBarPosition}
+        />
         <TranscriptionButton />
-        <Description description={episode?.description} />
+        <Description description={currentTrack?.description} />
       </View>
       <BottomBar />
     </SafeAreaView>

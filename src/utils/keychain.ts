@@ -29,7 +29,6 @@ export const checkTokenValidity = async (accessToken: string | undefined) => {
   try {
     const storedToken = await retrieveAccessToken();
     if (storedToken === accessToken) {
-      console.log('isti');
       return true;
     } else {
       return false;

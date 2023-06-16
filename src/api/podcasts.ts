@@ -2,32 +2,15 @@ import {apiClient} from './axios';
 import {SEARCH_ENDPOINT} from './constants';
 import {GetPodcastSeriesResponse} from './types';
 
-// export const search = async (query: string) => {
-//   const params = {
-//     query: query,
-//     content_type: ['podcast'],
-//     size: 20,
-//     knn_k: 20,
-//     knn_candidates: 500,
-//     knn_size: 5,
-//     embeddings_weight: 2,
-//     embedding_type: 'symmetric',
-//   };
+type getPodcastProps = {
+  query: string;
+};
 
-//   try {
-//     const response = await apiClient.get(SEARCH_ENDPOINT, {params});
-//     console.log(response);
-//     return response.data;
-//   } catch (e) {
-//     console.error(e);
-//   }
-// };
-
-export const getPodcast = async (name: string) => {
+export const getPodcast = async (query: string) => {
   try {
     const response = await apiClient.post<GetPodcastSeriesResponse>('', {
       query: `{
-                    getPodcastSeries(name: "${name}") {
+                    getPodcastSeries(uuid: "${query}") {
                       uuid
                       name
                       datePublished
@@ -47,7 +30,7 @@ export const getPodcast = async (name: string) => {
                   }`,
     });
 
-    return response.data.data.getPodcastSeries;
+    return response.data;
   } catch (e) {
     console.error(e);
   }

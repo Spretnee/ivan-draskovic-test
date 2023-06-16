@@ -1,6 +1,6 @@
 export type BottomPlayerControlsProps = {
   isPlaying: boolean;
-  play: () => void;
-  pause: () => void;
-  reset: () => void;
+  play: Controls['play'];
+  pause: Controls['pause'];
+  reset: Controls['reset'];
 };

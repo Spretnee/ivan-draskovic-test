@@ -13,9 +13,8 @@ module.exports = async function () {
     TrackPlayer.skipToNext(),
   );
 
-  TrackPlayer.addEventListener(
-    Event.RemoteJumpBackward,
-    () => TrackPlayer.getRepeatMode,
+  TrackPlayer.addEventListener(Event.RemoteJumpBackward, () =>
+    TrackPlayer.RemoteJumpBackward(),
   );
   TrackPlayer.addEventListener(Event.RemoteJumpForward, () =>
     TrackPlayer.RemoteJumpForward(),

@@ -1,10 +1,10 @@
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {AuthUser, Episode} from '../api/types';
+import {AuthUser, Episode, PodcastSeriesType} from '../api/types';
 
 export type RootStackParamList = {
-  Home: {episode: Episode};
-  Player: {episode: Episode};
-  PodcastPreview: undefined;
+  Home: {};
+  Player: {track: Track};
+  PodcastPreview: {};
 };
 
 export type ScreenPropsHome = NativeStackScreenProps<
@@ -17,5 +17,5 @@ export type ScreenPropsPlayer = NativeStackScreenProps<
 >;
 export type ScreenPropsPodcastPreview = NativeStackScreenProps<
   RootStackParamList,
-  'Player'
+  'PodcastPreview'
 >;

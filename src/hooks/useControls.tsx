@@ -1,24 +1,20 @@
-import {useContext, useEffect, useState} from 'react';
-import {PlayerStateContext} from '../providers/PlayerStateProvider';
-import {NumberArray} from 'react-native-svg';
+import {useState} from 'react';
+
 import TrackPlayer, {Track} from 'react-native-track-player';
+import {INITIAL_TRACK} from '../constants/player';
 
 export const useControls = (position: number) => {
-  const [value, setValue] = useState(position);
-
-  const handlePosition = (value: number[]) => {
-    setValue(Math.round(value[0]));
-  };
   const onSlidingComplete = async (value: Array<number>) =>
-    await TrackPlayer.seekTo(value[0]);
+    await TrackPlayer.seekTo(value[INITIAL_TRACK]);
 
   const jumpForward30 = async () => {
-    setValue(position + 30);
     return await TrackPlayer.seekTo(position + 30);
+  };
+  const skip = async (id: number) => {
+    await TrackPlayer.skip(id);
   };
 
   const jumpBack15 = async () => {
-    setValue(position - 15);
     return await TrackPlayer.seekTo(position - 15);
   };
   const next = async () => {
@@ -28,9 +24,10 @@ export const useControls = (position: number) => {
     return await TrackPlayer.skipToPrevious();
   };
 
-  const play = async () => await TrackPlayer.play();
+  const play = async () => {
+    return await TrackPlayer.play();
+  };
   const pause = async () => await TrackPlayer.pause();
-  const tracks = async () => await TrackPlayer.getQueue();
 
   const reset = async () =>
     await TrackPlayer.reset().then(() => TrackPlayer.add([]));
@@ -40,12 +37,10 @@ export const useControls = (position: number) => {
     pause,
     jumpForward30,
     jumpBack15,
-    handlePosition,
-    value,
     onSlidingComplete,
     reset,
     next,
     previous,
-    tracks,
+    skip,
   };
 };

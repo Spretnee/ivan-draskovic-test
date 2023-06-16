@@ -1,33 +1,18 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import TrackPlayer, {Track} from 'react-native-track-player';
-import {GetPodcastEpisode} from '../../../api/episodes';
-import {Episode, GetPodcastSeries} from '../../../api/types';
+import {PodcastSeriesType} from '../../../api/types';
+import {formatPlaylist} from './formatPlaylist';
 
-export const addPlaylist = (episodes: GetPodcastSeries | undefined) => {
+export const addPlaylist = (episodes: PodcastSeriesType | undefined) => {
   const addTrack = async (playlist: Track[]) => {
     await TrackPlayer.add(playlist);
   };
 
-  const formatPlaylist = ({episodes}: GetPodcastSeries): Track[] =>
-    episodes.map((episode: Episode) => ({
-      url: episode?.audioUrl ? episode.audioUrl : '',
-      title: episode?.name,
-      artist: episode?.podcastSeries,
-      date: episode?.datePublished.toString(),
-      artwork: episode?.imageUrl,
-    }));
-
   useEffect(() => {
     if (episodes) {
-      addTrack(formatPlaylist(episodes));
+      addTrack(formatPlaylist(episodes)).then(() =>
+        console.log(formatPlaylist(episodes)),
+      );
     }
-  });
+  }, [episodes]);
 };
-
-// {
-//       url: episode?.audioUrl ? episode.audioUrl : '',
-//       title: episode?.name,
-//       artist: episode?.podcastSeries,
-//       date: episode?.datePublished,
-//       artwork: episode?.imageUrl,
-//     },

@@ -1,21 +1,27 @@
-import {View, Text, FlatList} from 'react-native';
-import React from 'react';
+import {View, Text, FlatList, ActivityIndicator} from 'react-native';
+import React, {useContext} from 'react';
 import {PodcastEpisode} from './PodcastEpiode';
 import {Episode, PodcastSeriesType} from '../../../api/types';
+import {Track} from 'react-native-track-player';
+import {PlayerContext} from '../../../providers/PlayerProvider';
 
 type PodcastEpisodeListProps = {
-  episodes: Episode[] | undefined;
+  queue: Track[];
 };
-
-const PodcastEpisodeList = ({episodes}: PodcastEpisodeListProps) => {
-  return (
-    <FlatList
-      style={{marginBottom: 40}}
-      data={episodes}
-      renderItem={({item}) => <PodcastEpisode episode={item} />}
-      keyExtractor={item => item.name}
-    />
-  );
+const PodcastEpisodeList = () => {
+  const {queue} = useContext(PlayerContext);
+  if (!queue) {
+    return <ActivityIndicator />;
+  } else {
+    return (
+      <FlatList
+        style={{marginBottom: 40}}
+        data={queue}
+        renderItem={({item}) => <PodcastEpisode track={item} />}
+        keyExtractor={item => item.id}
+      />
+    );
+  }
 };
 
 export default PodcastEpisodeList;

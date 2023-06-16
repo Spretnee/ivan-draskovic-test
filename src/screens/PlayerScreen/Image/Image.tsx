@@ -2,22 +2,25 @@ import {View, Image as RNImage} from 'react-native';
 import React from 'react';
 import {styles} from './Image.styles';
 import {PodcastSeriesType} from '../../../api/types';
+import {Track} from 'react-native-track-player';
 
 type ImageType = {
-  uri: PodcastSeriesType['imageUrl'] | undefined;
+  url: string | number | undefined | null;
 };
 
-export const Image = ({uri}: ImageType) => {
+export const Image = ({url}: ImageType) => {
   return (
     <View style={styles.container}>
-      {uri ? (
+      {url ? (
         <RNImage
           style={{width: 160, height: 160}}
           source={{
-            uri,
+            uri: url.toString(),
           }}
         />
-      ) : null}
+      ) : (
+        <View style={styles.container}></View>
+      )}
     </View>
   );
 };

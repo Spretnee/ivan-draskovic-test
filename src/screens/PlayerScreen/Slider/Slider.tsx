@@ -13,23 +13,16 @@ import {useControls} from '../../../hooks/useControls';
 import {Text} from '../../../components/Text';
 import {formatTime} from './utils/formatTime';
 import {SliderControls} from '../SliderControls/SliderControls';
-import {PlayerStateContext} from '../../../providers/PlayerStateProvider';
+import {PlayerContext} from '../../../providers/PlayerProvider';
+import {Controls} from '../../../hooks/types';
 
-export const Slider = () => {
-  const {progressBarPosition, progressBarDuration} =
-    useContext(PlayerStateContext);
-  const {
-    handlePosition,
-    jumpBack15,
-    jumpForward30,
-    onSlidingComplete,
-    pause,
-    play,
-    next,
-    previous,
-    value,
-  } = useControls(progressBarPosition);
+type SliderPropsType = {
+  controls: Controls;
+  duration: number;
+  position: number;
+};
 
+export const Slider = ({controls, duration, position}: SliderPropsType) => {
   return (
     <>
       <View style={styles.container}>
@@ -39,26 +32,16 @@ export const Slider = () => {
           trackStyle={styles.trackStyle}
           maximumTrackTintColor={GREEN_LIGHT}
           minimumTrackTintColor={GREEN}
-          maximumValue={progressBarDuration}
-          onValueChange={handlePosition}
-          animateTransitions={true}
-          animationType="spring"
-          value={value === 0 ? progressBarPosition : value}
-          onSlidingComplete={onSlidingComplete}
+          maximumValue={duration}
+          value={position}
+          onSlidingComplete={controls.onSlidingComplete}
         />
       </View>
       <View style={styles.times}>
-        <Text type={'H5'}>{formatTime(progressBarPosition)}</Text>
-        <Text type={'H5'}>{formatTime(progressBarDuration)}</Text>
+        <Text type={'H5'}>{formatTime(position)}</Text>
+        <Text type={'H5'}>{formatTime(duration)}</Text>
       </View>
-      <SliderControls
-        next={next}
-        previous={previous}
-        play={play}
-        pause={pause}
-        jumpBack={jumpBack15}
-        jumpForward={jumpForward30}
-      />
+      <SliderControls controls={controls} />
     </>
   );
 };

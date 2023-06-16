@@ -4,7 +4,7 @@ import {Title} from './Title';
 import {MainButton} from './MainButton';
 import Logo from './Logo/Logo';
 import {ScreenPropsHome} from '../../navigation/types';
-import {BottomPlayer} from './BottomPlayer/BottomPlayer';
+// import {BottomPlayer} from './BottomPlayer/BottomPlayer';
 import {SearchBar} from '../../components/SearchBar/SearchBar';
 import {FieldValues} from 'react-hook-form';
 // import {search} from '../../api/podcasts';
@@ -24,7 +24,7 @@ export const HomeScreen = ({navigation, route}: ScreenPropsHome) => {
         <Logo />
         <MainButton navigation={navigation} />
       </View>
-      <BottomPlayer />
+      {/* <BottomPlayer /> */}
     </View>
   );
 };
