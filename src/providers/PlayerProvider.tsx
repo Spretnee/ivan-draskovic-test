@@ -20,9 +20,10 @@ const PlayerContext = createContext<PlayerStateContextType>({
   progressBarBuffered: 0,
   progressBarPosition: 0,
   progressBarDuration: 0,
-  currentTrack: undefined,
-  currentTrackIndex: undefined,
-  setCurrentTrackIndex: () => {},
+  currentTrack: {
+    url: ``,
+  },
+  currentTrackIndex: null,
   queue: [],
   controls: {
     play: async () => {},
@@ -38,18 +39,24 @@ const PlayerContext = createContext<PlayerStateContextType>({
 });
 
 const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
-  const {buffered, duration, position} = useProgress();
+  const {buffered, duration, position} = useProgress(3000);
   const controls = useControls(position);
-  const [currentTrack, setCurrentTrack] = useState<Track | null>();
-  const [currentTrackIndex, setCurrentTrackIndex] = useState<
-    number | undefined
-  >(undefined);
+  const [currentTrack, setCurrentTrack] = useState<Track>({
+    url: ``,
+  });
+  const [currentTrackIndex, setCurrentTrackIndex] = useState<number | null>(
+    null,
+  );
   const playbackState = usePlaybackState();
 
   useTrackPlayerEvents([Event.PlaybackTrackChanged], async event => {
     if (event.type === Event.PlaybackTrackChanged && event.nextTrack != null) {
       const track = await TrackPlayer.getTrack(event.nextTrack);
-      setCurrentTrack(track);
+      const index = await TrackPlayer.getCurrentTrack();
+
+      if (track) setCurrentTrack(track);
+
+      setCurrentTrackIndex(index);
     }
   });
 
@@ -65,7 +72,6 @@ const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
     progressBarDuration: duration,
     currentTrack: currentTrack,
     currentTrackIndex: currentTrackIndex,
-    setCurrentTrackIndex: setCurrentTrackIndex,
     queue: queue,
     controls: controls,
   };

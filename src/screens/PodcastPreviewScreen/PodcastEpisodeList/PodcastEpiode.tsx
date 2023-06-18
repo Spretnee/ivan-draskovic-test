@@ -26,7 +26,7 @@ export const PodcastEpisode = ({track}: PodcastEpisodeProps) => {
     <Pressable onPress={onPress} style={styles.container}>
       <Text type={'H3'}>{track?.title}</Text>
       <Text type={'H5'} numberOfLines={2}>
-        {formatString(track?.description)}
+        {formatString(track.description)}
       </Text>
     </Pressable>
   );

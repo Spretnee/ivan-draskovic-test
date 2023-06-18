@@ -7,11 +7,8 @@ import PlayerScreen from '../screens/PlayerScreen/PlayerScreen';
 import {RootStackParamList} from './types';
 import {useGetPodcast} from '../hooks/useGetPodcast';
 import {PodcastPreviewScreen} from '../screens/PodcastPreviewScreen/PodcastPreviewScreen';
-import {addPlaylist} from '../screens/PlayerScreen/utils/addPlaylist';
-import {PlayerContext, PlayerStateProvider} from '../providers/PlayerProvider';
-import {usePlayer} from '../utils/player/playerSetup';
-import TrackPlayer, {Track} from 'react-native-track-player';
-import {ActivityIndicator, View} from 'react-native';
+import {PlayerStateProvider} from '../providers/PlayerProvider';
+import {usePlayer} from '../hooks/usePlayerSetup';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 

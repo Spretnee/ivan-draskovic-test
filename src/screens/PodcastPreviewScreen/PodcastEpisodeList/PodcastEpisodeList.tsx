@@ -1,13 +1,8 @@
-import {View, Text, FlatList, ActivityIndicator} from 'react-native';
+import {FlatList, ActivityIndicator} from 'react-native';
 import React, {useContext} from 'react';
 import {PodcastEpisode} from './PodcastEpiode';
-import {Episode, PodcastSeriesType} from '../../../api/types';
-import {Track} from 'react-native-track-player';
 import {PlayerContext} from '../../../providers/PlayerProvider';
 
-type PodcastEpisodeListProps = {
-  queue: Track[];
-};
 const PodcastEpisodeList = () => {
   const {queue} = useContext(PlayerContext);
   if (!queue) {

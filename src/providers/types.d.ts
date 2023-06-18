@@ -17,11 +17,9 @@ export type PlayerStateContextType = {
   progressBarBuffered: number;
   progressBarPosition: number;
   progressBarDuration: number;
-  currentTrack: Track | undefined | null;
-  currentTrackIndex: number | undefined;
-  setCurrentTrackIndex: React.Dispatch<
-    React.SetStateAction<number | undefined>
-  >;
+  currentTrack: Track;
+  currentTrackIndex: number | null;
+
   queue: Track[] | undefined;
   controls: Controls;
 };
