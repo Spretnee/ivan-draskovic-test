@@ -1,4 +1,7 @@
-import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import {
+  NativeStackScreenProps,
+  BottomTabScreenProps,
+} from '@react-navigation/native-stack';
 import {AuthUser, Episode, PodcastSeriesType} from '../api/types';
 
 export type RootStackParamList = {

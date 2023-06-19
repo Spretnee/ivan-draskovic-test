@@ -7,8 +7,9 @@ import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {RootStackParamList} from '../../navigation/types';
 import PodcastEpisodeList from './PodcastEpisodeList/PodcastEpisodeList';
 import {PlayerContext} from '../../providers/PlayerProvider';
+import {BottomTabScreenProps} from '@react-navigation/bottom-tabs';
 
-export type PodcastPreviewScreenProps = NativeStackScreenProps<
+export type PodcastPreviewScreenProps = BottomTabScreenProps<
   RootStackParamList,
   'PodcastPreview'
 >;

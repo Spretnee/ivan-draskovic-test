@@ -9,6 +9,9 @@ import {useGetPodcast} from '../hooks/useGetPodcast';
 import {PodcastPreviewScreen} from '../screens/PodcastPreviewScreen/PodcastPreviewScreen';
 import {PlayerStateProvider} from '../providers/PlayerProvider';
 import {usePlayer} from '../hooks/usePlayerSetup';
+import {BottomSheetProvider} from '../providers/BottomSheetProvider';
+import {TabNavigation} from './TabNavigation';
+import {ModalPlayer} from '../components/ModalPlayer/ModalPlayer';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -21,16 +24,8 @@ export const RootNavigator = () => {
   return (
     <NavigationContainer theme={theme}>
       <PlayerStateProvider queue={queue}>
-        <Stack.Navigator
-          initialRouteName="Home"
-          screenOptions={{headerShown: false}}>
-          <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen
-            name="PodcastPreview"
-            component={PodcastPreviewScreen}
-          />
-          <Stack.Screen name="Player" component={PlayerScreen} />
-        </Stack.Navigator>
+        <TabNavigation />
+        <ModalPlayer />
       </PlayerStateProvider>
     </NavigationContainer>
   );
