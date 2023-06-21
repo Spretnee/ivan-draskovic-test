@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "android:production":"cross-env ENVFILE=.env.production react-native run-android",
    
-    "mock-server": "json-server --host 192.168.0.102 --port 39843 --watch db.json",
+    "mock-server": "json-server --host 192.168.1.192 --port 5003 --watch db.json",
     "ios": "react-native run-ios",
  
     "lint": "eslint .",

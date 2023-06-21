@@ -1,5 +1,6 @@
 import {Track} from 'react-native-track-player';
 import {Controls} from '../hooks/types';
+import { Queue } from '../api/types';
 
 export type PlayerStateProviderProps = {
   children: React.ReactNode;

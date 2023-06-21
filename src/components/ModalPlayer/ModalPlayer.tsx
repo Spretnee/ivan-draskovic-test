@@ -8,6 +8,7 @@ import {
   ButtonProps,
   ViewStyle,
   SafeAreaView,
+  Dimensions,
 } from 'react-native';
 import {BottomSheetModal} from '@gorhom/bottom-sheet';
 import {BottomSheetPlayer} from '../BottomSheetPlayer/BottomSheetPlayer';
@@ -26,6 +27,9 @@ import {Description} from '../../screens/PlayerScreen/Description/Description';
 import {EpisodeTitle} from '../../screens/PlayerScreen/EpisodeTitle';
 import {TranscriptionButton} from '../../screens/PlayerScreen/TranscriptionButton';
 import {Slider} from '../../screens/PlayerScreen/Slider';
+import {BACKGROUND} from '../../constants/colors';
+import {Image} from '../../screens/PlayerScreen/Image/Image';
+const {height} = Dimensions.get('screen');
 
 // ref
 export const ModalPlayer = () => {
@@ -41,8 +45,7 @@ export const ModalPlayer = () => {
     progressBarPosition,
   } = usePlayerContext();
 
-  const {dismissModal, handlePresentModalPress} =
-    useHandlePresentModal(bottomSheetModalRef);
+  const {handlePresentModalPress} = useHandlePresentModal(bottomSheetModalRef);
 
   const snapPoints = useMemo(() => MODAL_PLAYER_SNAP_POINTS, []);
 
@@ -61,15 +64,21 @@ export const ModalPlayer = () => {
         index={0}
         enablePanDownToClose={false}
         handleIndicatorStyle={styles.defaultIndicator}
-        snapPoints={snapPoints}>
-        <SafeAreaView style={{flex: 1}}>
-          <Header />
+        snapPoints={snapPoints}
+        style={{
+          marginTop: -20,
+        }}>
+        <SafeAreaView
+          style={{height: height - 77, backgroundColor: BACKGROUND}}>
           <View
             style={{
               paddingVertical: 32,
               paddingHorizontal: 21,
             }}>
-            {/* <Image url={currentTrack?.artwork} /> */}
+            <Image
+              url={currentTrack.artwork}
+              style={{marginBottom: 40, width: 220, height: 220}}
+            />
             <EpisodeTitle title={currentTrack.title} />
             <Slider
               controls={controls}
@@ -77,7 +86,7 @@ export const ModalPlayer = () => {
               position={progressBarPosition}
               isPlaying={isPlaying}
             />
-            <TranscriptionButton />
+            {/* <TranscriptionButton /> */}
             <Description description={currentTrack.description} />
           </View>
           <BottomBar />

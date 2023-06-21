@@ -9,6 +9,7 @@ import {PodcastPreviewScreen} from '../screens/PodcastPreviewScreen/PodcastPrevi
 import {theme} from '../theme/theme';
 import GreetingsScreen from '../screens/GreetingsScreen/GreetingsScreen';
 import YourPodcastsScreen from '../screens/YourPodcastsScreen/YourPodcastsScreen';
+import {ModalPlayer} from '../components/ModalPlayer';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,8 +18,8 @@ export const TabNavigation = () => {
     <Tab.Navigator
       initialRouteName="Greetings"
       screenOptions={{headerShown: false}}>
-      <Tab.Screen name="Greetings" component={GreetingsScreen} />
-      <Tab.Screen name="YourPodcasts" component={YourPodcastsScreen} />
+      <Tab.Screen name="Home" component={GreetingsScreen} />
+      <Tab.Screen name="Your Podcasts" component={YourPodcastsScreen} />
     </Tab.Navigator>
   );
 };

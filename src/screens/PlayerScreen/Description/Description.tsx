@@ -12,14 +12,12 @@ type DescriptionProps = {
 
 export const Description = ({description}: DescriptionProps) => {
   return (
-    <View>
-      <Text type="H4" numberOfLines={2}>
-        {formatString(description)}
-      </Text>
+    <View style={{paddingVertical: 40}}>
+      <Text type="H4">{description}</Text>
       <Pressable>
-        <Text type="H4" style={{textDecorationLine: 'underline'}}>
+        {/* <Text type="H4" style={{textDecorationLine: 'underline'}}>
           See More
-        </Text>
+        </Text> */}
       </Pressable>
     </View>
   );
