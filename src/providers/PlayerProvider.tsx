@@ -1,4 +1,4 @@
-import {createContext, useEffect, useState} from 'react';
+import {createContext, useContext, useEffect, useState} from 'react';
 import TrackPlayer, {
   Event,
   State,
@@ -81,4 +81,6 @@ const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
   );
 };
 
-export {PlayerContext, PlayerStateProvider};
+const usePlayerContext = () => useContext(PlayerContext);
+
+export {PlayerContext, PlayerStateProvider, usePlayerContext};

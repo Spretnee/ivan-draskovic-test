@@ -1,15 +1,12 @@
-import TrackPlayer, {Track} from 'react-native-track-player';
-import {PodcastSeriesType} from '../api/types';
+import TrackPlayer from 'react-native-track-player';
+import {Podcast, Queue} from '../api/types';
 import {useEffect, useState} from 'react';
-import {formatPlaylist} from '../screens/PlayerScreen/utils/formatPlaylist';
+import {formatPlaylist} from '../utils/player/formatPlaylist';
 import {checkPlayerIsSetup} from '../utils/player/checkPlayerSetup';
+import {addTrack} from '../utils/player/addTrack';
 
-export const usePlayer = (podcast: PodcastSeriesType | undefined) => {
-  const [queue, setQueue] = useState<Track[]>();
-
-  const addTrack = async (playlist: Track[]) => {
-    await TrackPlayer.add(playlist);
-  };
+export const usePlayer = (podcast: Podcast | undefined) => {
+  const [queue, setQueue] = useState<Queue>();
 
   const getQueue = async () => {
     try {
@@ -20,9 +17,8 @@ export const usePlayer = (podcast: PodcastSeriesType | undefined) => {
     }
   };
 
-  const setupPlayer = async (podcast: PodcastSeriesType) => {
+  const setupPlayer = async (podcast: Podcast) => {
     const isSetup = await checkPlayerIsSetup();
-    console.log('isSetup', isSetup);
     if (isSetup) {
       try {
         await TrackPlayer.reset();

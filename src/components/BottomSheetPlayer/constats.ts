@@ -1,1 +1,1 @@
-export const BOTTOM_SHEET_PLAYER_SNAP_POINTS = ['10%'];
+export const BOTTOM_SHEET_PLAYER_SNAP_POINTS = ['11%'];

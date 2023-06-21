@@ -3,7 +3,7 @@ import {Controls} from '../hooks/types';
 
 export type PlayerStateProviderProps = {
   children: React.ReactNode;
-  queue: Track[] | undefined;
+  queue: Queue | undefined;
 };
 
 export type PlayerStateContextType = {
@@ -20,6 +20,6 @@ export type PlayerStateContextType = {
   currentTrack: Track;
   currentTrackIndex: number | null;
 
-  queue: Track[] | undefined;
+  queue: Queue | undefined;
   controls: Controls;
 };

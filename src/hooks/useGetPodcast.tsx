@@ -1,5 +1,5 @@
 import {useQuery} from '@tanstack/react-query';
-import {getPodcast} from '../api/podcasts';
+import {handleGetPodcast} from '../api/podcasts';
 
 export const useGetPodcast = (query: string) =>
-  useQuery([`${query}`, 'podcast'], async () => getPodcast(query));
+  useQuery([`pod${query}`], () => handleGetPodcast(query));

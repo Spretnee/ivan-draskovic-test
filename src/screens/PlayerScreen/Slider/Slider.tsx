@@ -20,9 +20,15 @@ type SliderPropsType = {
   controls: Controls;
   duration: number;
   position: number;
+  isPlaying: boolean;
 };
 
-export const Slider = ({controls, duration, position}: SliderPropsType) => {
+export const Slider = ({
+  controls,
+  duration,
+  position,
+  isPlaying,
+}: SliderPropsType) => {
   return (
     <>
       <View style={styles.container}>
@@ -41,7 +47,7 @@ export const Slider = ({controls, duration, position}: SliderPropsType) => {
         <Text type={'H5'}>{formatTime(position)}</Text>
         <Text type={'H5'}>{formatTime(duration)}</Text>
       </View>
-      <SliderControls controls={controls} />
+      <SliderControls isPlaying={isPlaying} controls={controls} />
     </>
   );
 };

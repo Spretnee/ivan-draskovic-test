@@ -126,3 +126,8 @@ export const NEXT = `<svg width="19px" height="24px" viewBox="0 0 24 24" fill="n
 <path d="M19 6V18M5 18L5 6L15 12L5 18Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>`;
 export const PREVIOUS = `<svg fill="#000000" width="19px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.945,12.832l12,8A1,1,0,0,0,20.5,20V4a1,1,0,0,0-1.555-.832l-12,8a1,1,0,0,0,0,1.664ZM18.5,5.869V18.131L9.3,12ZM3.5,18V6a1,1,0,0,1,2,0V18a1,1,0,0,1-2,0Z"/></svg>`;
+export const CHEVRON_DOWN = `<svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Arrow / Chevron_Down">
+<path id="Vector" d="M19 9L12 16L5 9" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>`;

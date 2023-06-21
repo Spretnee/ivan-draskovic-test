@@ -16,33 +16,21 @@ import {PlayerContext} from '../../../providers/PlayerProvider';
 import PlaybackSpeedControl from './PlaybackSpeedControl';
 import {GREEN} from '../../../constants/colors';
 import {Controls} from '../../../hooks/types';
+import {PlayPause} from '../../../components/PlayPause';
 
 type SliderControlsProps = {
   controls: Controls;
+  isPlaying: boolean;
 };
 
-export const SliderControls = ({controls}: SliderControlsProps) => {
-  const {isPlaying, isBuffering, isConnecting} = useContext(PlayerContext);
-
+export const SliderControls = ({controls, isPlaying}: SliderControlsProps) => {
   return (
     <View>
       <View style={styles.container}>
         <SvgXml onPress={controls.previous} xml={PREVIOUS} />
 
         <SvgXml xml={FIFTEEN_BACK} onPress={controls.jumpBack15} />
-        {isBuffering || isConnecting ? (
-          <View style={{justifyContent: 'center', alignItems: 'center'}}>
-            <ActivityIndicator
-              color={GREEN}
-              size={'small'}
-              style={{alignSelf: 'center'}}
-            />
-          </View>
-        ) : !isPlaying ? (
-          <SvgXml onPress={controls.play} xml={PLAY_BUTTON} />
-        ) : (
-          <SvgXml onPress={controls.pause} xml={PAUSE} />
-        )}
+        <PlayPause isPlaying={isPlaying} type={'large'} />
 
         <SvgXml onPress={controls.jumpForward30} xml={THIRTY_FORWARD} />
         <SvgXml onPress={controls.next} xml={NEXT} />
