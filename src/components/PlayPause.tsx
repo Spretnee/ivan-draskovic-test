@@ -14,20 +14,13 @@ export const PlayPause = ({
   type,
 }: {
   isPlaying: boolean;
-  type: 'small' | 'large';
+  type?: 'small' | 'large';
 }) => {
   const {play, pause} = useControls();
-  if (type === 'small') {
-    return (
-      <Pressable onPress={isPlaying ? pause : play} style={{padding: 17}}>
-        <SvgXml xml={isPlaying ? PAUSE_SMALL : PLAY_SMALL} />
-      </Pressable>
-    );
-  } else {
-    return (
-      <Pressable onPress={isPlaying ? pause : play} style={{padding: 10}}>
-        <SvgXml xml={isPlaying ? PAUSE : PLAY_BUTTON} />
-      </Pressable>
-    );
-  }
+
+  return (
+    <Pressable onPress={isPlaying ? pause : play} style={{padding: 10}}>
+      <SvgXml xml={isPlaying ? PAUSE : PLAY_BUTTON} />
+    </Pressable>
+  );
 };

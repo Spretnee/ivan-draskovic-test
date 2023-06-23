@@ -1,29 +1,25 @@
-import {useState} from 'react';
-
-import TrackPlayer, {Track} from 'react-native-track-player';
+import TrackPlayer, {useProgress} from 'react-native-track-player';
 import {
   BACKWARD_JUMP_INTERVAL,
   FORWARD_JUMP_INTERVAL,
   INITIAL_TRACK,
 } from '../constants/player';
 
-export const useControls = (position?: number) => {
-  const onSlidingComplete = async (value: Array<number>) =>
-    await TrackPlayer.seekTo(value[INITIAL_TRACK]);
-
-  const jumpForward30 = async () => {
-    return await TrackPlayer.seekTo(
-      position ? position + FORWARD_JUMP_INTERVAL : INITIAL_TRACK,
-    );
+export const useControls = () => {
+  const {position, duration} = useProgress();
+  const onSlidingComplete = async (value: Array<number>) => {
+    return await TrackPlayer.seekTo(value[INITIAL_TRACK]);
   };
+
   const skip = async (id: number) => {
     await TrackPlayer.skip(id);
   };
 
+  const jumpForward30 = async () => {
+    return await TrackPlayer.seekTo(position + FORWARD_JUMP_INTERVAL);
+  };
   const jumpBack15 = async () => {
-    return await TrackPlayer.seekTo(
-      position ? position + BACKWARD_JUMP_INTERVAL : INITIAL_TRACK,
-    );
+    return await TrackPlayer.seekTo(position - BACKWARD_JUMP_INTERVAL);
   };
   const next = async () => {
     return await TrackPlayer.skipToNext();
@@ -32,9 +28,8 @@ export const useControls = (position?: number) => {
     return await TrackPlayer.skipToPrevious();
   };
 
-  const play = async () => {
-    return await TrackPlayer.play();
-  };
+  const play = async () => await TrackPlayer.play();
+
   const pause = async () => await TrackPlayer.pause();
 
   const reset = async () =>
@@ -50,5 +45,7 @@ export const useControls = (position?: number) => {
     next,
     previous,
     skip,
+    position,
+    duration,
   };
 };

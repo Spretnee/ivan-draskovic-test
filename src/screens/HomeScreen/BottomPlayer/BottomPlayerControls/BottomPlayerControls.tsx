@@ -1,5 +1,5 @@
 import {View} from 'react-native';
-import React, {useContext} from 'react';
+import React from 'react';
 import {SvgXml} from 'react-native-svg';
 import {PAUSE_SMALL, PLAY_SMALL, CLOSE} from '../../../../assets/images/svg';
 import {styles} from './BottomPlayerControls.styles';

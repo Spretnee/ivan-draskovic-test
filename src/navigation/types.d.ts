@@ -6,7 +6,7 @@ import {AuthUser, Episode, PodcastSeriesType} from '../api/types';
 
 export type RootStackParamList = {
   Home: {};
-  Player: {track: Track};
+  Player: undefined;
   PodcastPreview: {};
 };
 

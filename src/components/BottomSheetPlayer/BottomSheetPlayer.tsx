@@ -1,24 +1,27 @@
 import {Pressable, TouchableOpacity} from 'react-native';
 import React, {useCallback, useMemo, useRef} from 'react';
-import BottomSheet from '@gorhom/bottom-sheet';
+import BottomSheet, {BottomSheetModal} from '@gorhom/bottom-sheet';
 import {BottomSheetPlayerProps} from './types';
 import {styles} from './BottomSheetPlayer.styles';
 import {PlayPause} from '../PlayPause';
 import {snapPoints} from './utils/snapPoints';
 import {Title} from './Title';
-import {usePlayerContext} from '../../providers/PlayerProvider';
 import {Image} from '../../screens/PlayerScreen/Image/Image';
 
-export const BottomSheetPlayer = ({onPress}: BottomSheetPlayerProps) => {
+export const BottomSheetPlayer = ({
+  onPress,
+  isBuffering,
+  isConnecting,
+  isIdle,
+  currentTrack,
+  isPlaying,
+}: BottomSheetPlayerProps) => {
   const bottomSheetRef = useRef<BottomSheet>(null);
-  const {isPlaying, isIdle, currentTrack, isBuffering, isConnecting} =
-    usePlayerContext();
-  const isLoading = isBuffering || isConnecting;
 
   return (
     <BottomSheet
       ref={bottomSheetRef}
-      index={!isIdle || isLoading ? 0 : -1}
+      index={!isIdle || isBuffering || isConnecting ? 0 : -1}
       bottomInset={60}
       detached={true}
       backgroundStyle={styles.backgroundStyle}

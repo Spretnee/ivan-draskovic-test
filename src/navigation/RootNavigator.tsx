@@ -9,13 +9,14 @@ import {usePlayer} from '../hooks/usePlayer';
 import {TabNavigation} from './TabNavigation';
 import {ModalPlayer} from '../components/ModalPlayer/ModalPlayer';
 import {MOCK_PODCAST_ID} from '../api/constants';
+import {BottomSheetPlayer} from '../components/BottomSheetPlayer/BottomSheetPlayer';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export const RootNavigator = () => {
   const data = useGetPodcast(MOCK_PODCAST_ID);
   const {queue} = usePlayer(data.data);
-  console.log(queue);
+  // console.log(queue);
 
   return (
     <NavigationContainer theme={theme}>

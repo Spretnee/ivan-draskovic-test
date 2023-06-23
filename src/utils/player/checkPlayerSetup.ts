@@ -13,15 +13,21 @@ export const checkPlayerIsSetup = async () => {
     await TrackPlayer.getCurrentTrack();
     isSetup = true;
   } catch (e) {
-    await TrackPlayer.setupPlayer();
+    await TrackPlayer.setupPlayer({
+      minBuffer: 0,
+      backBuffer: 30,
+      playBuffer: 0,
+    });
     isSetup = true;
     await TrackPlayer.updateOptions({
       android: {
-        appKilledPlaybackBehavior: AppKilledPlaybackBehavior.ContinuePlayback,
+        appKilledPlaybackBehavior: AppKilledPlaybackBehavior.PausePlayback,
       },
+
       stoppingAppPausesPlayback: true,
       forwardJumpInterval: FORWARD_JUMP_INTERVAL,
       backwardJumpInterval: BACKWARD_JUMP_INTERVAL,
+      alwaysPauseOnInterruption: true,
 
       capabilities: [
         Capability.Pause,

@@ -16,13 +16,13 @@ import {Description} from './Description/Description';
 import {PlayerContext} from '../../providers/PlayerProvider';
 
 const PlayerScreen = () => {
-  const {
-    currentTrackIndex,
-    currentTrack,
-    controls,
-    progressBarDuration,
-    progressBarPosition,
-  } = useContext(PlayerContext);
+  // const {
+  //   currentTrackIndex,
+  //   currentTrack,
+  //   controls,
+  //   progressBarDuration,
+  //   progressBarPosition,
+  // } = useContext(PlayerContext);
 
   //TODO: const {controls,currentTrack} = usePlayer(queue:Track[])
 
@@ -33,16 +33,17 @@ const PlayerScreen = () => {
         style={{
           paddingVertical: 32,
           paddingHorizontal: 21,
-        }}>
+        }}
+      >
         {/* <Image url={currentTrack?.artwork} /> */}
-        <EpisodeTitle title={currentTrack.title} />
-        <Slider
+        {/* <EpisodeTitle title={currentTrack.title} /> */}
+        {/* <Slider
           controls={controls}
           duration={progressBarDuration}
           position={progressBarPosition}
-        />
-        <TranscriptionButton />
-        <Description description={currentTrack.description} />
+        /> */}
+        {/* <TranscriptionButton /> */}
+        {/* <Description description={currentTrack.description} /> */}
       </View>
       <BottomBar />
     </SafeAreaView>

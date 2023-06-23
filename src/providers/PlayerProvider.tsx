@@ -25,22 +25,10 @@ const PlayerContext = createContext<PlayerStateContextType>({
   },
   currentTrackIndex: null,
   queue: [],
-  controls: {
-    play: async () => {},
-    pause: async () => {},
-    jumpForward30: async () => {},
-    jumpBack15: async () => {},
-    onSlidingComplete: async () => {},
-    reset: async () => {},
-    next: async () => {},
-    previous: async () => {},
-    skip: async () => {},
-  },
 });
 
 const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
   const {buffered, duration, position} = useProgress(3000);
-  const controls = useControls(position);
   const [currentTrack, setCurrentTrack] = useState<Track>({
     url: ``,
   });
@@ -73,7 +61,6 @@ const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
     currentTrack: currentTrack,
     currentTrackIndex: currentTrackIndex,
     queue: queue,
-    controls: controls,
   };
 
   return (
