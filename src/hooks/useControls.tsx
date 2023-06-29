@@ -4,6 +4,7 @@ import {
   FORWARD_JUMP_INTERVAL,
   INITIAL_TRACK,
 } from '../constants/player';
+import {INITIAL_POSITION} from '../screens/PlayerScreen/Slider/constats';
 
 export const useControls = () => {
   const {position, duration} = useProgress();
@@ -11,8 +12,8 @@ export const useControls = () => {
     return await TrackPlayer.seekTo(value[INITIAL_TRACK]);
   };
 
-  const skip = async (id: number) => {
-    await TrackPlayer.skip(id);
+  const skip = async (id: number, initialPosition?: number) => {
+    await TrackPlayer.skip(id, initialPosition);
   };
 
   const jumpForward30 = async () => {

@@ -10,22 +10,18 @@ import {Header} from 'react-native/Libraries/NewAppScreen';
 import {BottomBar} from '../../screens/PlayerScreen/BottomBar';
 import {Description} from '../../screens/PlayerScreen/Description/Description';
 import {EpisodeTitle} from '../../screens/PlayerScreen/EpisodeTitle';
-import {Slider} from '../../screens/PlayerScreen/Slider';
+import Slider from '../../screens/PlayerScreen/Slider/Slider';
 import {BACKGROUND} from '../../constants/colors';
 import {Image} from '../../screens/PlayerScreen/Image/Image';
 import {State, usePlaybackState, useProgress} from 'react-native-track-player';
 import {useControls} from '../../hooks/useControls';
 import {DismissChevron} from './DismissChevron';
-import {Podcast} from '../../api/types';
-import {usePlayer} from '../../hooks/usePlayer';
 
 const {height} = Dimensions.get('screen');
 export const ModalPlayer = () => {
   const bottomSheetModalRef = useRef<BottomSheetModal>(null);
 
-  const controls = useControls();
-  const {currentTrack} = usePlayerContext();
-  const playbackState = usePlaybackState();
+  const {currentTrack, isPlaying, controls} = usePlayerContext();
   const {handlePresentModalPress, dismissModal} =
     useHandlePresentModal(bottomSheetModalRef);
 
@@ -60,23 +56,19 @@ export const ModalPlayer = () => {
               style={{marginBottom: 40, width: 220, height: 220}}
             />
             <EpisodeTitle title={currentTrack.title} />
-            <Slider
-              controls={controls}
-              duration={controls.duration}
-              position={controls.position}
-              isPlaying={playbackState === State.Playing}
-            />
+            <Slider isPlaying={isPlaying} controls={controls} />
             <Description description={currentTrack.description} />
           </View>
           <BottomBar />
         </SafeAreaView>
       </BottomSheetModal>
       <BottomSheetPlayer
+        controls={controls}
         onPress={handlePresentModalPress}
         isConnecting
         isBuffering
         isIdle
-        isPlaying={playbackState === State.Playing}
+        isPlaying={isPlaying}
         currentTrack={currentTrack}
       />
     </>

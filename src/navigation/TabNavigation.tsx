@@ -22,6 +22,7 @@ export const TabNavigation = () => {
     <Tab.Navigator
       initialRouteName="Home"
       screenOptions={({route}) => ({
+        //TODO: tidy up
         tabBarIcon: ({focused, color, size}) => {
           if (route.name === 'Home') {
             return (

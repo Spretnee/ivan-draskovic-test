@@ -30,7 +30,7 @@ export const SliderControls = ({controls, isPlaying}: SliderControlsProps) => {
         <SvgXml onPress={controls.previous} xml={PREVIOUS} />
 
         <SvgXml xml={FIFTEEN_BACK} onPress={controls.jumpBack15} />
-        <PlayPause isPlaying={isPlaying} type={'large'} />
+        <PlayPause isPlaying={isPlaying} controls={controls} />
 
         <SvgXml onPress={controls.jumpForward30} xml={THIRTY_FORWARD} />
         <SvgXml onPress={controls.next} xml={NEXT} />

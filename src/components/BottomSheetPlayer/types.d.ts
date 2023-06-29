@@ -5,4 +5,5 @@ export type BottomSheetPlayerProps = {
   isIdle: boolean;
   isPlaying: boolean;
   currentTrack: Track;
+  controls: Controls;
 };

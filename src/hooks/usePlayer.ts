@@ -8,7 +8,7 @@ import {addTrack} from '../utils/player/addTrack';
 export const usePlayer = (podcast: Podcast | undefined) => {
   const [queue, setQueue] = useState<Queue>();
 
-  const getQueue = async () => {
+  const setPlaylist = async () => {
     try {
       const tracks = await TrackPlayer.getQueue();
       setQueue(tracks);
@@ -23,7 +23,7 @@ export const usePlayer = (podcast: Podcast | undefined) => {
       try {
         await TrackPlayer.reset();
         await addTrack(formatPlaylist(podcast));
-        await getQueue();
+        await setPlaylist();
       } catch (e) {
         console.error('no podcast', e);
       }
@@ -31,6 +31,8 @@ export const usePlayer = (podcast: Podcast | undefined) => {
       console.error('No playlist available');
     }
   };
+
+  // console.log(queue);
 
   useEffect(() => {
     if (podcast) {

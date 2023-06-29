@@ -4,7 +4,7 @@ import {PodcastEpisode} from './PodcastEpiode';
 import {PlayerContext} from '../../../providers/PlayerProvider';
 
 const PodcastEpisodeList = () => {
-  const {queue} = useContext(PlayerContext);
+  const {queue, currentTrack} = useContext(PlayerContext);
   if (!queue) {
     return <ActivityIndicator />;
   } else {

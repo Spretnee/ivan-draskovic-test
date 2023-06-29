@@ -1,37 +1,36 @@
-import {
-  RootTagContext,
-  TextInputBase,
-  View,
-  useAnimatedValue,
-} from 'react-native';
-import React, {useState} from 'react';
+import {View} from 'react-native';
+import React, {useContext, useState} from 'react';
 import {Slider as OriginSlider} from '@miblanchard/react-native-slider';
 import {styles} from './Slider.styles';
 import {GREEN, GREEN_LIGHT} from '../../../constants/colors';
-import TrackPlayer, {Track, useProgress} from 'react-native-track-player';
-import {useControls} from '../../../hooks/useControls';
 import {Text} from '../../../components/Text';
 import {formatTime} from './utils/formatTime';
 import {SliderControls} from '../SliderControls/SliderControls';
+
+import {Controls} from '../../../hooks/types';
+import TrackPlayer, {
+  State,
+  usePlaybackState,
+  useProgress,
+} from 'react-native-track-player';
+import {useControls} from '../../../hooks/useControls';
 import {
   PlayerContext,
   usePlayerContext,
 } from '../../../providers/PlayerProvider';
-import {Controls} from '../../../hooks/types';
+import {SliderOnChangeCallback} from '@miblanchard/react-native-slider/lib/types';
+import {usePlayer} from '../../../hooks/usePlayer';
 
-type SliderPropsType = {
-  controls: Controls;
-  duration: number;
-  position: number;
-  isPlaying: boolean;
-};
-
-export const Slider = ({
-  controls,
+export default function Slider({
   isPlaying,
-  position,
-  duration,
-}: SliderPropsType) => {
+  controls,
+}: {
+  isPlaying: boolean;
+  controls: Controls;
+}) {
+  const {duration, position} = useProgress();
+  //TODO: tidy  up types
+
   return (
     <>
       <View style={styles.container}>
@@ -53,4 +52,4 @@ export const Slider = ({
       <SliderControls isPlaying={isPlaying} controls={controls} />
     </>
   );
-};
+}

@@ -1,6 +1,7 @@
 import {Track} from 'react-native-track-player';
 import {Controls} from '../hooks/types';
 import {Queue} from '../api/types';
+import {TrackWithId} from '../types';
 
 export type PlayerStateProviderProps = {
   children: React.ReactNode;
@@ -18,8 +19,9 @@ export type PlayerStateContextType = {
   progressBarBuffered: number;
   progressBarPosition: number;
   progressBarDuration: number;
-  currentTrack: Track;
+  currentTrack: TrackWithId | Track;
   currentTrackIndex: number | null;
 
   queue: Queue | undefined;
+  controls: Controls;
 };

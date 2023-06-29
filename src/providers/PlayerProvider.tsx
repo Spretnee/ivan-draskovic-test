@@ -9,6 +9,7 @@ import TrackPlayer, {
 } from 'react-native-track-player';
 import {PlayerStateContextType, PlayerStateProviderProps} from './types';
 import {useControls} from '../hooks/useControls';
+import {TrackWithId} from '../types';
 
 const PlayerContext = createContext<PlayerStateContextType>({
   isPlaying: false,
@@ -21,32 +22,78 @@ const PlayerContext = createContext<PlayerStateContextType>({
   progressBarPosition: 0,
   progressBarDuration: 0,
   currentTrack: {
+    id: '',
     url: ``,
   },
   currentTrackIndex: null,
   queue: [],
+  controls: {
+    play: async () => {},
+    onSlidingComplete: async () => {},
+
+    skip: async () => {},
+
+    jumpForward30: async () => {},
+    jumpBack15: async () => {},
+    next: async () => {},
+    previous: async () => {},
+
+    pause: async () => {},
+
+    reset: async () => {},
+  },
 });
 
 const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
+  const controls = useControls();
   const {buffered, duration, position} = useProgress(3000);
-  const [currentTrack, setCurrentTrack] = useState<Track>({
+  const [currentTrack, setCurrentTrack] = useState<TrackWithId | Track>({
+    id: '',
     url: ``,
   });
+
   const [currentTrackIndex, setCurrentTrackIndex] = useState<number | null>(
     null,
   );
+
+  type MultiTrackProgress = Record<string, number>;
+
+  const [multiTrackProgress, setMultiTrackProgress] =
+    useState<MultiTrackProgress>({});
   const playbackState = usePlaybackState();
 
-  useTrackPlayerEvents([Event.PlaybackTrackChanged], async event => {
-    if (event.type === Event.PlaybackTrackChanged && event.nextTrack != null) {
-      const track = await TrackPlayer.getTrack(event.nextTrack);
-      const index = await TrackPlayer.getCurrentTrack();
+  const handleMultiTrackProgress = (id: string, position: number) => {
+    setMultiTrackProgress(prevMultiTrackProgress => {
+      return {
+        ...prevMultiTrackProgress,
+        [id]: position,
+      };
+    });
+  };
 
-      if (track) setCurrentTrack(track);
+  useTrackPlayerEvents(
+    [Event.PlaybackTrackChanged, Event.PlaybackProgressUpdated],
+    async event => {
+      if (
+        event.type === Event.PlaybackTrackChanged &&
+        event.nextTrack != null
+      ) {
+        const track = await TrackPlayer.getTrack(event.nextTrack);
+        const index = await TrackPlayer.getCurrentTrack();
 
-      setCurrentTrackIndex(index);
-    }
-  });
+        if (track) {
+          setCurrentTrack(track);
+        }
+
+        setCurrentTrackIndex(index);
+      }
+
+      if (event.track != null && event.type === Event.PlaybackProgressUpdated) {
+        const track = await TrackPlayer.getTrack(event.track);
+        handleMultiTrackProgress(track?.id, event.position);
+      }
+    },
+  );
 
   const context: PlayerStateContextType = {
     isPlaying: playbackState === State.Playing,
@@ -61,6 +108,7 @@ const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
     currentTrack: currentTrack,
     currentTrackIndex: currentTrackIndex,
     queue: queue,
+    controls: controls,
   };
 
   return (

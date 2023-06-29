@@ -15,6 +15,7 @@ export const BottomSheetPlayer = ({
   isIdle,
   currentTrack,
   isPlaying,
+  controls,
 }: BottomSheetPlayerProps) => {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
@@ -28,11 +29,12 @@ export const BottomSheetPlayer = ({
       handleIndicatorStyle={{display: 'none'}}
       snapPoints={snapPoints}
       containerStyle={styles.contentContainer}
-      style={styles.sheetContainer}>
+      style={styles.sheetContainer}
+    >
       <Pressable onPress={onPress} style={styles.pressableStyle}>
         <Image url={currentTrack.artwork} style={styles.image} />
         <Title title={currentTrack.title} author={currentTrack.artist} />
-        <PlayPause type="large" isPlaying={isPlaying} />
+        <PlayPause isPlaying={isPlaying} controls={controls} />
       </Pressable>
     </BottomSheet>
   );

@@ -1,26 +1,44 @@
 import {View, Text, Pressable} from 'react-native';
 import React from 'react';
 import {SvgXml} from 'react-native-svg';
-import {
-  PAUSE,
-  PAUSE_SMALL,
-  PLAY_BUTTON,
-  PLAY_SMALL,
-} from '../assets/images/svg';
-import {useControls} from '../hooks/useControls';
+import {PAUSE, PLAY_BUTTON} from '../assets/images/svg';
+import {Controls} from '../hooks/types';
 
 export const PlayPause = ({
   isPlaying,
-  type,
+  controls,
+  index,
 }: {
   isPlaying: boolean;
-  type?: 'small' | 'large';
+  controls: Controls;
+  index?: number | undefined;
 }) => {
-  const {play, pause} = useControls();
-
-  return (
-    <Pressable onPress={isPlaying ? pause : play} style={{padding: 10}}>
-      <SvgXml xml={isPlaying ? PAUSE : PLAY_BUTTON} />
-    </Pressable>
-  );
+  //TODO:refactor PlayPause
+  if (!index) {
+    return (
+      <Pressable
+        onPress={isPlaying ? controls.pause : controls.play}
+        style={{padding: 10}}
+      >
+        <SvgXml xml={isPlaying ? PAUSE : PLAY_BUTTON} />
+      </Pressable>
+    );
+  } else {
+    return (
+      <Pressable
+        onPress={
+          isPlaying
+            ? controls.pause
+            : () => {
+                controls.skip(index);
+                controls.play();
+              }
+        }
+        style={{padding: 10}}
+      >
+        <SvgXml xml={isPlaying ? PAUSE : PLAY_BUTTON} />
+        {/* TODO: redo Icons Wrapper */}
+      </Pressable>
+    );
+  }
 };

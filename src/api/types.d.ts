@@ -1,3 +1,5 @@
+import {TrackWithId} from '../types';
+
 export interface GetPodcastSeriesResponse {
   data: Data;
 }
@@ -73,4 +75,4 @@ export interface Episode {
   ratingAverage: any;
 }
 
-export type Queue = Track[];
+export type Queue = TrackWithId[];

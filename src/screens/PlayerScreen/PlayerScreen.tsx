@@ -10,7 +10,6 @@ import {RootStackParamList, ScreenPropsPlayer} from '../../navigation/types';
 import {Header} from './Header';
 import {BottomBar} from './BottomBar';
 import {TranscriptionButton} from './TranscriptionButton';
-import {Slider} from './Slider';
 import {EpisodeTitle} from './EpisodeTitle';
 import {Description} from './Description/Description';
 import {PlayerContext} from '../../providers/PlayerProvider';

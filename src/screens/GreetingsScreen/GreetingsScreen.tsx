@@ -1,14 +1,59 @@
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 import React from 'react';
 import {Title} from '../HomeScreen/Title';
 import {BottomSheetPlayer} from '../../components/BottomSheetPlayer/BottomSheetPlayer';
 import {useNavigation} from '@react-navigation/native';
+import {FlatList} from 'react-native-gesture-handler';
+import {usePlayerContext} from '../../providers/PlayerProvider';
+import {Text} from '../../components/Text';
+import {PlayPause} from '../../components/PlayPause';
+import {useControls} from '../../hooks/useControls';
+import {BACKGROUND, GREEN, GREEN_LIGHT} from '../../constants/colors';
+
+//TODO: refactor screen
 
 const GreetingsScreen = () => {
-  const {navigate} = useNavigation();
+  const {
+    queue,
+    isPlaying,
+    isBuffering,
+    isConnecting,
+    controls,
+    currentTrack,
+    currentTrackIndex,
+  } = usePlayerContext();
+
   return (
     <View>
-      <Title />
+      <FlatList
+        data={queue}
+        renderItem={({item, index}) => {
+          return (
+            <View
+              style={{
+                backgroundColor:
+                  index === currentTrackIndex &&
+                  (isPlaying || isBuffering || isConnecting)
+                    ? GREEN
+                    : BACKGROUND,
+                paddingVertical: 13,
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+              }}
+            >
+              <Text type={'H3'}>{item.title}</Text>
+              <PlayPause
+                isPlaying={isPlaying && currentTrack.id === item.id}
+                controls={controls}
+                index={index}
+              />
+            </View>
+          );
+        }}
+        keyExtractor={item => item.id}
+      />
+
+      {/* <Title /> */}
     </View>
   );
 };
