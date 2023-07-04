@@ -19,7 +19,7 @@ import {
   usePlayerContext,
 } from '../../../providers/PlayerProvider';
 import {SliderOnChangeCallback} from '@miblanchard/react-native-slider/lib/types';
-import {usePlayer} from '../../../hooks/usePlayer';
+import {usePlayer} from '../../../hooks/useSetupPlayer';
 
 export default function Slider({
   isPlaying,

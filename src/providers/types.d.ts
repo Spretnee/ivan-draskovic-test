@@ -5,7 +5,7 @@ import {TrackWithId} from '../types';
 
 export type PlayerStateProviderProps = {
   children: React.ReactNode;
-  queue: Queue | undefined;
+  queue: Track[] | undefined;
 };
 
 export type PlayerStateContextType = {
@@ -16,12 +16,9 @@ export type PlayerStateContextType = {
   isBuffering: boolean;
   isConnecting: boolean;
 
-  progressBarBuffered: number;
-  progressBarPosition: number;
-  progressBarDuration: number;
   currentTrack: TrackWithId | Track;
   currentTrackIndex: number | null;
 
-  queue: Queue | undefined;
+  queue: Track[] | undefined;
   controls: Controls;
 };

@@ -1,12 +1,12 @@
-import TrackPlayer from 'react-native-track-player';
+import TrackPlayer, {Track} from 'react-native-track-player';
 import {Podcast, Queue} from '../api/types';
 import {useEffect, useState} from 'react';
 import {formatPlaylist} from '../utils/player/formatPlaylist';
 import {checkPlayerIsSetup} from '../utils/player/checkPlayerSetup';
 import {addTrack} from '../utils/player/addTrack';
 
-export const usePlayer = (podcast: Podcast | undefined) => {
-  const [queue, setQueue] = useState<Queue>();
+export const useSetupPlayer = (podcast: Podcast | undefined) => {
+  const [queue, setQueue] = useState<Track[]>();
 
   const setPlaylist = async () => {
     try {
@@ -31,8 +31,6 @@ export const usePlayer = (podcast: Podcast | undefined) => {
       console.error('No playlist available');
     }
   };
-
-  // console.log(queue);
 
   useEffect(() => {
     if (podcast) {

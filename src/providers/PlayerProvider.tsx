@@ -4,7 +4,6 @@ import TrackPlayer, {
   State,
   Track,
   usePlaybackState,
-  useProgress,
   useTrackPlayerEvents,
 } from 'react-native-track-player';
 import {PlayerStateContextType, PlayerStateProviderProps} from './types';
@@ -18,9 +17,6 @@ const PlayerContext = createContext<PlayerStateContextType>({
   isIdle: false,
   isBuffering: false,
   isConnecting: false,
-  progressBarBuffered: 0,
-  progressBarPosition: 0,
-  progressBarDuration: 0,
   currentTrack: {
     id: '',
     url: ``,
@@ -30,23 +26,18 @@ const PlayerContext = createContext<PlayerStateContextType>({
   controls: {
     play: async () => {},
     onSlidingComplete: async () => {},
-
     skip: async () => {},
-
     jumpForward30: async () => {},
     jumpBack15: async () => {},
     next: async () => {},
     previous: async () => {},
-
     pause: async () => {},
-
     reset: async () => {},
   },
 });
 
 const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
   const controls = useControls();
-  const {buffered, duration, position} = useProgress(3000);
   const [currentTrack, setCurrentTrack] = useState<TrackWithId | Track>({
     id: '',
     url: ``,
@@ -95,6 +86,19 @@ const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
     },
   );
 
+  const playerState = {
+    isPlaying: playbackState === State.Playing,
+    isPaused: playbackState === State.Paused,
+    isReady: playbackState === State.Ready,
+    isIdle: playbackState === State.None,
+    isBuffering: playbackState === State.Buffering,
+    isConnecting: playbackState === State.Connecting,
+    isLoading:
+      playbackState === State.Buffering || playbackState === State.Connecting,
+  };
+
+  type PlayerState = typeof playerState;
+
   const context: PlayerStateContextType = {
     isPlaying: playbackState === State.Playing,
     isPaused: playbackState === State.Paused,
@@ -102,9 +106,6 @@ const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
     isIdle: playbackState === State.None,
     isBuffering: playbackState === State.Buffering,
     isConnecting: playbackState === State.Connecting,
-    progressBarBuffered: buffered,
-    progressBarPosition: position,
-    progressBarDuration: duration,
     currentTrack: currentTrack,
     currentTrackIndex: currentTrackIndex,
     queue: queue,
