@@ -21,7 +21,8 @@ const {height} = Dimensions.get('screen');
 export const ModalPlayer = () => {
   const bottomSheetModalRef = useRef<BottomSheetModal>(null);
 
-  const {currentTrack, isPlaying, controls} = usePlayerContext();
+  const {currentTrack, isPlaying, controls, getTrackPosition} =
+    usePlayerContext();
   const {handlePresentModalPress, dismissModal} =
     useHandlePresentModal(bottomSheetModalRef);
 

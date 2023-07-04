@@ -22,7 +22,7 @@ const getPodcast = async (query: string) => {
                 id
                 title
                 description
-
+                length
                 airDate
                 imageUrl
                 audioUrl

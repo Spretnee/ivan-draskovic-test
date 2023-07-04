@@ -11,4 +11,5 @@ export const formatPlaylist = ({episodes, title}: Podcast): TrackWithId[] =>
     date: episode.airDate.toString(),
     artwork: episode.imageUrl,
     description: episode.description,
+    duration: episode.length,
   }));

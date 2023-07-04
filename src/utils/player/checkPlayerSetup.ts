@@ -13,7 +13,7 @@ export const checkPlayerIsSetup = async () => {
     await TrackPlayer.getCurrentTrack();
     isSetup = true;
   } catch (e) {
-    await TrackPlayer.setupPlayer({playBuffer: 0});
+    await TrackPlayer.setupPlayer();
     isSetup = true;
     await TrackPlayer.updateOptions({
       android: {

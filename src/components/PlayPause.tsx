@@ -8,10 +8,12 @@ export const PlayPause = ({
   isPlaying,
   controls,
   index,
+  initialPosition,
 }: {
   isPlaying: boolean;
   controls: Controls;
   index?: number | undefined;
+  initialPosition?: number | undefined;
 }) => {
   //TODO:refactor PlayPause
   if (!index) {
@@ -30,7 +32,7 @@ export const PlayPause = ({
           isPlaying
             ? controls.pause
             : () => {
-                controls.skip(index);
+                controls.skip(index, initialPosition!);
                 controls.play();
               }
         }

@@ -9,6 +9,8 @@ import {Text} from '../../components/Text';
 import {PlayPause} from '../../components/PlayPause';
 import {useControls} from '../../hooks/useControls';
 import {BACKGROUND, GREEN, GREEN_LIGHT} from '../../constants/colors';
+import {SliderMinimized} from '../HomeScreen/SliderMinimized';
+import {useProgress} from 'react-native-track-player';
 
 //TODO: refactor screen
 
@@ -21,6 +23,7 @@ const GreetingsScreen = () => {
     controls,
     currentTrack,
     currentTrackIndex,
+    getTrackPosition,
   } = usePlayerContext();
 
   return (
@@ -29,23 +32,30 @@ const GreetingsScreen = () => {
         data={queue}
         renderItem={({item, index}) => {
           return (
-            <View
-              style={{
-                backgroundColor:
-                  index === currentTrackIndex &&
-                  (isPlaying || isBuffering || isConnecting)
-                    ? GREEN
-                    : BACKGROUND,
-                paddingVertical: 13,
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-              }}
-            >
-              <Text type={'H3'}>{item.title}</Text>
-              <PlayPause
-                isPlaying={isPlaying && currentTrack.id === item.id}
-                controls={controls}
-                index={index}
+            <View>
+              <View
+                style={{
+                  backgroundColor:
+                    index === currentTrackIndex &&
+                    (isPlaying || isBuffering || isConnecting)
+                      ? GREEN
+                      : BACKGROUND,
+                  paddingVertical: 13,
+                  flexDirection: 'row',
+                  justifyContent: 'space-between',
+                }}
+              >
+                <Text type={'H3'}>{item.title}</Text>
+                <PlayPause
+                  isPlaying={isPlaying && currentTrack.id === item.id}
+                  controls={controls}
+                  index={index}
+                  initialPosition={getTrackPosition(item.id)}
+                />
+              </View>
+              <SliderMinimized
+                position={getTrackPosition(item.id)}
+                duration={item.duration!}
               />
             </View>
           );

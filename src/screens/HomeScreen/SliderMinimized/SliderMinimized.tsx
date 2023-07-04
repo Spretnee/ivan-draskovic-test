@@ -21,17 +21,10 @@ export const SliderMinimized = ({
       <OriginSlider
         containerStyle={{height: 36}}
         thumbStyle={{height: 0, borderRadius: 0}}
-        thumbTintColor={FONT_DARK2}
-        trackStyle={{height: 4, borderRadius: 0}}
         maximumTrackTintColor={BEIGE}
         minimumTrackTintColor={FONT_DARK2}
         value={position}
         maximumValue={duration}
-        animateTransitions={true}
-        animationType="spring"
-        onSlidingComplete={async (value: Array<number>) => {
-          await TrackPlayer.seekTo(value[0]);
-        }}
       />
     </View>
   );

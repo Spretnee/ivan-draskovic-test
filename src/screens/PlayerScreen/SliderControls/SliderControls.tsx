@@ -27,13 +27,13 @@ export const SliderControls = ({controls, isPlaying}: SliderControlsProps) => {
   return (
     <View>
       <View style={styles.container}>
-        <SvgXml onPress={controls.previous} xml={PREVIOUS} />
+        <SvgXml onPress={() => controls.previous()} xml={PREVIOUS} />
 
         <SvgXml xml={FIFTEEN_BACK} onPress={controls.jumpBack15} />
         <PlayPause isPlaying={isPlaying} controls={controls} />
 
         <SvgXml onPress={controls.jumpForward30} xml={THIRTY_FORWARD} />
-        <SvgXml onPress={controls.next} xml={NEXT} />
+        <SvgXml onPress={() => controls.next()} xml={NEXT} />
 
         <PlaybackSpeedControl />
       </View>

@@ -5,38 +5,17 @@ import {formatPlaylist} from '../utils/player/formatPlaylist';
 import {checkPlayerIsSetup} from '../utils/player/checkPlayerSetup';
 import {addTrack} from '../utils/player/addTrack';
 
-export const useSetupPlayer = (podcast: Podcast | undefined) => {
-  const [queue, setQueue] = useState<Track[]>();
-
-  const setPlaylist = async () => {
-    try {
-      const tracks = await TrackPlayer.getQueue();
-      setQueue(tracks);
-    } catch (e) {
-      console.error('no queue', e);
-    }
-  };
-
-  const setupPlayer = async (podcast: Podcast) => {
-    const isSetup = await checkPlayerIsSetup();
-    if (isSetup) {
-      try {
-        await TrackPlayer.reset();
-        await addTrack(formatPlaylist(podcast));
-        await setPlaylist();
-      } catch (e) {
-        console.error('no podcast', e);
-      }
-    } else {
-      console.error('No playlist available');
-    }
-  };
+export const useSetupPlayer = () => {
+  const [isPlayerReady, setIsPlayerReady] = useState<boolean>(false);
 
   useEffect(() => {
-    if (podcast) {
-      setupPlayer(podcast);
-    }
-  }, [podcast]);
+    const setupPlayer = async () => {
+      let isReady = await checkPlayerIsSetup();
+      setIsPlayerReady(isReady);
+    };
 
-  return {podcast, queue};
+    setupPlayer();
+  }, []);
+
+  return {isPlayerReady};
 };

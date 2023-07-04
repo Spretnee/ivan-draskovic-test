@@ -7,5 +7,5 @@ export type Controls = {
   reset: () => Promise<number | void>;
   next: () => Promise<void>;
   previous: () => Promise<void>;
-  skip: (id: number) => Promise<void>;
+  skip: (id: number, initialPosition: number) => Promise<void>;
 };

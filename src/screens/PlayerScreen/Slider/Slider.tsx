@@ -8,18 +8,7 @@ import {formatTime} from './utils/formatTime';
 import {SliderControls} from '../SliderControls/SliderControls';
 
 import {Controls} from '../../../hooks/types';
-import TrackPlayer, {
-  State,
-  usePlaybackState,
-  useProgress,
-} from 'react-native-track-player';
-import {useControls} from '../../../hooks/useControls';
-import {
-  PlayerContext,
-  usePlayerContext,
-} from '../../../providers/PlayerProvider';
-import {SliderOnChangeCallback} from '@miblanchard/react-native-slider/lib/types';
-import {usePlayer} from '../../../hooks/useSetupPlayer';
+import {useProgress} from 'react-native-track-player';
 
 export default function Slider({
   isPlaying,

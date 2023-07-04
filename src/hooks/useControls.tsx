@@ -22,11 +22,11 @@ export const useControls = () => {
   const jumpBack15 = async () => {
     return await TrackPlayer.seekTo(position - BACKWARD_JUMP_INTERVAL);
   };
-  const next = async () => {
-    return await TrackPlayer.skipToNext();
+  const next = async (initialPosition?: number) => {
+    return await TrackPlayer.skipToNext(initialPosition);
   };
-  const previous = async () => {
-    return await TrackPlayer.skipToPrevious();
+  const previous = async (initialPosition?: number) => {
+    return await TrackPlayer.skipToPrevious(initialPosition);
   };
 
   const play = async () => await TrackPlayer.play();

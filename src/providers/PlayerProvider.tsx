@@ -6,7 +6,11 @@ import TrackPlayer, {
   usePlaybackState,
   useTrackPlayerEvents,
 } from 'react-native-track-player';
-import {PlayerStateContextType, PlayerStateProviderProps} from './types';
+import {
+  MultiTrackProgress,
+  PlayerStateContextType,
+  PlayerStateProviderProps,
+} from './types';
 import {useControls} from '../hooks/useControls';
 import {TrackWithId} from '../types';
 
@@ -34,6 +38,7 @@ const PlayerContext = createContext<PlayerStateContextType>({
     pause: async () => {},
     reset: async () => {},
   },
+  getTrackPosition: () => 0,
 });
 
 const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
@@ -46,8 +51,6 @@ const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
   const [currentTrackIndex, setCurrentTrackIndex] = useState<number | null>(
     null,
   );
-
-  type MultiTrackProgress = Record<string, number>;
 
   const [multiTrackProgress, setMultiTrackProgress] =
     useState<MultiTrackProgress>({});
@@ -86,6 +89,10 @@ const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
     },
   );
 
+  const getTrackPosition = (trackId: string): number => {
+    return multiTrackProgress[trackId] || 0;
+  };
+
   const playerState = {
     isPlaying: playbackState === State.Playing,
     isPaused: playbackState === State.Paused,
@@ -110,8 +117,8 @@ const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
     currentTrackIndex: currentTrackIndex,
     queue: queue,
     controls: controls,
+    getTrackPosition: getTrackPosition,
   };
-
   return (
     <PlayerContext.Provider value={context}>{children}</PlayerContext.Provider>
   );

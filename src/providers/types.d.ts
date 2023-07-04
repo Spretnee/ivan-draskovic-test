@@ -7,6 +7,7 @@ export type PlayerStateProviderProps = {
   children: React.ReactNode;
   queue: Track[] | undefined;
 };
+export type MultiTrackProgress = Record<string, number>;
 
 export type PlayerStateContextType = {
   isPlaying: boolean;
@@ -21,4 +22,5 @@ export type PlayerStateContextType = {
 
   queue: Track[] | undefined;
   controls: Controls;
+  getTrackPosition: (truckId: string) => number;
 };
