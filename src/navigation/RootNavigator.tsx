@@ -23,14 +23,14 @@ export const RootNavigator = () => {
         <ActivityIndicator size="large" color={GREEN} />
       </SafeAreaView>
     );
+  } else {
+    return (
+      <NavigationContainer theme={theme}>
+        <PlayerStateProvider queue={queue}>
+          <TabNavigation />
+          <ModalPlayer />
+        </PlayerStateProvider>
+      </NavigationContainer>
+    );
   }
-
-  return (
-    <NavigationContainer theme={theme}>
-      <PlayerStateProvider queue={queue}>
-        <TabNavigation />
-        <ModalPlayer />
-      </PlayerStateProvider>
-    </NavigationContainer>
-  );
 };

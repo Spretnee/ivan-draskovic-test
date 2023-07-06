@@ -23,9 +23,7 @@ export const useLoadPlaylist = (podcast: Podcast | undefined) => {
       if (podcast) await addTrack(formatPlaylist(podcast));
 
       await setPlaylist();
-    } catch (e) {
-      console.error('no podcast', e);
-    }
+    } catch {}
   };
 
   useEffect(() => {

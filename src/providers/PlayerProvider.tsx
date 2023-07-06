@@ -119,6 +119,8 @@ const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
     controls: controls,
     getTrackPosition: getTrackPosition,
   };
+
+  console.log(playbackState);
   return (
     <PlayerContext.Provider value={context}>{children}</PlayerContext.Provider>
   );

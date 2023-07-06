@@ -1,4 +1,4 @@
-import {View} from 'react-native';
+import {ActivityIndicator, Pressable, View} from 'react-native';
 import React from 'react';
 import {Title} from '../HomeScreen/Title';
 import {BottomSheetPlayer} from '../../components/BottomSheetPlayer/BottomSheetPlayer';
@@ -8,9 +8,16 @@ import {usePlayerContext} from '../../providers/PlayerProvider';
 import {Text} from '../../components/Text';
 import {PlayPause} from '../../components/PlayPause';
 import {useControls} from '../../hooks/useControls';
-import {BACKGROUND, GREEN, GREEN_LIGHT} from '../../constants/colors';
+import {
+  BACKGROUND,
+  FONT_DARK1,
+  GREEN,
+  GREEN_LIGHT,
+} from '../../constants/colors';
 import {SliderMinimized} from '../HomeScreen/SliderMinimized';
 import {useProgress} from 'react-native-track-player';
+import {SvgXml} from 'react-native-svg';
+import {PAUSE, PLAY_BUTTON} from '../../assets/images/svg';
 
 //TODO: refactor screen
 
@@ -35,17 +42,23 @@ const GreetingsScreen = () => {
             <View>
               <View
                 style={{
-                  backgroundColor:
-                    index === currentTrackIndex &&
-                    (isPlaying || isBuffering || isConnecting)
-                      ? GREEN
-                      : BACKGROUND,
                   paddingVertical: 13,
                   flexDirection: 'row',
                   justifyContent: 'space-between',
                 }}
               >
-                <Text type={'H3'}>{item.title}</Text>
+                <Text
+                  type={'H3'}
+                  style={{
+                    color:
+                      index === currentTrackIndex &&
+                      (isPlaying || isBuffering || isConnecting)
+                        ? GREEN
+                        : FONT_DARK1,
+                  }}
+                >
+                  {item.title}
+                </Text>
                 <PlayPause
                   isPlaying={isPlaying && currentTrack.id === item.id}
                   controls={controls}

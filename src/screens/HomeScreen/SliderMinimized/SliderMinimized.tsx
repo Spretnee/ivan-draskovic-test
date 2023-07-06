@@ -19,10 +19,11 @@ export const SliderMinimized = ({
   return (
     <View style={styles.container}>
       <OriginSlider
-        containerStyle={{height: 36}}
-        thumbStyle={{height: 0, borderRadius: 0}}
+        containerStyle={styles.containerStyle}
+        thumbStyle={styles.thumb}
         maximumTrackTintColor={BEIGE}
         minimumTrackTintColor={FONT_DARK2}
+        disabled={true}
         value={position}
         maximumValue={duration}
       />
