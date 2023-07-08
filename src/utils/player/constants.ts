@@ -1,0 +1,1 @@
+export const PROGRESS_UPDATE_EVENT_INTERVAL = 2;

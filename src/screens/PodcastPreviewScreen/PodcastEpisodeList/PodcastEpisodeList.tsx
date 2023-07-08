@@ -1,18 +1,18 @@
-import {FlatList, ActivityIndicator} from 'react-native';
-import React, {useContext} from 'react';
-import {PodcastEpisode} from './PodcastEpiode';
-import {PlayerContext} from '../../../providers/PlayerProvider';
+import { FlatList, ActivityIndicator } from 'react-native';
+import React, { useContext } from 'react';
+import { PodcastEpisode } from './PodcastEpiode';
+import { PlayerContext } from '../../../providers/PlayerProvider';
 
 const PodcastEpisodeList = () => {
-  const {queue, currentTrack} = useContext(PlayerContext);
+  const { queue, currentTrack } = useContext(PlayerContext);
   if (!queue) {
     return <ActivityIndicator />;
   } else {
     return (
       <FlatList
-        style={{marginBottom: 40}}
+        style={{ marginBottom: 40 }}
         data={queue}
-        renderItem={({item}) => <PodcastEpisode track={item} />}
+        renderItem={({ item }) => <PodcastEpisode track={item} />}
         keyExtractor={item => item.id}
       />
     );

@@ -1,9 +1,9 @@
-import {useEffect, useState} from 'react';
-import TrackPlayer, {Track} from 'react-native-track-player';
-import {Podcast} from '../api/types';
-import {formatPlaylist} from '../utils/player/formatPlaylist';
-import {addTrack} from '../utils/player/addTrack';
-import {PlayPause} from '../components/PlayPause';
+import { useEffect, useMemo, useState } from 'react';
+import TrackPlayer, { Track } from 'react-native-track-player';
+import { Podcast, PodcastMetadata } from '../api/types';
+import { formatPlaylist } from '../utils/player/formatPlaylist';
+import { addTrack } from '../utils/player/addTrack';
+import { PlayPause } from '../components/PlayPause';
 
 export const useLoadPlaylist = (podcast: Podcast | undefined) => {
   const [queue, setQueue] = useState<Track[]>();
@@ -17,6 +17,15 @@ export const useLoadPlaylist = (podcast: Podcast | undefined) => {
     }
   };
 
+  const getPodcastMetadata = (
+    podcast: Podcast | undefined,
+  ): PodcastMetadata | undefined => {
+    if (podcast) {
+      const { episodes, ...rest } = podcast;
+      return rest;
+    } else return undefined;
+  };
+
   const loadPlaylist = async () => {
     try {
       await TrackPlayer.reset();
@@ -26,9 +35,9 @@ export const useLoadPlaylist = (podcast: Podcast | undefined) => {
     } catch {}
   };
 
-  useEffect(() => {
+  useMemo(() => {
     loadPlaylist();
   }, [podcast]);
 
-  return {podcast, queue};
+  return { podcast, queue, getPodcastMetadata };
 };

@@ -1,18 +1,18 @@
 import React from 'react';
-import {BottomSheetProvider} from '../providers/BottomSheetProvider';
-import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { BottomSheetProvider } from '../providers/BottomSheetProvider';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import {HomeScreen} from '../screens/HomeScreen';
+import { HomeScreen } from '../screens/HomeScreen';
 import PlayerScreen from '../screens/PlayerScreen/PlayerScreen';
-import {PodcastPreviewScreen} from '../screens/PodcastPreviewScreen/PodcastPreviewScreen';
-import {theme} from '../theme/theme';
+import { PodcastPreviewScreen } from '../screens/PodcastPreviewScreen/PodcastPreviewScreen';
+import { theme } from '../theme/theme';
 import GreetingsScreen from '../screens/GreetingsScreen/GreetingsScreen';
 import YourPodcastsScreen from '../screens/YourPodcastsScreen/YourPodcastsScreen';
-import {ModalPlayer} from '../components/ModalPlayer';
-import {SearchScreen} from '../screens/SearchScreen/SearchScreen';
-import {SvgXml} from 'react-native-svg';
-import {HOME, PODCAST_LIBRARY, SEARCH} from '../assets/images/svg';
+import { ModalPlayer } from '../components/ModalPlayer';
+import { SearchScreen } from '../screens/SearchScreen/SearchScreen';
+import { SvgXml } from 'react-native-svg';
+import { HOME, PODCAST_LIBRARY, SEARCH } from '../assets/images/svg';
 
 const Tab = createBottomTabNavigator();
 
@@ -21,9 +21,9 @@ export const TabNavigation = () => {
   return (
     <Tab.Navigator
       initialRouteName="Home"
-      screenOptions={({route}) => ({
+      screenOptions={({ route }) => ({
         //TODO: tidy up
-        tabBarIcon: ({focused, color, size}) => {
+        tabBarIcon: ({ focused, color, size }) => {
           if (route.name === 'Home') {
             return (
               <SvgXml
@@ -48,7 +48,10 @@ export const TabNavigation = () => {
 
           return (
             <SvgXml
-              style={{width: focused ? 30 : size, height: focused ? 30 : size}}
+              style={{
+                width: focused ? 30 : size,
+                height: focused ? 30 : size,
+              }}
               xml={PODCAST_LIBRARY}
             />
           );
@@ -57,8 +60,8 @@ export const TabNavigation = () => {
       })}
     >
       <Tab.Screen name="Home" options={{}} component={GreetingsScreen} />
-      <Tab.Screen name="Search" component={YourPodcastsScreen} />
-      <Tab.Screen name="Your Library" component={SearchScreen} />
+      <Tab.Screen name="Search" component={SearchScreen} />
+      <Tab.Screen name="Your Library" component={YourPodcastsScreen} />
     </Tab.Navigator>
   );
 };

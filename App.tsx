@@ -9,10 +9,21 @@ import {useSetupPlayer} from './src/hooks/useSetupPlayer';
 import styles from './src/screens/HomeScreen/HomeScreen.styles';
 import {ActivityIndicator} from 'react-native';
 import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
+import {GREEN} from './src/constants/colors';
 
 const queryClient = new QueryClient();
 
 const App = () => {
+  const {isPlayerReady} = useSetupPlayer();
+
+  if (!isPlayerReady) {
+    return (
+      <SafeAreaView style={styles.container}>
+        <ActivityIndicator size="large" color={GREEN} />
+      </SafeAreaView>
+    );
+  }
+
   return (
     <SafeAreaProvider>
       <GestureHandlerRootView style={{flex: 1}}>

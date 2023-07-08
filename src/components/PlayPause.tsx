@@ -1,8 +1,8 @@
-import {View, Text, Pressable} from 'react-native';
-import React from 'react';
-import {SvgXml} from 'react-native-svg';
-import {PAUSE, PLAY_BUTTON} from '../assets/images/svg';
-import {Controls} from '../hooks/types';
+import { View, Text, Pressable } from 'react-native';
+import React, { memo } from 'react';
+import { SvgXml } from 'react-native-svg';
+import { PAUSE, PLAY_BUTTON } from '../assets/images/svg';
+import { Controls } from '../hooks/types';
 
 export const PlayPause = ({
   isPlaying,
@@ -20,7 +20,7 @@ export const PlayPause = ({
     return (
       <Pressable
         onPress={isPlaying ? controls.pause : controls.play}
-        style={{padding: 10}}
+        style={{ padding: 10 }}
       >
         <SvgXml xml={isPlaying ? PAUSE : PLAY_BUTTON} />
       </Pressable>
@@ -36,7 +36,7 @@ export const PlayPause = ({
                 controls.play();
               }
         }
-        style={{padding: 10}}
+        style={{ padding: 10 }}
       >
         <SvgXml xml={isPlaying ? PAUSE : PLAY_BUTTON} />
         {/* TODO: redo Icons Wrapper */}

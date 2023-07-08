@@ -76,3 +76,4 @@ export interface Episode {
 }
 
 export type Queue = TrackWithId[];
+export type PodcastMetadata = Omit<Podcast, 'episodes'>;

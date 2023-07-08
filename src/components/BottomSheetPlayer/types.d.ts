@@ -1,9 +1,8 @@
+import { PlayerState } from '../../hooks/types';
+
 export type BottomSheetPlayerProps = {
   onPress: () => void;
-  isBuffering: boolean;
-  isConnecting: boolean;
-  isIdle: boolean;
-  isPlaying: boolean;
+  state: PlayerState;
   currentTrack: Track;
   controls: Controls;
 };

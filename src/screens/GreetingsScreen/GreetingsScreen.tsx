@@ -1,45 +1,30 @@
-import {ActivityIndicator, Pressable, View} from 'react-native';
+import { ActivityIndicator, Pressable, View } from 'react-native';
 import React from 'react';
-import {Title} from '../HomeScreen/Title';
-import {BottomSheetPlayer} from '../../components/BottomSheetPlayer/BottomSheetPlayer';
-import {useNavigation} from '@react-navigation/native';
-import {FlatList} from 'react-native-gesture-handler';
-import {usePlayerContext} from '../../providers/PlayerProvider';
-import {Text} from '../../components/Text';
-import {PlayPause} from '../../components/PlayPause';
-import {useControls} from '../../hooks/useControls';
-import {
-  BACKGROUND,
-  FONT_DARK1,
-  GREEN,
-  GREEN_LIGHT,
-} from '../../constants/colors';
-import {SliderMinimized} from '../HomeScreen/SliderMinimized';
-import {useProgress} from 'react-native-track-player';
-import {SvgXml} from 'react-native-svg';
-import {PAUSE, PLAY_BUTTON} from '../../assets/images/svg';
+import { FlatList } from 'react-native-gesture-handler';
+import { usePlayerContext } from '../../providers/PlayerProvider';
+import { Text } from '../../components/Text';
+import { FONT_DARK1, GREEN } from '../../constants/colors';
+import { SliderMinimized } from '../HomeScreen/SliderMinimized';
+import { useCustomPlaybackState } from '../../hooks/useCustomPlaybackState';
+import { SvgXml } from 'react-native-svg';
+import { PAUSE, PLAY_BUTTON } from '../../assets/images/svg';
+import { formatTime } from '../PlayerScreen/Slider/utils/formatTime';
 
 //TODO: refactor screen
 
 const GreetingsScreen = () => {
-  const {
-    queue,
-    isPlaying,
-    isBuffering,
-    isConnecting,
-    controls,
-    currentTrack,
-    currentTrackIndex,
-    getTrackPosition,
-  } = usePlayerContext();
+  const { queue, controls, currentTrack, currentTrackIndex, getTrackPosition } =
+    usePlayerContext();
+
+  const { isBuffering, isConnecting, isPlaying } = useCustomPlaybackState();
 
   return (
     <View>
       <FlatList
         data={queue}
-        renderItem={({item, index}) => {
+        renderItem={({ item, index }) => {
           return (
-            <View>
+            <View style={{ padding: 12 }}>
               <View
                 style={{
                   paddingVertical: 13,
@@ -47,24 +32,58 @@ const GreetingsScreen = () => {
                   justifyContent: 'space-between',
                 }}
               >
-                <Text
-                  type={'H3'}
-                  style={{
-                    color:
-                      index === currentTrackIndex &&
-                      (isPlaying || isBuffering || isConnecting)
-                        ? GREEN
-                        : FONT_DARK1,
-                  }}
-                >
-                  {item.title}
-                </Text>
-                <PlayPause
-                  isPlaying={isPlaying && currentTrack.id === item.id}
-                  controls={controls}
-                  index={index}
-                  initialPosition={getTrackPosition(item.id)}
-                />
+                <View>
+                  <Text
+                    type={'H3'}
+                    style={{
+                      color:
+                        index === currentTrackIndex &&
+                        (isPlaying || isBuffering || isConnecting)
+                          ? GREEN
+                          : FONT_DARK1,
+                    }}
+                  >
+                    {item.title}
+                  </Text>
+                  <Text
+                    type={'H5'}
+                    style={{
+                      color:
+                        index === currentTrackIndex &&
+                        (isPlaying || isBuffering || isConnecting)
+                          ? GREEN
+                          : FONT_DARK1,
+                    }}
+                  >
+                    {item.date}
+                  </Text>
+                </View>
+
+                {(isBuffering || isConnecting) &&
+                currentTrack.id === item.id ? (
+                  <ActivityIndicator size={'large'} color={GREEN} />
+                ) : (
+                  <Pressable
+                    onPress={
+                      isPlaying && currentTrack.id === item.id
+                        ? controls.pause
+                        : () => {
+                            controls.skip(index, getTrackPosition(item.id));
+                            controls.play();
+                          }
+                    }
+                    style={{ padding: 10 }}
+                  >
+                    <SvgXml
+                      xml={
+                        isPlaying && currentTrack.id === item.id
+                          ? PAUSE
+                          : PLAY_BUTTON
+                      }
+                    />
+                    {/* TODO: redo Icons Wrapper */}
+                  </Pressable>
+                )}
               </View>
               <SliderMinimized
                 position={getTrackPosition(item.id)}

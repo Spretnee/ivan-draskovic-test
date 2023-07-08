@@ -6,6 +6,7 @@ import {
   BACKWARD_JUMP_INTERVAL,
   FORWARD_JUMP_INTERVAL,
 } from '../../constants/player';
+import { PROGRESS_UPDATE_EVENT_INTERVAL } from './constants';
 
 export const checkPlayerIsSetup = async () => {
   let isSetup = false;
@@ -19,7 +20,7 @@ export const checkPlayerIsSetup = async () => {
       android: {
         appKilledPlaybackBehavior: AppKilledPlaybackBehavior.PausePlayback,
       },
-      progressUpdateEventInterval: 1,
+      progressUpdateEventInterval: PROGRESS_UPDATE_EVENT_INTERVAL,
 
       stoppingAppPausesPlayback: true,
       forwardJumpInterval: FORWARD_JUMP_INTERVAL,

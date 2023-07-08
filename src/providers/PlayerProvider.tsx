@@ -1,4 +1,10 @@
-import {createContext, useContext, useEffect, useState} from 'react';
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+} from 'react';
 import TrackPlayer, {
   Event,
   State,
@@ -11,16 +17,11 @@ import {
   PlayerStateContextType,
   PlayerStateProviderProps,
 } from './types';
-import {useControls} from '../hooks/useControls';
-import {TrackWithId} from '../types';
+import { useControls } from '../hooks/useControls';
+import { TrackWithId } from '../types';
+import { INITIAL_CURRENT_TRACK_STATE } from './constants';
 
 const PlayerContext = createContext<PlayerStateContextType>({
-  isPlaying: false,
-  isReady: false,
-  isPaused: false,
-  isIdle: false,
-  isBuffering: false,
-  isConnecting: false,
   currentTrack: {
     id: '',
     url: ``,
@@ -41,29 +42,28 @@ const PlayerContext = createContext<PlayerStateContextType>({
   getTrackPosition: () => 0,
 });
 
-const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
+const PlayerStateProvider = ({ children, queue }: PlayerStateProviderProps) => {
   const controls = useControls();
-  const [currentTrack, setCurrentTrack] = useState<TrackWithId | Track>({
-    id: '',
-    url: ``,
-  });
-
+  const [currentTrack, setCurrentTrack] = useState<TrackWithId | Track>(
+    INITIAL_CURRENT_TRACK_STATE,
+  );
   const [currentTrackIndex, setCurrentTrackIndex] = useState<number | null>(
     null,
   );
-
   const [multiTrackProgress, setMultiTrackProgress] =
     useState<MultiTrackProgress>({});
-  const playbackState = usePlaybackState();
 
-  const handleMultiTrackProgress = (id: string, position: number) => {
-    setMultiTrackProgress(prevMultiTrackProgress => {
-      return {
-        ...prevMultiTrackProgress,
-        [id]: position,
-      };
-    });
-  };
+  const handleMultiTrackProgress = useCallback(
+    (id: string, position: number) => {
+      setMultiTrackProgress(prevMultiTrackProgress => {
+        return {
+          ...prevMultiTrackProgress,
+          [id]: position,
+        };
+      });
+    },
+    [],
+  );
 
   useTrackPlayerEvents(
     [Event.PlaybackTrackChanged, Event.PlaybackProgressUpdated],
@@ -93,26 +93,7 @@ const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
     return multiTrackProgress[trackId] || 0;
   };
 
-  const playerState = {
-    isPlaying: playbackState === State.Playing,
-    isPaused: playbackState === State.Paused,
-    isReady: playbackState === State.Ready,
-    isIdle: playbackState === State.None,
-    isBuffering: playbackState === State.Buffering,
-    isConnecting: playbackState === State.Connecting,
-    isLoading:
-      playbackState === State.Buffering || playbackState === State.Connecting,
-  };
-
-  type PlayerState = typeof playerState;
-
   const context: PlayerStateContextType = {
-    isPlaying: playbackState === State.Playing,
-    isPaused: playbackState === State.Paused,
-    isReady: playbackState === State.Ready,
-    isIdle: playbackState === State.None,
-    isBuffering: playbackState === State.Buffering,
-    isConnecting: playbackState === State.Connecting,
     currentTrack: currentTrack,
     currentTrackIndex: currentTrackIndex,
     queue: queue,
@@ -120,7 +101,6 @@ const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
     getTrackPosition: getTrackPosition,
   };
 
-  console.log(playbackState);
   return (
     <PlayerContext.Provider value={context}>{children}</PlayerContext.Provider>
   );
@@ -128,4 +108,4 @@ const PlayerStateProvider = ({children, queue}: PlayerStateProviderProps) => {
 
 const usePlayerContext = () => useContext(PlayerContext);
 
-export {PlayerContext, PlayerStateProvider, usePlayerContext};
+export { PlayerContext, PlayerStateProvider, usePlayerContext };

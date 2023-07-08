@@ -1,32 +1,31 @@
-import {Pressable, TouchableOpacity} from 'react-native';
-import React, {useCallback, useMemo, useRef} from 'react';
-import BottomSheet, {BottomSheetModal} from '@gorhom/bottom-sheet';
-import {BottomSheetPlayerProps} from './types';
-import {styles} from './BottomSheetPlayer.styles';
-import {PlayPause} from '../PlayPause';
-import {snapPoints} from './utils/snapPoints';
-import {Title} from './Title';
-import {Image} from '../../screens/PlayerScreen/Image/Image';
+import { Pressable, TouchableOpacity } from 'react-native';
+import React, { useCallback, useMemo, useRef } from 'react';
+import BottomSheet, { BottomSheetModal } from '@gorhom/bottom-sheet';
+import { BottomSheetPlayerProps } from './types';
+import { styles } from './BottomSheetPlayer.styles';
+import { PlayPause } from '../PlayPause';
+import { snapPoints } from './utils/snapPoints';
+import { Title } from './Title';
+import { Image } from '../../screens/PlayerScreen/Image/Image';
 
 export const BottomSheetPlayer = ({
   onPress,
-  isBuffering,
-  isConnecting,
-  isIdle,
-  currentTrack,
-  isPlaying,
+  state,
   controls,
+  currentTrack,
 }: BottomSheetPlayerProps) => {
   const bottomSheetRef = useRef<BottomSheet>(null);
+
+  const { isIdle, isLoading, isPlaying } = state;
 
   return (
     <BottomSheet
       ref={bottomSheetRef}
-      index={!isIdle || isBuffering || isConnecting ? 0 : -1}
+      index={!isIdle || isLoading ? 0 : -1}
       bottomInset={60}
       detached={true}
       backgroundStyle={styles.backgroundStyle}
-      handleIndicatorStyle={{display: 'none'}}
+      handleIndicatorStyle={{ display: 'none' }}
       snapPoints={snapPoints}
       containerStyle={styles.contentContainer}
       style={styles.sheetContainer}

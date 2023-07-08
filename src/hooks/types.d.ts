@@ -9,3 +9,13 @@ export type Controls = {
   previous: () => Promise<void>;
   skip: (id: number, initialPosition: number) => Promise<void>;
 };
+
+export type PlayerState = {
+  isBuffering: boolean;
+  isPlaying: boolean;
+  isConnecting: boolean;
+  isPaused: boolean;
+  isReady: boolean;
+  isIdle: boolean;
+  isLoading: boolean;
+};
