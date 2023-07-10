@@ -1,15 +1,8 @@
 import React from 'react';
-import { BottomSheetProvider } from '../providers/BottomSheetProvider';
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { HomeScreen } from '../screens/HomeScreen';
-import PlayerScreen from '../screens/PlayerScreen/PlayerScreen';
-import { PodcastPreviewScreen } from '../screens/PodcastPreviewScreen/PodcastPreviewScreen';
-import { theme } from '../theme/theme';
-import GreetingsScreen from '../screens/GreetingsScreen/GreetingsScreen';
+import GreetingsScreen from '../screens/PodcastsScreen/PodcastsScreen';
 import YourPodcastsScreen from '../screens/YourPodcastsScreen/YourPodcastsScreen';
-import { ModalPlayer } from '../components/ModalPlayer';
 import { SearchScreen } from '../screens/SearchScreen/SearchScreen';
 import { SvgXml } from 'react-native-svg';
 import { HOME, PODCAST_LIBRARY, SEARCH } from '../assets/images/svg';

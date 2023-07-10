@@ -11,20 +11,22 @@ import { PAUSE, PLAY_BUTTON } from '../../assets/images/svg';
 import { formatDate } from '../PlayerScreen/Slider/utils/formatDate';
 import { Image } from '../PlayerScreen/Image/Image';
 import { useControls } from '../../hooks/useControls';
-import { useSelector } from 'react-redux';
-import { PlayerSliceState } from '../../store/playerSlice';
-import { useAppSelector } from '../../store/hooks';
+import { useSelectPlayerState } from '../../store/playerSlice';
 
 //TODO: refactor screen
 
 const GreetingsScreen = () => {
-  const { currentTrack, currentTrackIndex, getTrackPosition } =
-    usePlayerContext();
+  // const { currentTrack, currentTrackIndex } = usePlayerContext();
   const { isBuffering, isConnecting, isPlaying } = useCustomPlaybackState();
   const controls = useControls();
 
-  const podcastMetadata = useAppSelector(state => state.player.podcastMetadata);
-  const queue = useAppSelector(state => state.player.queue);
+  const {
+    queue,
+    podcastMetadata,
+    currentTrack,
+    currentTrackIndex,
+    multiTrackProgress,
+  } = useSelectPlayerState();
 
   return (
     <View>
@@ -83,7 +85,7 @@ const GreetingsScreen = () => {
                     }}
                   >
                     {`${Math.round(
-                      (item.duration! - getTrackPosition(item.id)) / 60,
+                      (item.duration! - multiTrackProgress[item.id] || 0) / 60,
                     )} mins left`}
                   </Text>
                 </View>
@@ -97,7 +99,10 @@ const GreetingsScreen = () => {
                       isPlaying && currentTrack.id === item.id
                         ? controls.pause
                         : () => {
-                            controls.skip(index, getTrackPosition(item.id));
+                            controls.skip(
+                              index,
+                              multiTrackProgress[item.id] || 0,
+                            );
                             controls.play();
                           }
                     }
@@ -115,7 +120,7 @@ const GreetingsScreen = () => {
                 )}
               </View>
               <SliderMinimized
-                position={getTrackPosition(item.id)}
+                position={multiTrackProgress[item.id] || 0}
                 duration={item.duration!}
               />
             </View>

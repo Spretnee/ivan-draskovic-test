@@ -5,7 +5,7 @@
   "scripts": {
     "android": "react-native run-android",
     "android:production": "cross-env ENVFILE=.env.production react-native run-android",
-    "mock-server": "json-server --host 192.168.0.102 --watch db.json",
+    "mock-server": "json-server --host 192.168.1.213 --watch db.json",
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
