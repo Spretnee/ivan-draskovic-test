@@ -11,19 +11,20 @@ import { PAUSE, PLAY_BUTTON } from '../../assets/images/svg';
 import { formatDate } from '../PlayerScreen/Slider/utils/formatDate';
 import { Image } from '../PlayerScreen/Image/Image';
 import { useControls } from '../../hooks/useControls';
+import { useSelector } from 'react-redux';
+import { PlayerSliceState } from '../../store/playerSlice';
+import { useAppSelector } from '../../store/hooks';
 
 //TODO: refactor screen
 
 const GreetingsScreen = () => {
-  const {
-    queue,
-    currentTrack,
-    currentTrackIndex,
-    getTrackPosition,
-    podcastMetadata,
-  } = usePlayerContext();
+  const { currentTrack, currentTrackIndex, getTrackPosition } =
+    usePlayerContext();
   const { isBuffering, isConnecting, isPlaying } = useCustomPlaybackState();
   const controls = useControls();
+
+  const podcastMetadata = useAppSelector(state => state.player.podcastMetadata);
+  const queue = useAppSelector(state => state.player.queue);
 
   return (
     <View>

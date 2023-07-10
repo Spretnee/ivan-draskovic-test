@@ -7,14 +7,16 @@ import { TabNavigation } from './TabNavigation';
 import { ModalPlayer } from '../components/ModalPlayer/ModalPlayer';
 import { MOCK_PODCAST_ID } from '../api/constants';
 import { useLoadPlaylist } from '../hooks/useLoadPlaylist';
+import { usePlayerEvents } from '../hooks/usePlayerEvents';
 
 export const RootNavigator = () => {
   const data = useGetPodcast(MOCK_PODCAST_ID);
-  const { queue, podcastMetadata } = useLoadPlaylist(data.data);
+  usePlayerEvents();
+  useLoadPlaylist(data.data);
 
   return (
     <NavigationContainer theme={theme}>
-      <PlayerStateProvider queue={queue} podcastMetadata={podcastMetadata}>
+      <PlayerStateProvider>
         <TabNavigation />
         <ModalPlayer />
       </PlayerStateProvider>

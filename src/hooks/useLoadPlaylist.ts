@@ -1,16 +1,18 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import TrackPlayer, { Track } from 'react-native-track-player';
-import { Podcast, PodcastMetadata } from '../api/types';
+import { Podcast } from '../api/types';
 import { formatPlaylist } from '../utils/player/formatPlaylist';
 import { addTrack } from '../utils/player/addTrack';
+import { useAppDispatch } from '../store/hooks';
+import { setPodcastMetadata, setQueue } from '../store/playerSlice';
 
 export const useLoadPlaylist = (podcast: Podcast | undefined) => {
-  const [queue, setQueue] = useState<Track[]>();
-  const [podcastMetadata, setPodcastMetadata] = useState<PodcastMetadata>();
+  const dispatch = useAppDispatch();
+
   const setPlaylist = async () => {
     try {
       const tracks = await TrackPlayer.getQueue();
-      setQueue(tracks);
+      dispatch(setQueue(tracks));
     } catch (e) {
       console.error('no queue', e);
     }
@@ -22,7 +24,7 @@ export const useLoadPlaylist = (podcast: Podcast | undefined) => {
       if (podcast) {
         await addTrack(formatPlaylist(podcast));
         const { episodes, ...metadata } = podcast;
-        setPodcastMetadata(metadata);
+        dispatch(setPodcastMetadata(metadata));
       }
 
       await setPlaylist();
@@ -31,7 +33,9 @@ export const useLoadPlaylist = (podcast: Podcast | undefined) => {
 
   useMemo(() => {
     loadPlaylist();
+    if (podcast) {
+    }
   }, [podcast]);
 
-  return { podcast, queue, podcastMetadata };
+  return { podcast };
 };

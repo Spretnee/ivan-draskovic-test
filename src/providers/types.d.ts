@@ -5,16 +5,12 @@ import { TrackWithId } from '../types';
 
 export type PlayerStateProviderProps = {
   children: React.ReactNode;
-  queue: Track[] | undefined;
-  podcastMetadata: PodcastMetadata | undefined;
 };
 export type MultiTrackProgress = Record<string, number>;
 
 export type PlayerStateContextType = {
   currentTrack: TrackWithId | Track;
   currentTrackIndex: number | null;
-  podcastMetadata: PodcastMetadata | undefined;
-  queue: Track[] | undefined;
   controls: Controls;
   getTrackPosition: (truckId: string) => number;
 };
