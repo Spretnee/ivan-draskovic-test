@@ -16,10 +16,8 @@ export const RootNavigator = () => {
 
   return (
     <NavigationContainer theme={theme}>
-      <PlayerStateProvider>
-        <TabNavigation />
-        <ModalPlayer />
-      </PlayerStateProvider>
+      <TabNavigation />
+      <ModalPlayer />
     </NavigationContainer>
   );
 };

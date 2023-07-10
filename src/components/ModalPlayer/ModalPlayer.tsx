@@ -5,7 +5,6 @@ import { BottomSheetPlayer } from '../BottomSheetPlayer/BottomSheetPlayer';
 import { styles } from './ModalPlayer.styles';
 import { MODAL_PLAYER_SNAP_POINTS } from './constants';
 import { useHandlePresentModal } from './hooks/useHandlePresentModal';
-import { usePlayerContext } from '../../providers/PlayerProvider';
 import { BottomBar } from '../../screens/PlayerScreen/BottomBar';
 import { Description } from '../../screens/PlayerScreen/Description/Description';
 import { EpisodeTitle } from '../../screens/PlayerScreen/EpisodeTitle';
@@ -16,12 +15,14 @@ import { Image } from '../../screens/PlayerScreen/Image/Image';
 import { DismissChevron } from './DismissChevron';
 import { useCustomPlaybackState } from '../../hooks/useCustomPlaybackState';
 import { useControls } from '../../hooks/useControls';
+import { useAppSelector } from '../../store/hooks';
+import { selectPlayerState } from '../../store/playerSlice';
 
 const { height } = Dimensions.get('screen');
 export const ModalPlayer = () => {
   const bottomSheetModalRef = useRef<BottomSheetModal>(null);
 
-  const { currentTrack } = usePlayerContext();
+  const { currentTrack } = useAppSelector(selectPlayerState);
   const controls = useControls();
   const { handlePresentModalPress, dismissModal } =
     useHandlePresentModal(bottomSheetModalRef);

@@ -4,6 +4,8 @@ import { MultiTrackProgress } from '../providers/types';
 import { PodcastMetadata } from '../api/types';
 import { useState } from 'react';
 import { Track } from 'react-native-track-player';
+import { RootState } from './store';
+import { useAppSelector } from './hooks';
 
 const initialState: PlayerSliceState = {
   currentTrack: { id: '', url: '' },
@@ -57,11 +59,57 @@ const playerSlice = createSlice({
 
 //selectors
 
-export const selectTrackProgress = (trackId: string) =>
-  createSelector(
-    (state: PlayerSliceState) => state.multiTrackProgress,
-    multiTrackProgress => multiTrackProgress[trackId] || 0,
-  );
+const selectMultiTrackProgress = createSelector(
+  (state: RootState) => state.player,
+  player => player.multiTrackProgress,
+);
+
+const selectPodcastMetadata = createSelector(
+  (state: RootState) => state.player,
+  player => player.podcastMetadata,
+);
+const selectQueue = createSelector(
+  (state: RootState) => state.player,
+  player => player.queue,
+);
+const selectCurrentTrack = createSelector(
+  (state: RootState) => state.player,
+  player => player.currentTrack,
+);
+
+const selectCurrentTrackIndex = createSelector(
+  (state: RootState) => state.player,
+  player => player.currentTrackIndex,
+);
+
+export const selectPlayerState = createSelector(
+  [
+    selectPodcastMetadata,
+    selectQueue,
+    selectCurrentTrack,
+    selectMultiTrackProgress,
+    selectCurrentTrackIndex,
+  ],
+  (
+    podcastMetadata,
+    queue,
+    currentTrack,
+    multiTrackProgress,
+    currentTrackIndex,
+  ) => {
+    return {
+      podcastMetadata,
+      queue,
+      currentTrack,
+      multiTrackProgress,
+      currentTrackIndex,
+    };
+  },
+);
+
+type PlayerStateSelector = typeof selectPlayerState;
+
+export const useSelectPlayerState = () => useAppSelector(selectPlayerState);
 
 export const {
   setCurrentTrack,
