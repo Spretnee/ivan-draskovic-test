@@ -10,11 +10,11 @@ import { useLoadPlaylist } from '../hooks/useLoadPlaylist';
 
 export const RootNavigator = () => {
   const data = useGetPodcast(MOCK_PODCAST_ID);
-  const { queue } = useLoadPlaylist(data.data);
+  const { queue, podcastMetadata } = useLoadPlaylist(data.data);
 
   return (
     <NavigationContainer theme={theme}>
-      <PlayerStateProvider queue={queue}>
+      <PlayerStateProvider queue={queue} podcastMetadata={podcastMetadata}>
         <TabNavigation />
         <ModalPlayer />
       </PlayerStateProvider>

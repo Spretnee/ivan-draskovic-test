@@ -8,20 +8,33 @@ import { SliderMinimized } from '../HomeScreen/SliderMinimized';
 import { useCustomPlaybackState } from '../../hooks/useCustomPlaybackState';
 import { SvgXml } from 'react-native-svg';
 import { PAUSE, PLAY_BUTTON } from '../../assets/images/svg';
-import { formatTime } from '../PlayerScreen/Slider/utils/formatTime';
+import { formatDate } from '../PlayerScreen/Slider/utils/formatDate';
+import { Image } from '../PlayerScreen/Image/Image';
 
 //TODO: refactor screen
 
 const GreetingsScreen = () => {
-  const { queue, controls, currentTrack, currentTrackIndex, getTrackPosition } =
-    usePlayerContext();
-
+  const {
+    queue,
+    controls,
+    currentTrack,
+    currentTrackIndex,
+    getTrackPosition,
+    podcastMetadata,
+  } = usePlayerContext();
   const { isBuffering, isConnecting, isPlaying } = useCustomPlaybackState();
 
   return (
     <View>
       <FlatList
         data={queue}
+        ListHeaderComponent={() => (
+          <View>
+            <Text type={'H2'}>{podcastMetadata?.title}</Text>
+            <Text type={'H3'}>{podcastMetadata?.description}</Text>
+            <Image url={podcastMetadata?.imageUrl} />
+          </View>
+        )}
         renderItem={({ item, index }) => {
           return (
             <View style={{ padding: 12 }}>
@@ -55,7 +68,21 @@ const GreetingsScreen = () => {
                           : FONT_DARK1,
                     }}
                   >
-                    {item.date}
+                    {formatDate(item.date!)}
+                  </Text>
+                  <Text
+                    type={'H5'}
+                    style={{
+                      color:
+                        index === currentTrackIndex &&
+                        (isPlaying || isBuffering || isConnecting)
+                          ? GREEN
+                          : FONT_DARK1,
+                    }}
+                  >
+                    {`${Math.round(
+                      (item.duration! - getTrackPosition(item.id)) / 60,
+                    )} mins left`}
                   </Text>
                 </View>
 

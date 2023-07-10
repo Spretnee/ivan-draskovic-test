@@ -22,6 +22,7 @@ import { TrackWithId } from '../types';
 import { INITIAL_CURRENT_TRACK_STATE } from './constants';
 
 const PlayerContext = createContext<PlayerStateContextType>({
+  podcastMetadata: undefined,
   currentTrack: {
     id: '',
     url: ``,
@@ -42,7 +43,11 @@ const PlayerContext = createContext<PlayerStateContextType>({
   getTrackPosition: () => 0,
 });
 
-const PlayerStateProvider = ({ children, queue }: PlayerStateProviderProps) => {
+const PlayerStateProvider = ({
+  children,
+  queue,
+  podcastMetadata,
+}: PlayerStateProviderProps) => {
   const controls = useControls();
   const [currentTrack, setCurrentTrack] = useState<TrackWithId | Track>(
     INITIAL_CURRENT_TRACK_STATE,
@@ -99,6 +104,7 @@ const PlayerStateProvider = ({ children, queue }: PlayerStateProviderProps) => {
     queue: queue,
     controls: controls,
     getTrackPosition: getTrackPosition,
+    podcastMetadata: podcastMetadata,
   };
 
   return (

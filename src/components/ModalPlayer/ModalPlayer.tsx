@@ -6,7 +6,6 @@ import { styles } from './ModalPlayer.styles';
 import { MODAL_PLAYER_SNAP_POINTS } from './constants';
 import { useHandlePresentModal } from './hooks/useHandlePresentModal';
 import { usePlayerContext } from '../../providers/PlayerProvider';
-import { Header } from 'react-native/Libraries/NewAppScreen';
 import { BottomBar } from '../../screens/PlayerScreen/BottomBar';
 import { Description } from '../../screens/PlayerScreen/Description/Description';
 import { EpisodeTitle } from '../../screens/PlayerScreen/EpisodeTitle';
@@ -58,7 +57,7 @@ export const ModalPlayer = () => {
               style={{ marginBottom: 40, width: 220, height: 220 }}
             />
             <EpisodeTitle title={currentTrack.title} />
-            <Slider isPlaying={state?.isPlaying} controls={controls} />
+            <Slider isPlaying={state.isPlaying} controls={controls} />
             <Description description={currentTrack.description} />
           </View>
           <BottomBar />
