@@ -1,20 +1,22 @@
 import 'react-native-gesture-handler';
-import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
-import {RootNavigator} from './src/navigation/RootNavigator';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { RootNavigator } from './src/navigation/RootNavigator';
 
-import {GestureHandlerRootView} from 'react-native-gesture-handler';
-import {BottomSheetProvider} from './src/providers/BottomSheetProvider';
-import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
-import {useSetupPlayer} from './src/hooks/useSetupPlayer';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { BottomSheetProvider } from './src/providers/BottomSheetProvider';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { useSetupPlayer } from './src/hooks/useSetupPlayer';
 import styles from './src/screens/HomeScreen/HomeScreen.styles';
-import {ActivityIndicator} from 'react-native';
-import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
-import {GREEN} from './src/constants/colors';
+import { ActivityIndicator } from 'react-native';
+import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
+import { GREEN } from './src/constants/colors';
+import { Provider } from 'react-redux';
+import { store } from './src/store/store';
 
 const queryClient = new QueryClient();
 
 const App = () => {
-  const {isPlayerReady} = useSetupPlayer();
+  const { isPlayerReady } = useSetupPlayer();
 
   if (!isPlayerReady) {
     return (
@@ -26,11 +28,13 @@ const App = () => {
 
   return (
     <SafeAreaProvider>
-      <GestureHandlerRootView style={{flex: 1}}>
+      <GestureHandlerRootView style={{ flex: 1 }}>
         <BottomSheetModalProvider>
           <QueryClientProvider client={queryClient}>
             <BottomSheetProvider>
-              <RootNavigator />
+              <Provider store={store}>
+                <RootNavigator />
+              </Provider>
             </BottomSheetProvider>
           </QueryClientProvider>
         </BottomSheetModalProvider>

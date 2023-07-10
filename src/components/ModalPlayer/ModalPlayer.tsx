@@ -15,12 +15,14 @@ import { Image } from '../../screens/PlayerScreen/Image/Image';
 
 import { DismissChevron } from './DismissChevron';
 import { useCustomPlaybackState } from '../../hooks/useCustomPlaybackState';
+import { useControls } from '../../hooks/useControls';
 
 const { height } = Dimensions.get('screen');
 export const ModalPlayer = () => {
   const bottomSheetModalRef = useRef<BottomSheetModal>(null);
 
-  const { currentTrack, controls } = usePlayerContext();
+  const { currentTrack } = usePlayerContext();
+  const controls = useControls();
   const { handlePresentModalPress, dismissModal } =
     useHandlePresentModal(bottomSheetModalRef);
 

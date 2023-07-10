@@ -10,19 +10,20 @@ import { SvgXml } from 'react-native-svg';
 import { PAUSE, PLAY_BUTTON } from '../../assets/images/svg';
 import { formatDate } from '../PlayerScreen/Slider/utils/formatDate';
 import { Image } from '../PlayerScreen/Image/Image';
+import { useControls } from '../../hooks/useControls';
 
 //TODO: refactor screen
 
 const GreetingsScreen = () => {
   const {
     queue,
-    controls,
     currentTrack,
     currentTrackIndex,
     getTrackPosition,
     podcastMetadata,
   } = usePlayerContext();
   const { isBuffering, isConnecting, isPlaying } = useCustomPlaybackState();
+  const controls = useControls();
 
   return (
     <View>

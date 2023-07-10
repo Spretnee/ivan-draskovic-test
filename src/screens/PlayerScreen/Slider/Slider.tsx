@@ -1,5 +1,5 @@
 import { View } from 'react-native';
-import React, { useContext, useState } from 'react';
+import React from 'react';
 import { Slider as OriginSlider } from '@miblanchard/react-native-slider';
 import { styles } from './Slider.styles';
 import { GREEN, GREEN_LIGHT } from '../../../constants/colors';
@@ -20,8 +20,6 @@ export default function Slider({
   const { duration, position } = useProgress();
 
   //TODO: tidy  up types
-
-  console.log(formatTime(duration));
 
   return (
     <>
