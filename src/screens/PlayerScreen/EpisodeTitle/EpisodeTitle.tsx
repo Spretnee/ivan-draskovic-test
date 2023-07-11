@@ -3,7 +3,7 @@ import React from 'react';
 import {styles} from './EpisodeTitle.styles';
 import {Text} from '../../../components/Text';
 
-type EpisodeTitleProps = {title: string | undefined};
+type EpisodeTitleProps = {title: string};
 
 export const EpisodeTitle = ({title}: EpisodeTitleProps) => {
   return (

@@ -1,29 +1,19 @@
-import {
-  View,
-  Pressable,
-  ScrollView,
-  SafeAreaView,
-  ActivityIndicator,
-} from 'react-native';
-import React, {useContext, useEffect, useState} from 'react';
-import {RootStackParamList, ScreenPropsPlayer} from '../../navigation/types';
+import {View, Pressable, ScrollView, SafeAreaView} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {ScreenPropsPlayer} from '../../navigation/types';
 import {Header} from './Header';
 import {BottomBar} from './BottomBar';
 import {TranscriptionButton} from './TranscriptionButton';
+import {Slider} from './Slider';
+import {Image} from './Image/Image';
 import {EpisodeTitle} from './EpisodeTitle';
 import {Description} from './Description/Description';
-import {PlayerContext} from '../../providers/PlayerProvider';
+import {addPlaylist} from './utils/addPlaylist';
 
-const PlayerScreen = () => {
-  // const {
-  //   currentTrackIndex,
-  //   currentTrack,
-  //   controls,
-  //   progressBarDuration,
-  //   progressBarPosition,
-  // } = useContext(PlayerContext);
-
-  //TODO: const {controls,currentTrack} = usePlayer(queue:Track[])
+const PlayerScreen = ({route}: ScreenPropsPlayer) => {
+  const {episode} = route.params;
+  console.log(episode);
+  addPlaylist(episode);
 
   return (
     <SafeAreaView style={{flex: 1}}>
@@ -32,17 +22,12 @@ const PlayerScreen = () => {
         style={{
           paddingVertical: 32,
           paddingHorizontal: 21,
-        }}
-      >
-        {/* <Image url={currentTrack?.artwork} /> */}
-        {/* <EpisodeTitle title={currentTrack.title} /> */}
-        {/* <Slider
-          controls={controls}
-          duration={progressBarDuration}
-          position={progressBarPosition}
-        /> */}
-        {/* <TranscriptionButton /> */}
-        {/* <Description description={currentTrack.description} /> */}
+        }}>
+        <Image uri={episode.image} />
+        <EpisodeTitle title={episode.title} />
+        <Slider />
+        <TranscriptionButton />
+        <Description description={episode.summary} />
       </View>
       <BottomBar />
     </SafeAreaView>

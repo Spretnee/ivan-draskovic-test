@@ -1,32 +1,21 @@
-import {
-  View,
-  Image as RNImage,
-  ImagePropsBase,
-  ImageStyle,
-  StyleProp,
-} from 'react-native';
+import {View, Image as RNImage} from 'react-native';
 import React from 'react';
 import {styles} from './Image.styles';
-import {Track} from 'react-native-track-player';
+import {Episode} from '../../../api/types';
 
-interface ImageType {
-  url: string | number | undefined | null;
-  style?: StyleProp<ImageStyle>;
-}
+type ImageType = {
+  uri: Episode['image'];
+};
 
-export const Image = ({url, style}: ImageType) => {
+export const Image = ({uri}: ImageType) => {
   return (
     <View style={styles.container}>
-      {url ? (
-        <RNImage
-          style={[{width: 160, height: 160}, style]}
-          source={{
-            uri: url.toString(),
-          }}
-        />
-      ) : (
-        <View style={styles.container}></View>
-      )}
+      <RNImage
+        style={{width: 160, height: 160}}
+        source={{
+          uri: uri,
+        }}
+      />
     </View>
   );
 };

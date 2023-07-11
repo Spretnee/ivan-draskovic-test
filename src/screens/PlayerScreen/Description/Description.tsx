@@ -3,21 +3,21 @@ import React from 'react';
 import {styles} from './Description.styles';
 import {Text} from '../../../components/Text';
 import {Episode} from '../../../api/types';
-import {formatString} from '../../PodcastPreviewScreen/PodcastEpisodeList/utils/formatString';
-import {Track} from 'react-native-track-player';
 
 type DescriptionProps = {
-  description: Track['description'];
+  description: Episode['summary'];
 };
 
 export const Description = ({description}: DescriptionProps) => {
   return (
-    <View style={{paddingVertical: 40}}>
-      <Text type="H4">{description}</Text>
+    <View>
+      <Text type="H4" numberOfLines={2}>
+        {description}
+      </Text>
       <Pressable>
-        {/* <Text type="H4" style={{textDecorationLine: 'underline'}}>
+        <Text type="H4" style={{textDecorationLine: 'underline'}}>
           See More
-        </Text> */}
+        </Text>
       </Pressable>
     </View>
   );
