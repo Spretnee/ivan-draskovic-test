@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import GreetingsScreen from '../screens/PodcastsScreen/PodcastsScreen';
 import YourPodcastsScreen from '../screens/YourPodcastsScreen/YourPodcastsScreen';
+import { ModalPlayer } from '../components/ModalPlayer';
 import { SearchScreen } from '../screens/SearchScreen/SearchScreen';
 import { SvgXml } from 'react-native-svg';
 import { HOME, PODCAST_LIBRARY, SEARCH } from '../assets/images/svg';

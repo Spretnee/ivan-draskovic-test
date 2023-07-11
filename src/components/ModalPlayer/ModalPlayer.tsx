@@ -7,16 +7,16 @@ import { MODAL_PLAYER_SNAP_POINTS } from './constants';
 import { useHandlePresentModal } from './hooks/useHandlePresentModal';
 import { BottomBar } from '../../screens/PlayerScreen/BottomBar';
 import { Description } from '../../screens/PlayerScreen/Description/Description';
-import { EpisodeTitle } from '../../screens/PlayerScreen/EpisodeTitle';
-import Slider from '../../screens/PlayerScreen/Slider/Slider';
 import { BACKGROUND } from '../../constants/colors';
-import { Image } from '../../screens/PlayerScreen/Image/Image';
 
 import { DismissChevron } from './DismissChevron';
 import { useCustomPlaybackState } from '../../hooks/useCustomPlaybackState';
 import { useControls } from '../../hooks/useControls';
 import { useAppSelector } from '../../store/hooks';
 import { selectPlayerState } from '../../store/playerSlice';
+import { Image } from '../../screens/PlayerScreen/Image/Image';
+import { Slider } from '../../screens/PlayerScreen/Slider';
+import { EpisodeTitle } from '../../screens/PlayerScreen/EpisodeTitle';
 
 const { height } = Dimensions.get('screen');
 export const ModalPlayer = () => {
@@ -56,10 +56,10 @@ export const ModalPlayer = () => {
             }}
           >
             <Image
-              url={currentTrack.artwork}
+              url={currentTrack?.artwork}
               style={{ marginBottom: 40, width: 220, height: 220 }}
             />
-            <EpisodeTitle title={currentTrack.title} />
+            <EpisodeTitle title={currentTrack?.title} />
             <Slider isPlaying={state.isPlaying} controls={controls} />
             <Description description={currentTrack.description} />
           </View>

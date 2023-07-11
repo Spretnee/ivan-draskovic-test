@@ -1,0 +1,17 @@
+const CATEGORIES = [
+  'society',
+  'culture',
+  'education',
+  'arts',
+  'business',
+  'religion',
+  'spirituality',
+  'music',
+  'health',
+  'comedy',
+  'news',
+  'fitness',
+  'family',
+  'kids',
+  'technology',
+];

@@ -1,13 +1,12 @@
-import TrackPlayer, {useProgress} from 'react-native-track-player';
+import TrackPlayer, { useProgress } from 'react-native-track-player';
 import {
   BACKWARD_JUMP_INTERVAL,
   FORWARD_JUMP_INTERVAL,
   INITIAL_TRACK,
 } from '../constants/player';
-import {INITIAL_POSITION} from '../screens/PlayerScreen/Slider/constats';
 
 export const useControls = () => {
-  const {position, duration} = useProgress();
+  const { position } = useProgress();
   const onSlidingComplete = async (value: Array<number>) => {
     return await TrackPlayer.seekTo(value[INITIAL_TRACK]);
   };
@@ -46,7 +45,5 @@ export const useControls = () => {
     next,
     previous,
     skip,
-    position,
-    duration,
   };
 };

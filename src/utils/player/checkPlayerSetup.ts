@@ -14,11 +14,14 @@ export const checkPlayerIsSetup = async () => {
     await TrackPlayer.getCurrentTrack();
     isSetup = true;
   } catch (e) {
-    await TrackPlayer.setupPlayer();
+    await TrackPlayer.setupPlayer({
+      maxCacheSize: 5000,
+    });
     isSetup = true;
     await TrackPlayer.updateOptions({
       android: {
-        appKilledPlaybackBehavior: AppKilledPlaybackBehavior.PausePlayback,
+        appKilledPlaybackBehavior:
+          AppKilledPlaybackBehavior.StopPlaybackAndRemoveNotification,
       },
       progressUpdateEventInterval: PROGRESS_UPDATE_EVENT_INTERVAL,
 

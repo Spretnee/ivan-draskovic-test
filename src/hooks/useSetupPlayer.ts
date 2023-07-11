@@ -1,9 +1,5 @@
-import TrackPlayer, {Track} from 'react-native-track-player';
-import {Podcast, Queue} from '../api/types';
-import {useEffect, useState} from 'react';
-import {formatPlaylist} from '../utils/player/formatPlaylist';
-import {checkPlayerIsSetup} from '../utils/player/checkPlayerSetup';
-import {addTrack} from '../utils/player/addTrack';
+import { useEffect, useState } from 'react';
+import { checkPlayerIsSetup } from '../utils/player/checkPlayerSetup';
 
 export const useSetupPlayer = () => {
   const [isPlayerReady, setIsPlayerReady] = useState<boolean>(false);
@@ -17,5 +13,5 @@ export const useSetupPlayer = () => {
     setupPlayer();
   }, []);
 
-  return {isPlayerReady};
+  return { isPlayerReady };
 };

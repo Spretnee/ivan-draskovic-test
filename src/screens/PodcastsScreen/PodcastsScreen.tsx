@@ -12,11 +12,11 @@ import { formatDate } from '../PlayerScreen/Slider/utils/formatDate';
 import { Image } from '../PlayerScreen/Image/Image';
 import { useControls } from '../../hooks/useControls';
 import { useSelectPlayerState } from '../../store/playerSlice';
+import TrackPlayer from 'react-native-track-player';
 
 //TODO: refactor screen
 
 const GreetingsScreen = () => {
-  // const { currentTrack, currentTrackIndex } = usePlayerContext();
   const { isBuffering, isConnecting, isPlaying } = useCustomPlaybackState();
   const controls = useControls();
 
@@ -103,7 +103,7 @@ const GreetingsScreen = () => {
                               index,
                               multiTrackProgress[item.id] || 0,
                             );
-                            controls.play();
+                            TrackPlayer.play();
                           }
                     }
                     style={{ padding: 10 }}

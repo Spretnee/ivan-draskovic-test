@@ -82,6 +82,9 @@ const selectCurrentTrackIndex = createSelector(
   player => player.currentTrackIndex,
 );
 
+/**
+ * Selector of selectors for player slice */
+
 export const selectPlayerState = createSelector(
   [
     selectPodcastMetadata,
