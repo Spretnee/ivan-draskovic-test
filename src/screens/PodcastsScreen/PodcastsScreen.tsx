@@ -27,7 +27,10 @@ export const PodcastsScreen = ({ route }: any) => {
     useSelectPlayerStore();
 
   const isQueueLoaded = useMemo(
-    () => data?.episodes.data[currentTrackIndex!].id === currentTrack.id,
+    () =>
+      currentTrackIndex
+        ? data?.episodes.data[currentTrackIndex].id === currentTrack.id
+        : false,
     [data],
   );
 

@@ -19,7 +19,7 @@ export const BottomSheetPlayer = ({
   const { isIdle, isReady, isLoading, isPlaying, isPaused } = state;
 
   if (
-    (!isIdle && !isReady && !isPlaying && !isPaused) ||
+    (isIdle && !isReady && !isPlaying && !isPaused) ||
     currentTrack.id === ''
   ) {
     bottomSheetRef.current?.close();
@@ -30,6 +30,7 @@ export const BottomSheetPlayer = ({
   return (
     <BottomSheet
       ref={bottomSheetRef}
+      index={-1}
       bottomInset={60}
       detached={true}
       backgroundStyle={styles.backgroundStyle}

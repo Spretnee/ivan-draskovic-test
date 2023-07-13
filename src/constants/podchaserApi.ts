@@ -1,5 +1,6 @@
 export const CATEGORIES = [
   'family',
+  'comedy',
   'society',
   'culture',
   'education',
@@ -9,7 +10,6 @@ export const CATEGORIES = [
   'spirituality',
   'music',
   'health',
-  'comedy',
   'news',
   'fitness',
   'kids',
