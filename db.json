@@ -1,6 +1,430 @@
 {
   "podcasts": [
     {
+            "id": "2049",
+            "title": "The Birth Hour - A Birth Story Podcast",
+            "description": "Whether you are pregnant and looking for inspirational birth stories through your pregnancy, trying to conceive, breastfeeding, or postpartum; if you're a first time mom or a veteran parent of multiple children, you can learn, laugh and maybe even cry a little at these moving childbirth stories from those willing to share one of the most intimate moments of their lives.",
+            "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+            "modifiedDate": "2023-07-13 09:39:28",
+            "numberOfEpisodes": 869,
+            "episodes": {
+                "data": [
+                    {
+                        "id": "100090345",
+                        "title": "Partner Podcast Preview Clip - Tyson Cap",
+                        "description": "This is a preview of our Partner Podcast series from The Birth Hour. These episodes release every Friday for our listener supporters at the $10+ level via Patreon. Go to patreon.com/birthhour to become a patron and receive access to these weekly partner episodes as well as other bonuses such as access to over 350 archived episodes, membership in our private Facebook group, and other bonus content. We are so appreciative of your support!",
+                        "airDate": "2021-10-18 23:43:16",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/birthhour/Partner_Podcast_Preview_Clip_Tyson_Oberndorfer.mp3?dest-id=308903",
+                        "length": 262,
+                        "modifiedDate": "2023-02-14 20:45:10"
+                    },
+                    {
+                        "id": "163365272",
+                        "title": "Postpartum Story: Perinatal Depression/Anxiety after Emergency C-sections and NICU - Amy Serafin",
+                        "description": "Listen to Melanie's first episode in our archives via Patreon! This episode is part of our postpartum series in partnership with Ergobaby. Check out their baby carriers at ergobaby.com. Know Your Options Online Childbirth Course Use code 100OFF for $100 off enrollment Beyond the First Latch Course (comes free with KYO course) Support The Birth Hour via Patreon!",
+                        "airDate": "2023-02-14 10:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/birthhour/Amy_Serafin_-_21323_3.30_PM.mp3?dest-id=308903",
+                        "length": 3302,
+                        "modifiedDate": "2023-05-31 18:29:19"
+                    },
+                    {
+                        "id": "153501753",
+                        "title": "Unmedicated Hospital Birth, Peaceful & Healing Homebirth, and Loss Following a Pallister-Killian Syndrome Diagnoses - Katie Kirk",
+                        "description": "This episode is in partnership with Ergobaby. Check out their baby carriers at ergobaby.com. Know Your Options Online Childbirth Course Use code 100OFF for $100 off enrollment Beyond the First Latch Course (comes free with KYO course) Support The Birth Hour via Patreon!",
+                        "airDate": "2022-10-25 09:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/birthhour/Katie_Kirk_-_102422_6.14_PM.mp3?dest-id=308903",
+                        "length": 4129,
+                        "modifiedDate": "2023-06-06 08:06:24"
+                    },
+                    {
+                        "id": "135412171",
+                        "title": "Planned Birth Center Birth Turned Emergency Induction and C-Section - Jewel Broussard",
+                        "description": "Links This episode is sponsored by Kindred Bravely. Use code BIRTHHOUR for 20% off at kindredbravely.com Know Your Options Online Childbirth Course - Use Code 100OFF for $100 off Beyond the First Latch Course Support The Birth Hour via Patreon!",
+                        "airDate": "2022-05-05 09:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/birthhour/Jewel_Broussard_-_5422_4.15_PM.mp3?dest-id=308903",
+                        "length": 2194,
+                        "modifiedDate": "2023-04-23 07:10:00"
+                    },
+                    {
+                        "id": "36666688",
+                        "title": "343| Pregnancy and Birth Story with Paraplegia - Rachel Halladay",
+                        "description": "Rachel had always envisioned herself having an unmedicated home or birth center birth, but when she found out she was considered high risk she knew that wouldn’t be possible. So, she and her fiancé hired a doula and chose a hospital and team that best fit their birth wishes. Rachel delivered her daughter vaginally and unmedicated 3 weeks early and just 14 hours after arriving at the hospital! As smooth as her pregnancy and delivery went, she’s still dealing with some unexpected postpartum complications 3 months later.",
+                        "airDate": "2019-02-12 10:00:00",
+                        "imageUrl": "http://static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/birthhour/Rachel_Halladay.mp3?dest-id=308903",
+                        "length": 2146,
+                        "modifiedDate": "2023-05-04 04:15:13"
+                    },
+                    {
+                        "id": "177750998",
+                        "title": "Two Unmedicated Hospital Birth Stories - Cristina Bocanegra [rebroadcast]",
+                        "description": "Links: Today's episode is sponsored by Motif Medical. See how you can get Motif's Luna or Aura breast pumps covered through insurance at motifmedical.com/birthhour.  Know Your Options Online Childbirth Course Beyond the First Latch Course (comes free with KYO course) Support The Birth Hour via Patreon!",
+                        "airDate": "2023-07-04 09:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/birthhour/Cristina_Bocanegra_replay_-_62923_11.00_AM.mp3?dest-id=308903",
+                        "length": 2720,
+                        "modifiedDate": "2023-07-05 17:12:39"
+                    },
+                    {
+                        "id": "78793",
+                        "title": "67| Empowering Homebirth Story - Bethanne Wanamaker",
+                        "description": "Bethanne Wanamaker is a certified holistic nutrition educator, and the founder of Edible Goddess, an international conscious lifestyle brand that cares deeply about your empowerment. She teaches progressive strategies that awaken you to your highest potential by following the body's inherent wisdom, and with an intentional mindset, daily self-care rituals, and radical self-love. Be sure to check out the show notes page, and follow us on Instagram.  ",
+                        "airDate": "2016-05-19 09:00:00",
+                        "imageUrl": "http://static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/birthhour/Bethanne_Wanamaker.mp3?dest-id=308903",
+                        "length": 2577,
+                        "modifiedDate": "2022-01-04 21:11:27"
+                    },
+                    {
+                        "id": "78809",
+                        "title": "52| An Island Pregnancy and Birth Story - Rachel Kessler",
+                        "description": "Rachel is a new mom to a little boy named Rónán and she owns and operates a small batch hand spun, plant dyed yarn business on Etsy called 44Clovers. In this episode, Rachel shares the story of the birth of her son, who was 3 weeks and 3 days early. She delivered in a wonderful birth center in the nearest town called The Birthplace with a doula, midwife, nurse and her husband.",
+                        "airDate": "2016-03-24 09:00:00",
+                        "imageUrl": "http://static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/birthhour/Rachel_Kessler.mp3?dest-id=308903",
+                        "length": 2859,
+                        "modifiedDate": "2023-01-28 15:09:14"
+                    },
+                    {
+                        "id": "78839",
+                        "title": "22| Blythe Fike Share's Her Sixth Birth Story - The Epidural Birth",
+                        "description": "Blythe's episode is pretty light hearted and will definitely make you laugh but I also think it's so valuable in that she wasn't afraid to trust her gut and go for the type of birth she wanted even though she had done things very differently the first FIVE times! I love how Blythe and her husband tease each other about how funny the hospital birth experience is after having so many homebirths. These two obviously really know each other on all sorts of levels and make an awesome birthing team.",
+                        "airDate": "2015-12-08 10:00:00",
+                        "imageUrl": "http://static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/birthhour/Blythe_Fike_The_Epidural_Birth.mp3?dest-id=308903",
+                        "length": 3789,
+                        "modifiedDate": "2022-01-04 21:11:27"
+                    },
+                    {
+                        "id": "2873925",
+                        "title": "109| Planned Induction Hospital Birth Stories - Felicity Taylor",
+                        "description": "Today's birth story guest shares all three of her birth stories, which took place in hospitals. She talks about her baby's shoulders getting stuck with her second birth, and of how her doctor gave her the option of being induced a week early or having a cesarean with her third baby, which really scared her. She chose induction and ended up stalling out during labor, and she was prepped for a c section but as they were wheeling her into the operating room, she felt the urge to push and her baby was born!",
+                        "airDate": "2016-11-29 10:00:00",
+                        "imageUrl": "http://static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/birthhour/Felicity_Taylor.mp3?dest-id=308903",
+                        "length": 2820,
+                        "modifiedDate": "2022-08-28 23:13:58"
+                    },
+                    {
+                        "id": "2873944",
+                        "title": "90|Overcoming Gestational Diabetes in Pregnancy: Two Hospital Births - Adanna Dill",
+                        "description": "Adanna had two wonderful birth experiences with her children. Her first child was born in 2010. Adanna and her husband prepared for the birth by attending Lamaze class and planned a natural birth. Adanna had gestational diabetes during this pregnancy and managed it with a strict diet. She was excited to give birth, but fearful, even with all of her preparations, so she decided to get an epidural when it was offered to her. It turned out to be a beautiful experience without any complications. She was very happy that her beautiful daughter was healthy, and that the birth was relatively easy after a tough pregnancy with gestational diabetes and severe morning sickness.  In 2013 Adanna gave birth to her second child, a baby boy. This time she opted to have him naturally without any pain medication. Adanna’s labor with her second child went really quickly and this time she had the full experience that she desired.",
+                        "airDate": "2016-09-22 09:00:00",
+                        "imageUrl": "http://static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/birthhour/Adanna.mp3?dest-id=308903",
+                        "length": 1540,
+                        "modifiedDate": "2022-01-04 21:11:27"
+                    },
+                    {
+                        "id": "9635444",
+                        "title": "115| Gestational Diabetes, Cesarean, and VBAC - Ellen Richards",
+                        "description": "Ellen Richards is English born, and is now an Australian citizen, living with her family in South East Queensland. She and her partner, Billy, have 4 children, aged 13 years, 11 years, 8 years and 9 months. She was 44 when her fourth child was born. All have been planned to be born at home, and two of them were. Each birth has been a incredibly positive experience and each was totally different: an elective cesarean birth at almost 43 weeks; an ecstatic birth after a 76 hour labour; an intense 50 minute labour after a patient 10 day wait (with broken waters); and, a chemical hospital induction (which was at the clear indication of her unborn child). She also had gestational diabetes during two of her pregnancies, including one of the homebirths. Each pregnancy and birth has required Ellen and Billy to make many choices, and it is these choices, with the support of their midwives, that have made each birth such a positive experience.",
+                        "airDate": "2016-12-20 10:00:00",
+                        "imageUrl": "http://static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/birthhour/Ellen_Richards.mp3?dest-id=308903",
+                        "length": 5259,
+                        "modifiedDate": "2022-01-04 21:11:27"
+                    },
+                    {
+                        "id": "9823186",
+                        "title": "117| Bryn Huntpalmer's First Birth Story (REBROADCAST)",
+                        "description": "My firstborn is turning 5 in less than a week, FIVE! How did the time go by so fast?! I know that's so cliche to say, but it truly surprises me that the little baby that made me a mama is now in full blown kid-mode. Since this time of year is crazy at our house with two birthdays and Christmas all within two weeks of each other, I thought I'd take a step back and do a couple replay episodes. Today I'm replaying that first wild and crazy 34 hour labor and homebirth with my daughter Adelaide. It's a fun episode too because I shared it along with my husband, Richard, who was such a huge part of this birth story. I needed him every single step of the way during her birth so I love that we recorded this story together.",
+                        "airDate": "2016-12-27 10:00:00",
+                        "imageUrl": "http://static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/birthhour/Adelaide_Birth_Story_Replay.mp3?dest-id=308903",
+                        "length": 3658,
+                        "modifiedDate": "2022-08-04 18:50:34"
+                    },
+                    {
+                        "id": "15412650",
+                        "title": "145| Five Birth Stories - Hospital and Home Births - Mary Haseltine",
+                        "description": "Mary shares the stories of her three planned homebirths (two in water); one crazy-fast, planned hospital birth; and one unplanned hospital birth that resulted in a natural footling breech birth. She also has experienced a natural miscarriage at home. Mary is a mother to five on earth and one in eternity. She works as a certified birth and bereavement doula, birth educator, and as a writer at Better Than Eden. There, she shares about birth, her faith, mothering, homeschooling, miscarriage, raising boys, and more. She is also a featured writer at Elizabeth Ministry International. A theology graduate, she has a passion for helping women experience their God-given “feminine genius” through birth, motherhood, and in the very design of their body. She believes that treating babies and women with the utmost dignity and respect at every moment during pregnancy and birth is necessary for building strong families and a culture of life and love. You can find her writing at Better Than Eden or connect on Facebook and Instagram. And thanks to Earth Mama Angel Baby for sponsoring today's episode!",
+                        "airDate": "2017-04-04 09:00:00",
+                        "imageUrl": "http://static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/birthhour/Mary_Haseltine.mp3?dest-id=308903",
+                        "length": 3788,
+                        "modifiedDate": "2022-04-19 23:05:24"
+                    },
+                    {
+                        "id": "18282046",
+                        "title": "166| Three Beautiful Hospital Births & Mammary Hypoplasia - Sarah Dagger",
+                        "description": "Sarah Daggett had 3 very positive unmedicated hospital births with her OB and a doula. She struggled with low supply when breastfeeding and was eventually diagnosed with mammary hypoplasia, which is a condition she didn't know about before her diagnosis. Connect with her on Instagram at @welcometoourmess. This episode is sponsored by Brentwood Home, a family-owned company that has been crafting mattresses and bedding essentials in Los Angeles for decades. Brentwood Home uses natural, ethically sourced materials that are safe for your family and the environment. Outfit your nursery with their top-rated crib mattresses, changing pads, and nursing pillows, made with healthy fibers like organic cotton and organic coconut husk. Visit brentwoodhome.com/birthhour and use the code birthhour for 15% off your purchase!",
+                        "airDate": "2017-06-13 09:00:00",
+                        "imageUrl": "http://static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/birthhour/Sarah_Daggett.mp3?dest-id=308903",
+                        "length": 3150,
+                        "modifiedDate": "2022-01-04 21:11:27"
+                    },
+                    {
+                        "id": "88201036",
+                        "title": "Introducing Zombiemum!",
+                        "description": " Introducing #Zombiemum, a new podcast about the psychological effects of having and raising children. Since her own experience with postpartum psychosis, writer and illustrator Laura Dockrill (@LauraDockrill) has been on a mission to smash the stigmas associated with parental mental health. Each week, Laura will be joined by guests from a range of different backgrounds and disciplines, all with their own experiences. Subscribe now to hear the rest of the first episode with musician Paloma Faith!",
+                        "airDate": "2021-03-31 09:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/birthhour/Introducing-Zombiemum__-_33021_10.08_PM.mp3?dest-id=308903",
+                        "length": 594,
+                        "modifiedDate": "2022-01-20 04:23:18"
+                    },
+                    {
+                        "id": "91813553",
+                        "title": "Partner Podcast Preview Clip - Richard returns",
+                        "description": "This is a preview of our Partner Podcast series from The Birth Hour. These episodes release every Friday for our listener supporters at the $10+ level via Patreon. Go to patreon.com/birthhour to become a patron and receive access to these weekly partner episodes as well as other bonuses such as access to over 350 archived episodes, membership in our private Facebook group, and other bonus content. We are so appreciative of your support!",
+                        "airDate": "2021-05-22 02:09:09",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/birthhour/Richard_Huntpalmer_returns.mp3?dest-id=308903",
+                        "length": 773,
+                        "modifiedDate": "2022-01-20 04:23:18"
+                    },
+                    {
+                        "id": "91852146",
+                        "title": "Three Hospital Births, PPD, & Pelvic Floor Therapy - Annie Davis",
+                        "description": "On this episode, Annie shares her three birth stories, and having postpartum depression and pelvic floor issues.",
+                        "airDate": "2021-05-23 02:21:44",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/birthhour/Annie_Davis_Encore_-_52221_9.09_PM.mp3?dest-id=308903",
+                        "length": 2480,
+                        "modifiedDate": "2022-01-20 04:23:18"
+                    },
+                    {
+                        "id": "93509691",
+                        "title": "Partner Podcast Preview Clip - Tom McFarlin",
+                        "description": "This is a preview of our Partner Podcast series from The Birth Hour. These episodes release every Friday for our listener supporters at the $10+ level via Patreon. Go to patreon.com/birthhour to become a patron and receive access to these weekly partner episodes as well as other bonuses such as access to over 350 archived episodes, membership in our private Facebook group, and other bonus content. We are so appreciative of your support!",
+                        "airDate": "2021-06-18 19:43:26",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/birthhour/Partner_Podcast_Preview_Clip_-_Tom_McFarlin_-_61821_2.40_PM.mp3?dest-id=308903",
+                        "length": 237,
+                        "modifiedDate": "2022-01-20 04:23:18"
+                    },
+                    {
+                        "id": "95918351",
+                        "title": "Intrauterine Growth Restriction (IUGR) and Preterm Induction Birth Story - Sara Gottlieb-Cohen",
+                        "description": "Sarah shares her birth story and discusses her positive NICU experience. Today's sponsor is Brightside. Take your free mental health assessment and get up to ONE HUNDRED DOLLARS credit on your first month of treatment at Brightside.com/birthhour. Know Your Options Online Childbirth Course: https://courses.thebirthhour.com/limited-time Beyond the Latch Course: https://courses.thebirthhour.com/enroll-b2w/ Support The Birth Hour via Patreon!: https://patreon.com/birthhour",
+                        "airDate": "2021-07-29 09:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/birthhour/Sara_Gottlieb-Cohen.mp3?dest-id=308903",
+                        "length": 2344,
+                        "modifiedDate": "2022-12-22 12:25:24"
+                    }
+                ]
+            }
+        },
+    {
+            "id": "663705",
+            "title": "In The Trenches with the Toulons",
+            "description": "Every week join Touly and Ralph as they jump into the trenches discussing the good, bad and humorous side of marriage & relationships. The couple also invite guests to discuss their personal journey pertaining to the weekly topic.\n\nTouly and Ralph are newlyweds trying to make this their best and last marriage by pulling the veil back, exposing the other sides of marriage.\n\nPlease subscribe, rate and comment.",
+            "imageUrl": "https://ssl-static.libsyn.com/p/assets/3/b/c/a/3bca16769e8f179a/itunes_avatar.jpg",
+            "modifiedDate": "2023-07-10 00:38:59",
+            "numberOfEpisodes": 98,
+            "episodes": {
+                "data": [
+                    {
+                        "id": "29172889",
+                        "title": "EP09 - \"Sex on Tuesday\"",
+                        "description": "JT and Ralph take on questions about sex & intimacy. Keeping your spouse interested along with balancing the children and/or work. Scheduling sex..genuine or repetition? More rambling and Ralph mic issue, sorry guys :) Subscribe, Rate, Comment and check us out at www.inthetrenchespodcast.com",
+                        "airDate": "2018-06-18 05:43:37",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/7/1/d/e/71de0979aa6a27b8/artworks-000362054865-70xqqc-original.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/459841803-the-trenches-213801209-ep09-sex-on-tuesday.mp3?dest-id=705877",
+                        "length": 2934,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "30271324",
+                        "title": "EP15 -\"Transitioning from the Savage life\"",
+                        "description": "Jumping into the Trenches with the Toulons this week is Yoli, a single young women, who has all her stuff together but isn't having much luck in the dating area. Yoli takes us on the journey from giving men 24 hours to use her number or its over, figuring out how to manage her blunt tongue, battling with depression and being okay with not having the romantic piece of her life complete just yet. Yoli gives hope to anyone in her situation and that patience is the key, don't give up hope and that it will happen to you. Does have to happen in the order you thought it was, or it could, just know that if you want it all that you can have it all. The key is to not get in your own way and to be open to the process. If you know someone who enjoyed this episode please share. **The National Suicide Prevention Lifeline is a national network of local crisis centers that provides free and confidential emotional support to people in suicidal crisis or emotional distress 24 hours a day, 7 days a week. 1-800-273-8255**",
+                        "airDate": "2018-07-30 10:19:05",
+                        "imageUrl": "http://static.libsyn.com/p/assets/3/a/7/c/3a7c91e22d06bc37/itunes_avatar.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/thetrenches/EP15_-__Transitioning_from_the_Savage_life_.mp3?dest-id=705877",
+                        "length": 3688,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "36859041",
+                        "title": "EP43- \"Her pleasure..with or without you\"",
+                        "description": "Jumping into the trenches with the Toulons this week with the owner of \"HerPleasure\" Shop, an online sex toy line, Mrs. Iyana M. Mrs. Iyana is letting the men and especially the women know that its okay to brings toys into the bedroom. She enlightens us on some of the sex toys in her line, good ways to approach bringing toys into the bedroom and also shares her personal experiences with sex toys. Married or single, at the end of the day, you need to be satisfied! If you aren't comfortable telling your partner or spouse what you want/need, then what are you doing with them?? You can check out herpleasure at: Instagram - @herpleasureshop Website - https://herpleasureshop.myshopify.com",
+                        "airDate": "2019-02-18 05:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/4/d/8/7/4d87495c96e6e70c/itunes_avatar.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/EP43-_Her_Pleasure..with_or_without_you_mixdown.mp3.mp3?dest-id=705877",
+                        "length": 2499,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "39589366",
+                        "title": "EP55 - \"Mothers do it ALL!\"",
+                        "description": "This short little visit to the Trenches this week, we celebrate Mothers Day by going through a list of things that Mothers may deal with. Please remember to tell a friend and Subscribe, Rate and Comment. Always, thank you for your support..and Until next time",
+                        "airDate": "2019-05-13 06:01:55",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/f/f/8/8/ff884475afed3d46/itunes_avatar.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/EP55_-_mothers_do_it_all_mixdown.mp3?dest-id=705877",
+                        "length": 2197,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "42010395",
+                        "title": "EP64 - \"Marriage is meant for growth, not happiness\"",
+                        "description": "Trench Topic came from the article, \"Marriage Is Not Meant to Make You Happy, Its Meant To Make You Conscious\" by Brianna Wiest. Hopefully this gave you a different view on marriage and what it could really do for an individual, not just the couple. Paternity Ward will drop 7/17 (Touly's BIRTHDAY) after approval from the proper authorities, lol  ",
+                        "airDate": "2019-07-15 04:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/5/a/4/8/5a481db02f721d20/itunes_avatar.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/EP64_-_marriageyougrowth_mixdown.mp3?dest-id=705877",
+                        "length": 3078,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "42971479",
+                        "title": "EP67 - \"Back seat\"",
+                        "description": "Trench Topic this week, the Toulons discuss the impact of losing your children at the hands of your spouse. Topic was taken from the New York father, who forgot about his 1 year old twins in the back seat of the car for 8 hours.",
+                        "airDate": "2019-08-05 04:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/b/f/0/bbf0c5c296ebe9b5/itunes_avatar.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/EP67_-_backseat_mixdown.mp3?dest-id=705877",
+                        "length": 2937,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "28009804",
+                        "title": "Lets meet at Target",
+                        "description": "In this episode, JT and Ralph do more rambling about the first stages of dating for them. The introduction to family and friends, and how that steps could mean different things. Also opposite sex friends and how the two handled this difficult conversation for most. Thank you for all the support, please continue to listen, subscribe and rate. www.inthetrenchespodcast.com",
+                        "airDate": "2018-05-07 12:00:29",
+                        "imageUrl": "http://static.libsyn.com/p/assets/3/7/4/1/3741286302cb3d19/itunes_avatar.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/thetrenches/ITT03_-_Meeting_at_Target.mp3?dest-id=705877",
+                        "length": 2703,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "28198528",
+                        "title": "Its Real Lite",
+                        "description": "Touly and Ralph sit down with another guest going through the journey of having too much quantity to just wanting some quality. Exploring what is on the checklist of \"future wife\" wants, & how to check yaself to receive positive vibes on what you put out.",
+                        "airDate": "2018-05-14 10:51:13",
+                        "imageUrl": "http://static.libsyn.com/p/assets/2/2/2/a/222a655e80ddf555/itunes_avatar.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/thetrenches/ITT04-_Its_Real_Lite.mp3?dest-id=705877",
+                        "length": 4743,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "28411845",
+                        "title": "Questions, Answers, & Letters",
+                        "description": "JT and Ralph answer what supposed to be \"difficult\" questions and their answers may not be the \"norm\". The couple also answer their first letter from the Trenches. Please subscribe, rate and comment. Tell a friend and stay connect via, www.inthetrenchespodcast.com, Facebook, Instagram and Twitter.",
+                        "airDate": "2018-05-21 03:30:32",
+                        "imageUrl": "http://static.libsyn.com/p/assets/c/9/c/6/c9c6830136bab3ef/itunes_avatar.jpg",
+                        "audioUrl": "http://traffic.libsyn.com/thetrenches/ITT05-_Mastermix_Question_Answers__Letters_01.mp3?dest-id=705877",
+                        "length": 3176,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "29720193",
+                        "title": "EP12 - \"27 YRS OF SLAVE\"",
+                        "description": "Donna and Rolando jump into the Trenches with JT & Ralph this week. The couple go through the journey of being together for 27 years from high school, college, fraternity, jobs and children. This couple, again shows you that marriage isn't all ice cream and cake but it can be. Again, The Toulons do not condone domestic violence.",
+                        "airDate": "2018-07-09 04:58:35",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/1/0/8/c/108cfecf7608a7fc/artworks-000370866912-k2m660-original.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/469175880-the-trenches-213801209-ep12-27-yrs-of-slave.mp3?dest-id=705877",
+                        "length": 4230,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "32795969",
+                        "title": "EP27 - \"Don't hold that sh*t in!!\"",
+                        "description": "In this episode, the Toulons discuss expressing themselves within their marriage, showing where improvements can & have been made. They encourage everyone to express themselves, regardless of what the outcome may be. -Feedback is welcomed -Don't forget to submit for single of the week -Subscribe if you haven't already, rate comment and tell a friend.  ",
+                        "airDate": "2018-10-22 04:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/9/1/0/0/9100483f476ef1eb/itunes_avatar.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/Ep27F_expressyourself.mp3.mp3?dest-id=705877",
+                        "length": 3825,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "39381188",
+                        "title": "EP54 - \"Grace..enough or not enough\"",
+                        "description": "Jump into the Trenches with us this week as we discuss Grace in the car through the rain going back to Atlanta. Having too much of it, not having enough and the impact of either on a relationship/marriage.  Congrats to Mr. & Mrs. Skinner who jumped the broom on 5/4...We welcome you to the Trenches!!! Don't forget to spread the word and tell your friend, family and enemies :) Subscribe, Rate and Comment.",
+                        "airDate": "2019-05-06 04:25:09",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/7/7/4/2/774245977eaa6dc5/itunes_avatar.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/EP54_on_the_road_mixdown.mp3?dest-id=705877",
+                        "length": 3132,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "46013653",
+                        "title": "EP76 - \"Pieces of Me\" ft Author Davisha Fredericks",
+                        "description": "**AUDIO DISCLAIMER** although this isn't our normal audio quality, we still believe this is a story that the world should hear. Our apologies in advance. As this is Domestic Violence Awareness Month, we wanted to provide the Trench Mob with a story based around that very topic. This week in The Trenches, Ralph and Touly welcome guest, Davisha Fredericks. Through her personal story of growth and triumph, listeners will gain an inside glance at not only how Davisha endured the abuse, but also how, over the course of 15 years, she gained the strength and faith to turn the impossible to possible. . Key Takeaways From Episode: - Taking care of self should never be a compromise - No matter what you're looking for, always look to God first - And using personal experiences is a great tool to help someone overcome fear and find their purpose   About Davisha: Davisha Fredericks is a Christian woman, wife, and mother of four children. Through various jobs, life experiences and hardships, she has sought to find her calling in life. Through some of those experiences, she began helping women break strongholds in their lives and move forward to becoming independent, whole and free. Websites: https://davishafredericks.com and http://www.susuglobal.com/ Book(s) on Amazon: https://www.amazon.com/Davisha-Fredericks/e/B07L4VMG9P Social Media: Facebook - Davisha Fredericks Instagram - @davishafredericks   Additional Info from episode From Sharita Humphrey: Hey trench mob, this is Sharita, your money therapist.  I am offering an exclusive deal to allow you to a get a true financial strategy to help you win in 2020.  Now through December 13th you have the opportunity to get a 30-minute virtual consultation with Sharita for $50. That's not all. One person from the trench mob will be selected to receive monthly complimentary coaching from January to March 2020 if they book through this exclusive deal.  Trench Mob, please head over to sharitamhumphrey.com and book your 30-minute consultation today because its time to get financially fit!   ",
+                        "airDate": "2019-10-07 06:04:35",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/9/3/3/0/9330005fabd80ca5/itunes_avatar.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/EP76_Davisha_mixdown.mp3?dest-id=705877",
+                        "length": 3192,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "46359341",
+                        "title": "EP77 - \"Alice in Fairytale\" TRENCH LETTER",
+                        "description": "We were brought up believing in fairy tales where Prince Charming comes in to sweep the heroine off her feet, whisking her away to be married. Growing up we would imitate playing husband & wife, with children, a dog, and a white picket fence. For women, some were probably told that they needed a man to complete them. Unfortunately, real life isn't a fairy tale, but many women don't know that until they begin dating. This week in the Trenches, Ralph and Touly welcome a guest who doesn't want to be identified, but you can refer to her as Alice.  Alice discusses how she struggles with a manipulative boyfriend who likes to control her using scare tactics.  She also talks about fairy-tales and how watching certain shows has tainted her perspective on what life/love.   Key Takeaways From Episode:   When manipulating a person with low self-esteem, you are attacking their weakness Telling yourself something nice everyday to help build your self-esteem And The Bachelor is a TV show that doesn't represent what a relationship is truly about.   Additional Info Hey trench mob, this is Sharita, your money therapist.  I am offering an exclusive deal to allow you to a get a true financial strategy to help you win in 2020.  Now through December 13th you have the opportunity to get a 30-minute virtual consultation with Sharita for $50. That's not all. One person from the trench mob will be selected to receive monthly complimentary coaching from January to March 2020 if they book through this exclusive deal.  Trench Mob, please head over to sharitamhumphrey.com and book your 30-minute consultation today because its time to get financially fit! **Savings Challenge link **   https://www.saverlife.org/?utm_source=sharitamhumphrey&utm_medium=unknown&utm_campaign=001 Trenches Social Media   Instagram: @thetrenchespodcast               Facebook: In The Trenches With The Toulons Twitter: @TrenchesPodcast ",
+                        "airDate": "2019-10-14 13:24:43",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/9/0/9/b/909be13e57fc7cff/C8150622-0EE2-48F6-81E1-6FF57983A6A9.jpeg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/Ep77_-_Alice_in_fairytales_mixdown.mp3?dest-id=705877",
+                        "length": 3730,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "49262598",
+                        "title": "EP85 - The Barber & The Wife Coach",
+                        "description": "A wife is a female partner in a continuing marital relationship.  A married woman may indicate her marital status in a number of different, for instance, in western culture a married woman would commonly wear a wedding ring, but in other cultures other markers of marital status may be used. A married woman is commonly given the honorific title \"Mrs\", but some married women prefer to be referred to as \"Ms\", a title which is also used when the marital status of a woman is unknown.   This week on In the Trenches with the Toulons, Ralph and Touly jump into the Trenches with Lakia (The Wife Coach) and Derek Brandenburg.  Lakia aka The Wife Coach is an expert in helping women grow from a married woman to a wife.  Through her teachings, she shows women how to be happy, understanding, and patient simply by changing the way you show up.   Key Takeaways from this episode  The difference between a bride and wife God's perspective on marriage Power of the \"P\" - Power of your position as a wife And seeing the power within yourself   ------------------------------------------------------------------------ About Lakia: Wife-to-Derek and Coach-to-Wives, Lakia “LB” Brandenburg is The Wife Coach. She is a powerful inspirational speaker, and accomplished relationship author who is committed to helping women (who are married or planning-to-be) to know the difference between being a \"married\" woman and being a dynamic wife. In her exclusive Teach Me How to be a Wife online masterclass, LB empowers women to get rid of the fairytale syndrome and create a more realistic vision for their marriage and role as a wife. By tapping into The Power of the \"P\" (your position), and knowing when to \"Tame Your Tongue,\" her clients are taught how to live the \"happy wife life\" and create their own Picture Perfect marriage. Also as a Certified Prepare-Enrich Instructor, LB coaches couples in preparing for marriage and enriching their relationship through the P/E assessment and her customized VIP Day sessions. To learn more about LB and her services, visit www.lakiabrandenburg.com.  ------------------------------------------------------------------------ Additional Info for The Wife Coach: IG: @TheWifeCoach Web: www.lakiabrandenburg.com FB: www.facebook.com/TheWifeCoach  Twitter: lbthewifecoach    *New* The Marriage Success Planner Available for Pre-order! www.lakiabrandenburg.com/marriageplanner     ------------------------------------------------------------------------   Trench Announcements:   The Money Therapist Sharita is offering, from now until December 13th, the opportunity to get a 30-minute virtual consultation for $50 (Valued at $450 a session). Also one person from the Trench Mob will be selected to receive monthly complimentary coaching from January to March 2020 if they book through this exclusive deal.  Trench Mob head over to sharitamhumphrey.com and book your 30-minute consultation today because its time to get financially fit! ***USE CODE -->Trench Mob*** Saverlife.org   https://www.saverlife.org/?utm_source=sharitamhumphrey&utm_medium=unknown&utm_campaign=001  ------------------------------------------------------------------ Trenches Social Media: Website: https://inthetrenchespodcast.com   Instagram: @inthetrenchespodcast Twitter: @TrenchesPodcast Facebook: In The Trenches With The Toulons",
+                        "airDate": "2019-12-09 05:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/a/a/5/9/aa59d2dd37195366/C8150622-0EE2-48F6-81E1-6FF57983A6A9.jpeg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/EP85_-_The_Barber__The_Wife_Coach_mixdown.mp3?dest-id=705877",
+                        "length": 4191,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "49583268",
+                        "title": "EP86 - Marriage after Dalton",
+                        "description": "The death of a loved one can change your world forever. Grief is a natural reaction to loss; it can be felt emotionally, physically and spiritually. Everyone copes with loss differently, and you will process grief in your own individual way, in your own time. In this weeks episode, Ralph and Touly jump into the Trenches with Roni Lambrecht.  Roni tells us the story of how her and her husband John loss their son in a ATV accident.  She discusses what it took to help each other get through the rough times, doing what works for your marriage in these hard times, and having no regrets. Key Takeaways from this episode  How keeping busy helped with the transition of their loss Having a support system that is understanding How the loss of a child helped other parent do better with their parenting of of child/children And paying it forward through acts of kindness in Dalton's name   ------------------------------------------------------------------------ About Roni: Roni and John have been happily married since 1995. Their beautiful son, Dalton, was with us for 15 years, and left for Heaven just after Christmas in 2013 due to injuries from an ATV vs. sandrail accident. Dalton lived his short life with the intent to create smiles, laughter, and happiness by sharing his kind spirit and helping others through tough times. We continue his legacy by counting our blessings as often as possible for the short time we had him and practicing random acts of kindness in his memory, each and every day.  ------------------------------------------------------------------------ Additional Information: Website:  www.DoItForDalton.com Books:  Parenting At Your Best (2018 Winner of The Gold Mom's Choice Award) A Parent's Guide for Journaling to Their Child A Parent's Journal to Their Child   All books are a tribute to Dalton, with hope and anticipation that the stories and advice they offer will inspire current parents to excellence in their parenting and ongoing communication with their children.  ------------------------------------------------------------------------ Trenches Social Media: Website: https://inthetrenchespodcast.com   Instagram: @inthetrenchespodcast Twitter: @TrenchesPodcast Facebook: In The Trenches With The Toulons",
+                        "airDate": "2019-12-16 05:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/e/4/8/be48f0fb36223859/C8150622-0EE2-48F6-81E1-6FF57983A6A9.jpeg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/EP86_-_Marriage_after_death_mixdown.mp3?dest-id=705877",
+                        "length": 3199,
+                        "modifiedDate": "2021-12-04 18:57:38"
+                    },
+                    {
+                        "id": "29899349",
+                        "title": "EP13 - \"When it rains, put on your cape\"-Part 1",
+                        "description": "Chris and Steph in part 1 jump into the trenches with us, sharing their rocky journey in the first year of marriage. Expressing how everything that may look perfect, may at one time geared the heavy storms before the rainbow. Chris and Steph take us through the engagement, wedding day DIY lip fillers, honeymoon insurance, house but not our home and miscarriages. Please remember to Subscribe, Rate and Comment. Tell a friend, family member, or co-worker to jump into the trenches with us each week as we pull the curtain back on what marriage really looks like.",
+                        "airDate": "2018-07-16 04:00:54",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/c/0/3/2/c032a234f8666d8d/artworks-000374407119-k1sj76-original.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/472223313-the-trenches-213801209-ep13-when-it-rains-put-on-your-cap-part-1.mp3?dest-id=705877",
+                        "length": 2826,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "32570785",
+                        "title": "EP26 - \"Two mommies and a homemade baby\"",
+                        "description": "Are we just having sex or are we going to be in a relationship?? Jumping into the Trenches this week, Nyesha and Samantha took us on the journey of how this conversation went, and what happened afterwards. From moving in after 5months, seizures, family rejection, conceiving a baby, seeing the light and starting their own podcast.   Hey Trench Nation!! If you enjoyed this episode, please tell a friend. Also don't forget to subscribe, rate and comment.  ",
+                        "airDate": "2018-10-15 04:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/6/e/8/b/6e8b742b204b354a/itunes_avatar.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/EP26F_-_Two_mommies_and_a_homemade_baby__mixdown.mp3?dest-id=705877",
+                        "length": 4109,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "33042168",
+                        "title": "EP28 - \"Just try it out...9 to 930\" (Therapist Stephanie)",
+                        "description": "This week, the Toulons sit down with Therapist Stephanie D Walthour. Stephanie is a Licensed Marriage & Family Therapist, as well as a certified Sex Therapist. In this episode we discuss what therapy is and why its beneficial to go. In addition, reasons why a person would need a sex therapist and being a partner & not a parent to your spouse. You can contact Stephanie at www.intimacycenterga.com, @imtimacytherapyga on instagram and facebook. Mentioned in this episode: Love on Top - Married couples trip to Jamaica http://loveontop.nxleveltravel.com \"His needs, her needs\" By Willard E Harley Jr Therapy for Black Girls www.therapyforblackgirls.com Psychology Today www.psychologytoday.com Partner vs Parent https://www.mentalhelp.net/blogs/when-relationship-partners-act-like-parents-or-children-towards-one-another/      ",
+                        "airDate": "2018-10-29 04:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/2/5/3/5/25352fe23613fd4f/itunes_avatar.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/EP28FM_-_Just_Try_it.mp3?dest-id=705877",
+                        "length": 4194,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    },
+                    {
+                        "id": "34022574",
+                        "title": "EP32 - \"Naked Bedtime & Sex for money\"",
+                        "description": "The Toulons discuss the results of sleeping naked and thoughts on men being the sole spender. What is too much, going to far and being ungrateful when it comes to the man paying for everything in \"dating\". Thank you for @i_am_jperry on instagram for the video, it really did work!!  Subscribe, Rate and Comment!!",
+                        "airDate": "2018-11-26 05:00:00",
+                        "imageUrl": "https://ssl-static.libsyn.com/p/assets/8/8/7/0/88706086d9916a0d/itunes_avatar.jpg",
+                        "audioUrl": "https://traffic.libsyn.com/secure/thetrenches/EP32FM_-_Sex_challenge.mp3?dest-id=705877",
+                        "length": 3024,
+                        "modifiedDate": "2021-11-17 05:41:42"
+                    }
+                ]
+            }
+        },
+    {
             "id": "28116",
             "title": "Mom and Dad Are Fighting | Slate's parenting show",
             "description": "Jamilah Lemieux, Zak Rosen, and Elizabeth Newcamp share triumphs and fails and offer advice on parenting kids from toddler to teens.",
