@@ -13,7 +13,7 @@ export const formatPlaylist = ({
     artist: podcastMetadata.title,
 
     date: episode.airDate.toString(),
-    artwork: episode.imageUrl,
+    artwork: episode.imageUrl || podcastMetadata.imageUrl,
     description: episode.description,
     duration: episode.length,
   }));

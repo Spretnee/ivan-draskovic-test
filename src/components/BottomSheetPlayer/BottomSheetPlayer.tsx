@@ -13,16 +13,20 @@ export const BottomSheetPlayer = ({
   state,
   controls,
   currentTrack,
-  altImage,
 }: BottomSheetPlayerProps) => {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
-  const { isIdle, isLoading, isPlaying } = state;
+  const { isIdle, isReady, isPlaying } = state;
+
+  if (!isIdle && !isReady) {
+    bottomSheetRef.current?.close();
+  } else {
+    bottomSheetRef.current?.snapToIndex(0);
+  }
 
   return (
     <BottomSheet
       ref={bottomSheetRef}
-      index={!isIdle || isLoading ? 0 : -1}
       bottomInset={60}
       detached={true}
       backgroundStyle={styles.backgroundStyle}
@@ -32,10 +36,7 @@ export const BottomSheetPlayer = ({
       style={styles.sheetContainer}
     >
       <Pressable onPress={onPress} style={styles.pressableStyle}>
-        <Image
-          url={currentTrack.artwork ? currentTrack.artwork : altImage}
-          style={styles.image}
-        />
+        <Image url={currentTrack.artwork} style={styles.image} />
         <Title title={currentTrack.title} author={currentTrack.artist} />
         <PlayPause isPlaying={isPlaying} controls={controls} />
       </Pressable>

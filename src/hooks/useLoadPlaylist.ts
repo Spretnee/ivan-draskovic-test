@@ -4,15 +4,11 @@ import { Podcast } from '../api/types';
 import { formatPlaylist } from '../utils/player/formatPlaylist';
 import { addTrack } from '../utils/player/addTrack';
 import { useAppDispatch } from '../store/hooks';
-import { setPodcastMetadata, setQueue } from '../store/playerSlice';
 
 export const useLoadPlaylist = (podcast: Podcast | undefined) => {
-  const dispatch = useAppDispatch();
-
   const setPlaylist = async () => {
     try {
-      const tracks = await TrackPlayer.getQueue();
-      dispatch(setQueue(tracks));
+      await TrackPlayer.getQueue();
     } catch (e) {
       console.error('no queue', e);
     }
@@ -23,8 +19,6 @@ export const useLoadPlaylist = (podcast: Podcast | undefined) => {
       await TrackPlayer.reset();
       if (podcast) {
         await addTrack(formatPlaylist(podcast));
-        const { episodes, ...metadata } = podcast;
-        dispatch(setPodcastMetadata(metadata));
       }
 
       await setPlaylist();

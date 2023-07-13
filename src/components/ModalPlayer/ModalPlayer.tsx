@@ -71,7 +71,6 @@ export const ModalPlayer = () => {
         </SafeAreaView>
       </BottomSheetModal>
       <BottomSheetPlayer
-        altImage={podcastMetadata?.imageUrl}
         controls={controls}
         onPress={handlePresentModalPress}
         state={state}

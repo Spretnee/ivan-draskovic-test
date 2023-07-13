@@ -5,5 +5,4 @@ export type BottomSheetPlayerProps = {
   state: PlayerState;
   currentTrack: Track;
   controls: Controls;
-  altImage: string | undefined;
 };
