@@ -1,12 +1,13 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import GreetingsScreen from '../screens/PodcastsScreen/PodcastsScreen';
 import YourPodcastsScreen from '../screens/YourPodcastsScreen/YourPodcastsScreen';
 import { ModalPlayer } from '../components/ModalPlayer';
 import { SearchScreen } from '../screens/SearchScreen/SearchScreen';
 import { SvgXml } from 'react-native-svg';
 import { HOME, PODCAST_LIBRARY, SEARCH } from '../assets/images/svg';
+import { HomeScreen } from '../screens/HomeScreen';
+import { SearchStackNavigator } from './SearchStackNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -53,8 +54,8 @@ export const TabNavigation = () => {
         headerShown: false,
       })}
     >
-      <Tab.Screen name="Home" options={{}} component={GreetingsScreen} />
-      <Tab.Screen name="Search" component={SearchScreen} />
+      <Tab.Screen name="Home" options={{}} component={HomeScreen} />
+      <Tab.Screen name="Search" component={SearchStackNavigator} />
       <Tab.Screen name="Your Library" component={YourPodcastsScreen} />
     </Tab.Navigator>
   );

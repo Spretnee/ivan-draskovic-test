@@ -34,9 +34,8 @@ export const Slider = ({
           maximumTrackTintColor={GREEN_LIGHT}
           minimumTrackTintColor={GREEN}
           maximumValue={duration}
-          animateTransitions={true}
-          animationType="spring"
           value={position}
+          // TODO:fix twitching on slider action
           onSlidingComplete={controls.onSlidingComplete}
         />
       </View>

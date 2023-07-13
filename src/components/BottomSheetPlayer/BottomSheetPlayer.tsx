@@ -13,6 +13,7 @@ export const BottomSheetPlayer = ({
   state,
   controls,
   currentTrack,
+  altImage,
 }: BottomSheetPlayerProps) => {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
@@ -31,7 +32,10 @@ export const BottomSheetPlayer = ({
       style={styles.sheetContainer}
     >
       <Pressable onPress={onPress} style={styles.pressableStyle}>
-        <Image url={currentTrack.artwork} style={styles.image} />
+        <Image
+          url={currentTrack.artwork ? currentTrack.artwork : altImage}
+          style={styles.image}
+        />
         <Title title={currentTrack.title} author={currentTrack.artist} />
         <PlayPause isPlaying={isPlaying} controls={controls} />
       </Pressable>

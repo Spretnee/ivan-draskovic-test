@@ -33,8 +33,6 @@ export const useLoadPlaylist = (podcast: Podcast | undefined) => {
 
   useMemo(() => {
     loadPlaylist();
-    if (podcast) {
-    }
   }, [podcast]);
 
   return { podcast };

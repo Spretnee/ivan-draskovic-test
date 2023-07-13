@@ -12,8 +12,7 @@ import { BACKGROUND } from '../../constants/colors';
 import { DismissChevron } from './DismissChevron';
 import { useCustomPlaybackState } from '../../hooks/useCustomPlaybackState';
 import { useControls } from '../../hooks/useControls';
-import { useAppSelector } from '../../store/hooks';
-import { selectPlayerState } from '../../store/playerSlice';
+import { useSelectPlayerState } from '../../store/playerSlice';
 import { Image } from '../../screens/PlayerScreen/Image/Image';
 import { Slider } from '../../screens/PlayerScreen/Slider';
 import { EpisodeTitle } from '../../screens/PlayerScreen/EpisodeTitle';
@@ -22,7 +21,7 @@ const { height } = Dimensions.get('screen');
 export const ModalPlayer = () => {
   const bottomSheetModalRef = useRef<BottomSheetModal>(null);
 
-  const { currentTrack } = useAppSelector(selectPlayerState);
+  const { currentTrack, podcastMetadata } = useSelectPlayerState();
   const controls = useControls();
   const { handlePresentModalPress, dismissModal } =
     useHandlePresentModal(bottomSheetModalRef);
@@ -30,6 +29,7 @@ export const ModalPlayer = () => {
   const snapPoints = useMemo(() => MODAL_PLAYER_SNAP_POINTS, []);
 
   const state = useCustomPlaybackState();
+
   return (
     <>
       <BottomSheetModal
@@ -56,7 +56,11 @@ export const ModalPlayer = () => {
             }}
           >
             <Image
-              url={currentTrack?.artwork}
+              url={
+                currentTrack?.artwork
+                  ? currentTrack?.artwork
+                  : podcastMetadata?.imageUrl
+              }
               style={{ marginBottom: 40, width: 220, height: 220 }}
             />
             <EpisodeTitle title={currentTrack?.title} />
@@ -67,6 +71,7 @@ export const ModalPlayer = () => {
         </SafeAreaView>
       </BottomSheetModal>
       <BottomSheetPlayer
+        altImage={podcastMetadata?.imageUrl}
         controls={controls}
         onPress={handlePresentModalPress}
         state={state}

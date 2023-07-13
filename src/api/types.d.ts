@@ -1,4 +1,4 @@
-import {TrackWithId} from '../types';
+import { TrackWithId } from '../types';
 
 export interface GetPodcastSeriesResponse {
   data: Data;
@@ -26,6 +26,7 @@ export interface Data {
 //   description: string;
 //   imageUrl: string;
 // }
+
 export interface Podcast {
   id: string;
   title: string;

@@ -9,8 +9,10 @@ import { styles } from './SliderControls.styles';
 import { SvgXml } from 'react-native-svg';
 import {
   FIFTEEN_BACK,
+  NEXT,
   PAUSE,
   PLAY_BUTTON,
+  PREVIOUS,
   THIRTY_FORWARD,
 } from '../../../assets/images/svg';
 import { Text } from '../../../components/Text';
@@ -30,16 +32,17 @@ export const SliderControls = ({
 }: SliderControlsProps) => {
   return (
     <View>
+      {/* TODO: figure out next and previous initialPosition option */}
       <View style={styles.container}>
+        <SvgXml xml={PREVIOUS} onPress={() => controls.previous()} />
         <SvgXml xml={FIFTEEN_BACK} onPress={controls.jumpBack15} />
-
         {!isPlaying ? (
           <SvgXml onPress={controls.play} xml={PLAY_BUTTON} />
         ) : (
           <SvgXml onPress={controls.pause} xml={PAUSE} />
         )}
-
         <SvgXml onPress={controls.jumpForward30} xml={THIRTY_FORWARD} />
+        <SvgXml onPress={() => controls.next()} xml={NEXT} />
         <PlaybackSpeedControl />
       </View>
     </View>

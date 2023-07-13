@@ -110,8 +110,6 @@ export const selectPlayerState = createSelector(
   },
 );
 
-type PlayerStateSelector = typeof selectPlayerState;
-
 export const useSelectPlayerState = () => useAppSelector(selectPlayerState);
 
 export const {

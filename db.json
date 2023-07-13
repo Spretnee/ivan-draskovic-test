@@ -1,6 +1,543 @@
 {
   "podcasts": [
     {
+            "id": "28116",
+            "title": "Mom and Dad Are Fighting | Slate's parenting show",
+            "description": "Jamilah Lemieux, Zak Rosen, and Elizabeth Newcamp share triumphs and fails and offer advice on parenting kids from toddler to teens.",
+            "imageUrl": "https://megaphone.imgix.net/podcasts/31ef271a-8289-11e5-b42a-27d2fd35eff7/image/uploads_2F1516905010671-cxg36pv3386-d18113fe889804ff329c98b9aded52fd_2F01_Slate_Redux_Podcast_Cover_MADAF.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format%2Ccompress",
+            "modifiedDate": "2023-07-11 16:41:08",
+            "numberOfEpisodes": 504,
+            "episodes": {
+                "data": [
+                    {
+                        "id": "35118300",
+                        "title": "Friend Zone Edition",
+                        "description": "Gabriel Roth, Rebecca Lavoie, and Carvell Wallace are prompted by a Washington Post series of three stories about  raising boys in the #MeToo era to discuss teenagers, modern masculinity, \"the friend zone\", and more. Plus a listener question about the grandparent's favorite kid, \"Triumphs and Fails\", and recommendations.\nThis episode is brought to you by the following advertisers: \nAmerican Express, don’t do business without it.\nClorox. head to cloroxforschools.com to find out how to keep your family healthy and happy this cold and flu season.\n Listen To The Marriage, the new novel by John Jay Osborn. Available now wherever books are sold.\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2018-12-27 19:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/PPY9433377285.mp3",
+                        "length": 3399,
+                        "modifiedDate": "2023-03-02 20:19:30"
+                    },
+                    {
+                        "id": "80333872",
+                        "title": "Spoiling Santa Edition",
+                        "description": "On this week’s episode: Dan, Jamilah, and Elizabeth answer a question about a kid who was told Santa wasn’t real. Now she is basing her continued belief on whether or not she gets a horse for Christmas. They also answer a question from a sister who is worried about her younger brother’s slacking in school. \n\nIn Slate Plus: How are Santas adapting? Is it time to retire the tradition of sitting on Santa’s lap? Slate Plus members get a bonus segment on MADAF each week, and no ads. Sign up now to listen and support our work.\n\nRecommendations:\n\nJamilah recommends Eczema Honey products.\n\nElizabeth recommends Mail Order Mystery.\n\nDan recommends “Christmas Wrapping” by the Waitresses and “Christmas on Riverside Drive” by August Darnell. \n\nJoin us on Facebook and email us at momanddad@slate.com to ask us new questions, tell us what you thought of today’s show, and give us ideas about what we should talk about in future episodes. \n\nTune in to The Kids Are Asleep, the hilarious Slate Live show hosted by Jamilah. Catch it via Slate’s Facebook or YouTube on Thursdays at 10:00 p.m. ET / 7:00 p.m. PT. \n \nPodcast produced by Rosemary Belson.\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2020-12-03 19:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT1221764403.mp3",
+                        "length": 2980,
+                        "modifiedDate": "2023-03-02 20:18:36"
+                    },
+                    {
+                        "id": "27551561",
+                        "title": "Falling Piano Edition",
+                        "description": "Gabriel Roth and Carvell Wallace are joined by Marlo Mack of the How to be a Girl podcast to discuss executive functions, when to badger your kids about hand-washing, disclosing sensitive information to soon-to-be-relatives, whether a mom should push her ex-husband to allow their transgender son to start taking hormones, and why it's so taboo to leave a baby alone in an empty house, even for a short time. \nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2018-04-19 18:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/PPY3737955442.mp3",
+                        "length": 3539,
+                        "modifiedDate": "2023-03-02 20:19:47"
+                    },
+                    {
+                        "id": "44130677",
+                        "title": "Am I A Spoiled Brat?",
+                        "description": "On this week’s episode, Rebecca, Jamilah and Dan answer listener questions from a mom that wants her mother to be more supportive an a worried grandma who is looking for the right way to have a tough conversation with a child. As usual, we share our triumphs and fails and offer up some recommendations. For Slate Plus, Rebecca shares how the big day of dropping her kid off at college went. Sign up for Slate Plus here. \nRecommendations:\nDan recommends the comic series, Real Friends, by Shannon Hale and LeUyen Pham.\nJamilah recommends visiting your local pain management specialist if you’re experiencing some body ails. \nRebecca recommends the Netflix series Derry Girls. Fans of Derry Girls can check out Dan’s most read Slate article of the year, The Many Faces of Derry Girls’ Saoirse-Monica Jackson.\nIf you’re interested in the cousin rivalry at Market Basket that Rebecca mentioned in today’s triumph or fail, read the Slate article here.  \nJoin us on Facebook and email us at momanddad@slate.com to tell us what you thought of today’s show and give us ideas for what we should talk about in future episodes. Got questions that you’d like us to answer? Call and leave us a message at 424-255-7833. \nPodcast produced by Jess Jupiter.\nHosts Rebecca Lavoie, Jamilah Lemieux, and Dan Kois\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2019-08-29 18:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT2256295498.mp3",
+                        "length": 3004,
+                        "modifiedDate": "2023-03-02 20:19:11"
+                    },
+                    {
+                        "id": "41901424",
+                        "title": "Fish and Candy",
+                        "description": "On this week’s episode: The hosts answer listener questions about a mom who wants to know what to do about a sort of stepson and another about a kid who’s hanging out with a kid that counts calories. We also welcome Amy Scott as this week’s special host. As usual, we share our triumphs and fails and offer up some recommendations. Amy brings Ask-A-Teacher to Slate Plus.\nRecommendations:\nRebecca recommends the YouTube series, Star Wars by the Numbers. \nDan recommends day camp as the ultimate summer solution for working vacations.\nAmy has two recommendations: The Hamilton soundtrack and buying your kids’ puzzles at the thrift store. \nJoin us on Facebook and email us at momanddad@slate.com to tell us what you thought of today’s show and give us ideas for what we should talk about in future episodes. Got questions that you’d like us to answer? Call and leave us a message at 424-255-7833. \nPodcast produced by Jess Jupiter.\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2019-07-11 18:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT9071778532.mp3",
+                        "length": 3435,
+                        "modifiedDate": "2023-03-02 20:19:15"
+                    },
+                    {
+                        "id": "63392627",
+                        "title": "Visit From Mike Birbiglia Edition",
+                        "description": "On this week’s episode: Elizabeth, Jamilah, and Dan talk with comedian Mike Birbiglia about his new book, The New One: Painfully True Stories From a Reluctant Dad. They discuss what it’s like to not connect to your newborn right away, finally understanding parenting cliches, and comedy during quarantine. The hosts also answer a question from a parent who feels that their young one is transitioning from mommy to mom way too early.  \n\nFor Slate Plus, Slate Staff Writer Ruth Graham joins to discuss adoption influencers. Slate Plus members get a bonus segment on MADAF each week, and no ads. Sign up now to listen and support our work.\n\nRecommendations:\nDan recommends You Pick Tonight, a father-daughter double feature podcast from Dan and Lyra. \n\nJamilah recommends It’s Just a Plant: A Children’s Story about Marijuana by Ricardo Cortés.\n\nElizabeth recommends learning to make balloon animals with your kids. \n\nOther Recommendations and Resources: \nTransgender Children & Youth: Understanding the Basics\n“Gender Identity Isn't Too Confusing For Your Toddler” by Kasandra Brabaw\nTranswhat? A Guide Towards Allyship\n“In Our Gender Diverse Era, Parents Should Practice Humility With Their Kids” by Evan Urquhart\nMy Kid is Not Crazy\n“Myka Stauffer and the Aggressively Inspirational World of “Adoption Influencers”” by Ruth Graham\n\nJoin us on Facebook and email us at momanddad@slate.com to ask us new questions, tell us what you thought of today’s show, and give us ideas about what we should talk about in future episodes. \n \nPodcast produced by Rosemary Belson. \nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2020-06-11 18:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT3844227900.mp3?updated=1591891967",
+                        "length": 4039,
+                        "modifiedDate": "2023-03-02 20:18:48"
+                    },
+                    {
+                        "id": "54624624",
+                        "title": "The All Kids, All the Time Edition ",
+                        "description": "On this week’s episode: Dan and Jamilah are joined by Emily Farranto to answer a question from a listener who works with kids and is thinking about having her own. Is constant contact with kids overwhelming? We also have a question from a mom whose son was hospitalized at 4 months after getting sick. But now her husband’s germaphobia is making daily life difficult. For Slate Plus: what forgotten historical figures would make the best costumes? Slate Plus members get a bonus segment on MADAF each week, and no ads. Sign up now to listen and support our work.\n\nRecommendations:\n\nJamilah recommends preordering the picture book Who Will You Be? by Andrea Pippins.\n\nDan recommends Love Letter, a fun, fast card game great for two to four people.\n \nEmily recommends Cowboy Magic, a concentrated hair detangler great for horses...and HUMANS!\n \nJoin us on Facebook and email us at momanddad@slate.com to ask us new questions, tell us what you thought of today’s show, and give us ideas for what we should talk about in future episodes.\n \nPodcast produced by Rosemary Belson.\n \nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2020-03-05 18:40:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT3161145343.mp3",
+                        "length": 3010,
+                        "modifiedDate": "2023-03-02 20:18:55"
+                    },
+                    {
+                        "id": "47918982",
+                        "title": "Keep Your Head Above Water",
+                        "description": "On this week’s episode: Dan, Jamilah, and guest host Greg Lavallee answer listener questions from a parent whose daughter is afraid of the water and a mom who needs a response strategy for a disrespectful kiddo. For Slate Plus, the hosts strategize date night. Are microdates the solution to a busy schedule? Or is it worth the effort of hiring a babysitter to go out? Sign up for Slate Plus here.\n\nRecommendations:\nJamilah recommends a newfangled entertainment destination… a place where you could spend hours without spending any money…. The MALL.\nGreg recommends Shashibo, a mesmerizing magnetic puzzle.\nDan recommends Boom Blast Stix for little kids and Telestrations for bigger ones.\n\nJoin us on Facebook and email us at momanddad@slate.com to tell us what you thought of today’s show and give us ideas for what we should talk about in future episodes. Got questions that you’d like us to answer? Call and leave us a message at 424-255-7833.\nPodcast produced by Rosemary Belson.\n\nHosts\nDan Kois is an editor and writer at Slate. He’s the author of How to Be a Family and the co-author of The World Only Spins Forward.\nJamilah Lemieux is a writer, cultural critic, and communications strategist based in Brooklyn, New York.\nGreg Lavallee is the director of technology at Slate.\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2019-11-14 19:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT2957938659.mp3?updated=1573754779",
+                        "length": 3114,
+                        "modifiedDate": "2023-03-02 20:19:03"
+                    },
+                    {
+                        "id": "53830974",
+                        "title": "The Trampled on the Playground Edition",
+                        "description": "On this week’s episode: Dan and Jamilah are joined by Elizabeth Newcamp to answer a question from a mom worried about her young kids’ safety at the park. Is it okay to tell off older kids for not playing nicely? We also have a question from a listener who is looking to have a child and wants to set healthy boundaries with her mother when it comes to discipline tactics and alcohol consumption. Plus, a BONUS question from a mother who doesn’t know if she can accept the money her parents set aside for her twins’ college fund. For Slate Plus: a discussion about the division of household labor. Have changing views toward gender equality actually affected who does what in the home? Sign up for Slate Plus.\n\nRecommendations:\nJamilah recommends buying a journal to take with you on trips when children aren’t tagging along. During the trip write notes to them and get others you see to write notes. Then when you get back you have a lovely trip memento that they can read.\n\nDan recommends Street Angel: Deadliest Girl Alive by Jim Rugg, an action comic about a “homeless ninja girl on a skateboard” perfect for 13-year-olds who like a bit of (but not too much) violence.\n \nElizabeth recommends installing a Swedish wall gym, which is especially useful for getting the wiggles out on inclement days.\n \nAdditional Reading:\n“Young Men Embrace Gender Equality, but They Still Don’t Vacuum” by Claire Cain Miller\n“All the Single Mothers” by Lara Bazelon\nShopping With Dad by Matt Harvey and Miriam Latimer\n \nJoin us on Facebook and email us at momanddad@slate.com to tell us what you thought of today’s show and give us ideas for what we should talk about in future episodes. Got questions that you’d like us to answer? Call and leave us a message at 424-255-7833.\n \nPodcast produced by Rosemary Belson.\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2020-02-20 19:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT5907179930.mp3",
+                        "length": 3536,
+                        "modifiedDate": "2023-03-02 20:18:55"
+                    },
+                    {
+                        "id": "48147144",
+                        "title": "Whoops...A Baby! ",
+                        "description": "On this week’s episode: Dan, Jamilah, and guest host Elizabeth Newcamp answer listener questions from a mom who is contemplating telling her son he was unplanned before his father tells him. Plus, a guide to making friends with other parents from a military mom who has to do it every three years. How can you make the leap from school yard acquaintances to actual friends? For Slate Plus, the hosts reminisce about amusement park memories. Can parents actually have fun? Or is it all about the kids? Sign up for Slate Plus here. \nRecommendations:\nElizabeth recommends the U.S National Park Service’s Junior Ranger Program. \nAnd in a stunning moment of unplanned host telepathy - Jamilah and Dan recommend the same thing: creating special handshakes with your kids.\n\nJoin us on Facebook and email us at momanddad@slate.com to tell us what you thought of today’s show and give us ideas for what we should talk about in future episodes. Got questions that you’d like us to answer? Call and leave us a message at 424-255-7833.\nPodcast produced by Rosemary Belson.\nHosts\nDan Kois is an editor and writer at Slate. He’s the author of How to Be a Family and the co-author of The World Only Spins Forward.\nJamilah Lemieux is a writer, cultural critic, and communications strategist based in Brooklyn, New York.\nElizabeth Newcamp is a traveling mother of three boys who chronicles her misadventures at Dutch, Dutch, Goose!\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2019-11-21 19:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT7653794257.mp3",
+                        "length": 3750,
+                        "modifiedDate": "2023-03-02 20:19:03"
+                    },
+                    {
+                        "id": "38208060",
+                        "title": "Ages Ten And Up Edition ",
+                        "description": "This week, Rebecca, Gabe, and guest host Katherine answer listener questions about putting the pressure on your kid after getting into a prestige school and solutions on getting your kids to play nice with each other. And as usual, we share our triumphs and fails and offer up some recommendations.\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2019-03-28 18:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT6496276334.mp3",
+                        "length": 2822,
+                        "modifiedDate": "2023-03-02 20:19:22"
+                    },
+                    {
+                        "id": "3195806",
+                        "title": "The Truth About Santa Edition",
+                        "description": "Listen to Slate's parenting podcast where we discuss Santa and toys that require a bit of building.\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2014-12-17 07:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SM3187458261.mp3",
+                        "length": 2645,
+                        "modifiedDate": "2023-03-02 20:20:35"
+                    },
+                    {
+                        "id": "3195572",
+                        "title": "The National Clown Threat Edition",
+                        "description": "Allison and Dan dive deep into the mythology of killer clowns.  RJ Palacio, best-selling author of “Wonder,” stops by the studio to talk about her quest to spread kindness. And for the Slate Plus segment, Will Saletan discusses the futility of attempting to regulate his teenager’s bedtime.\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2016-10-13 21:24:50",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SM8491608990.mp3",
+                        "length": 3259,
+                        "modifiedDate": "2023-03-02 20:20:15"
+                    },
+                    {
+                        "id": "3195738",
+                        "title": "Sex After Baby Edition",
+                        "description": "Listen to Slate's parenting podcast where Allison Benedict and Jessica Winter talk about bed wetting and sex after having a baby.\n \nMom and Dad Are Fighting Is Sponsored by Little Passports. Keep your kids busy this summer with Little Passports, the award-winning subscription for kids. Right now, Mom & Dad Are Fighting listeners can save 40% on their first month today with promo code MOMANDDAD40. Learn more at littlepassports.com/momanddad.\n \nAnd by Audible.com, offering more than 180,000 audiobooks and spoken-word audio products. Get a free audiobook of your choice at audible.com/momanddad\n \nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2015-07-16 06:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SM3566590834.mp3",
+                        "length": 3406,
+                        "modifiedDate": "2023-03-02 20:20:28"
+                    },
+                    {
+                        "id": "3195748",
+                        "title": "Live from Durham Edition",
+                        "description": "Listen to Slate's parenting podcast live from Durham, North Carolina. Allison and Dan are joined by Superchunk frontman and Merge co-owner Mac McCaughan to life as a touring dad, the worst children's songs, and play a song from his latest album.\nMom and Dad Are Fighting is sponsored by Gemvara. Turn old jewelry or a loose gemstone into a new design setting you'll love. Chose from a variety of beautiful designs or customize your own. Right now, get 15% off the stone reset of your choice at stonereset.com/momanddad.\nAnd by: Little Passports. Keep your kids busy this summer with Little Passports, the award-winning subscription for kids. Right now, Mom And Dad Are Fighting listeners can save 40% on their first month today with promo code MOMANDDAD40. Learn more at littlepassports.com/momanddad.\nAnd by: Casper, an online retailer of premium mattresses for a fraction of the price. Casper mattresses come with free delivery and returns within a 100-day period. And get 50 dollars toward any mattress purchase by visiting casper.com/momanddad and using the promo code momanddad.\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2015-06-18 06:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SM9088392106.mp3",
+                        "length": 3257,
+                        "modifiedDate": "2023-03-02 20:20:29"
+                    },
+                    {
+                        "id": "72549418",
+                        "title": "Talk to the Teacher",
+                        "description": "On this week’s bonus episode: Elizabeth and Jamilah are joined by Ask a Teacher columnists Amy Scott and Brandon Hersey to discuss how parents should approach their kid’s teacher to make sure they form a good, working relationship. What’s the best way to communicate important information without overwhelming or overstepping? Now that some schools are opting for virtual learning, how can parents replicate the brief, but important, conversations that happen at pick up or in the halls?\n\nJoin us on Facebook and email us at momanddad@slate.com to ask us new questions, tell us what you thought of today’s show, and give us ideas about what we should talk about in future episodes. \n \nPodcast produced by Rosemary Belson. \nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2020-08-18 10:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT3401847223.mp3",
+                        "length": 1874,
+                        "modifiedDate": "2023-03-02 20:18:43"
+                    },
+                    {
+                        "id": "70773169",
+                        "title": "Bosslady in Crisis Edition",
+                        "description": "On this week’s episode: Elizabeth, Jamilah, and Dan answer a question from a boss who is trying to figure out how her company can support employees who are caring for kids. They also talk with Slate’s Rachelle Hampton about student loan debt. She has some advice for parents sending their kids to college about deciding when and if debt is worth it.\n\nIn Slate Plus: Should parents tickle their children? Slate Plus members get a bonus segment on MADAF each week, and no ads. Sign up now to listen and support our work.\n\nRecommendations:\n\nDan recommends pickleball, small tennis or enormous human sized ping pong. But whichever way you look at it, pickleball is a great sports equalizer and a lot of fun. \n\nJamilah recommends A Kids Book About Divorce by Ashley Simpo.\n\nElizabeth recommends Rocket to the Moon!: Big Ideas That Changed the World by Don Brown and Junior Ranger NASA badges. \n\nAdditional Recommendations:\nDebt Nation by Rachelle Hampton.\nThe Six-Hour Workday Graphic\n\nCatch Jamilah’s new Slate Live show: The Kids Are Asleep. Catch the next show on Thursday July 23 at 7:00 p.m. PST. Stream it on Slate’s Facebook page or YouTube channel. \n\nJoin us on Facebook and email us at momanddad@slate.com to ask us new questions, tell us what you thought of today’s show, and give us ideas about what we should talk about in future episodes. \n \nPodcast produced by Rosemary Belson.\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2020-07-23 18:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT9965764554.mp3",
+                        "length": 3288,
+                        "modifiedDate": "2023-03-02 20:18:46"
+                    },
+                    {
+                        "id": "92874110",
+                        "title": "The Cross-Country Chaos Edition",
+                        "description": "On this week’s episode: Elizabeth, Dan, and Jamilah counsel a mother who is feeling guilty that she’s having a hard time bonding with her second child. She, of course, loves her son very much. But sometimes wishes her family could revert back to happier days when she had only one kid. \nThen, you are hopping in the Newcamp minivan to travel from Florida to Colorado and hopefully pick up a few useful tips for the next time you decide to spend days in the car with your kids. \nIn Slate Plus: Of course they are talking about the Texas mom posed as her seventh-grade daughter for almost an entire day of school. How could they not? Slate Plus members get a bonus segment on MADAF each week, and no ads. Sign up now at slate.com/momanddadplus to listen and support our work.\nRecommendations:\nDan recommends My Begging Chart by Keiler Roberts. \nJamilah recommends Morcheeba’s new album, Blackest Blue. \nElizabeth recommends sleeping headphones. \nJoin us on Facebook and email us at momanddad@slate.com to ask us new questions, tell us what you thought of today’s show, and give us ideas about what we should talk about in future episodes. \nPodcast produced by Rosemary Belson. \nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2021-06-10 18:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT3769702694.mp3?updated=1623338716",
+                        "length": 3769,
+                        "modifiedDate": "2023-03-02 20:18:25"
+                    },
+                    {
+                        "id": "92122757",
+                        "title": "Acne Flashbacks Edition",
+                        "description": "On this week’s episode: Dan and Elizabeth are joined by Doyin Richards, Care & Feeding columnist, bestselling children's author, and founder of the Anti-Racism Fight Club. They counsel a mom who had terrible acne growing up and now is stressing over her son’s breakouts. Then they have a question about a little boy who is obsessed with gender norms and a mom who’s worried she’s obsessing about it too much. \nIn Slate Plus: How has giving advice changed the way the hosts parent? Slate Plus members get a bonus segment on MADAF each week, and no ads. Sign up now at slate.com/momanddadplus to listen and support our work.\nRecommendations:\nElizabeth recommends the Loóna: calm, relax, and sleep app.\nDoyin recommends Anti-Racism Fight Club for Kids. \nDan recommends The Fifth Quarter by Mike Dawson. \nJoin us on Facebook and email us at momanddad@slate.com to ask us new questions, tell us what you thought of today’s show, and give us ideas about what we should talk about in future episodes. \nPodcast produced by Rosemary Belson.\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2021-05-27 18:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT5716943942.mp3?updated=1622129167",
+                        "length": 2767,
+                        "modifiedDate": "2023-03-02 20:18:26"
+                    },
+                    {
+                        "id": "129738507",
+                        "title": "Turning Into a Math Monster",
+                        "description": "On this week’s episode: Elizabeth, Zak, and Jamilah tackle a question from a parent worried that tense homework sessions are fracturing her relationship with her daughter. When should you keep pushing your kid so they succeed and when should you back off? Then, they’re advising a parent who is simply burned out. It’s something a lot of parents are feeling and they’ve got some tips to make life a little more manageable. On Slate Plus, they’re juggling stressful sports schedules. \nRecommendations:\nJamilah recommends Abbott Elementary. \nZak recommends making your own everything seasoning. \nElizabeth recommends a visual timer. \nExtra Credit!: \nBoom Goes the Dynamite\nProdigy Education Game \nMath Rush\nWaldock Way's best math games \nJoin us on Facebook and email us at momanddad@slate.com to ask us new questions, tell us what you thought of today’s show, and give us ideas about what we should talk about in future episodes. \nPodcast produced by Rosemary Belson.\nLearn more about your ad choices. Visit megaphone.fm/adchoices",
+                        "airDate": "2022-02-24 05:45:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/verifi.podscribe.com/rss/p/chtbl.com/track/28D492/traffic.megaphone.fm/SLT2173339535.mp3?updated=1645725653",
+                        "length": 3164,
+                        "modifiedDate": "2023-03-02 20:18:07"
+                    }
+                ]
+            }
+        },
+     {
+            "id": "642374",
+            "title": "Maelle Kids Radio",
+            "description": "Weekly entertainment and modeling podcast for kids, teens, and parents. Exclusive interviews, family-friendly music, entertainment news and more.",
+            "imageUrl": "https://dasg7xwmldix6.cloudfront.net/hostpics/retina/91f4739e-77d0-4170-8b40-59c180669eb0_maelle-radio-logo-01.jpg",
+            "modifiedDate": "2023-06-01 22:06:52",
+            "numberOfEpisodes": 42,
+            "episodes": {
+                "data": [
+                    {
+                        "id": "42970218",
+                        "title": "Episode 09: Alabama Teen Models  Jolie Val Johnson &  Emma Erasmus Join Us",
+                        "description": "Maelle Kids Radio is a family-friendly radio network. Renaldo interview amazing people kids, teens, and parents, and talks about current events. On this episode, Renaldo interviews teen models Jolie Val Johnson and Emma Raine Erasmus from Barbie Perry's Street Jam Talent Agency. Follow Street Jam on Instagram @streetjamtalentagency. \n\nListen to Maelle Kids Radio show archive click here. Subscribe to Apple Podcast, iHeart Radio | TuneIn Radio, Stitcher, and Blubrry.\n\nGet our latest issue at https://www.maellekids.com/magazines.  \nAdvertise: maellekids.com/adsModel Submission maellekids.com/smMagazines: maellekids.com/magazines\n \n\n ",
+                        "airDate": "2019-07-31 12:30:00",
+                        "imageUrl": null,
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/07/31/episode-09-alabama-teen-models-jolie-val-johnson--emma-erasmus-join-us.mp3",
+                        "length": 4380,
+                        "modifiedDate": "2019-08-05 05:51:35"
+                    },
+                    {
+                        "id": "54728693",
+                        "title": "Maelle Kids Magazine Show 1",
+                        "description": "On this episode of Maelle Kids Radio, Renaldo Creative and Tee talk about the Maelle Kids Magazine, Top 5 Tips for new parents, Maelle Kid's social network and more.\n\nMagazines: www.maellekids.com/magazines\n\nAdvertise With Us:www.maellekids.com/ads\n\nSubmission: www.maellekids.com/sm\n\nRadio: www.maellekids.com/radio\n\nFollow Us  @maellekids\n\n \n\n \n\n \n",
+                        "airDate": "2018-03-15 22:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2018/03/15/maelle-kids-magazine-show-1.mp3",
+                        "length": 1560,
+                        "modifiedDate": "2021-10-08 18:37:50"
+                    },
+                    {
+                        "id": "37342467",
+                        "title": "Maelle Kids Radio featuring 9 year old Jayden Perez",
+                        "description": "On this episode of Maelle Kids Radio, Renaldo interviews  9-year-old philanthropist Jayden Perez. \n",
+                        "airDate": "2019-01-12 22:00:00",
+                        "imageUrl": "https://dasg7xwmldix6.cloudfront.net/episodes/1163003_C1lNurJ2.jpg",
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/01/12/maelle-kids-radio-featuring-9-year-old-jayden-perez.mp3",
+                        "length": 1680,
+                        "modifiedDate": "2021-10-08 18:37:50"
+                    },
+                    {
+                        "id": "42574992",
+                        "title": "Maelle Kids Radio: Featuring 11 Year Old Kid Model and Actress Precious Rose",
+                        "description": "Maelle Kids Radio is a family-friendly radio show powered by Maelle Kids Magazine. On this episode, Renaldo interviews 11-Year-old model Precious Rose. She talks about the runway, modeling and who inspire her. Follow Precious on Instagram @it_preciousrose. Get our latest issue at https://www.maellekids.com/magazines.  \nAdvertise: maellekids.com/adsModel Submission maellekids.com/smMagazines: maellekids.com/magazinesBuy Magazines: maellekids.com/shop",
+                        "airDate": "2019-07-27 21:00:00",
+                        "imageUrl": "https://dasg7xwmldix6.cloudfront.net/episodes/1163003_H9KiWtIV.jpg",
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/07/27/maelle-kids-radio-featuring-11-year-old-kid-model-and-actress-precious-rose.mp3",
+                        "length": 2700,
+                        "modifiedDate": "2021-10-08 18:37:51"
+                    },
+                    {
+                        "id": "44836280",
+                        "title": "Episode 14: With Danville, Virginia Youth Development Specialist  Byron Gunn",
+                        "description": "On this episode, we interview Danville, Virginia Youth Director Byron Gunn from DK Royalties. He talks about how he got started working with kids, the struggles he faces, effective tips for parents with talented kids and more.\n\n \n\n \n",
+                        "airDate": "2019-09-14 21:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/09/14/episode-14-with-danville-virginia-youth-development-specialist-byron-gunn.mp3",
+                        "length": 2700,
+                        "modifiedDate": "2023-02-10 12:09:53"
+                    },
+                    {
+                        "id": "42847364",
+                        "title": "Maelle Kids Radio: Teen Model and Athlete Ta'Nyi from South Bend Join Us",
+                        "description": "Maelle Kids Radio is a family-friendly radio network. Renaldo interview amazing people kids, teens, and parents, and talks about current events. On this episode, Renaldo interviews teen model and athlete Ta'nyi from South Bend, Indiana. \n\nGet our latest issue at https://www.maellekids.com/magazines.  \nAdvertise: maellekids.com/adsModel Submission maellekids.com/smMagazines: maellekids.com/magazines\n ",
+                        "airDate": "2019-08-01 12:30:00",
+                        "imageUrl": "https://dasg7xwmldix6.cloudfront.net/episodes/1318045_Xc51GOC5.jpg",
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/08/01/maelle-kids-radio-teen-model-and-athlete-tanyi-from-south-bend-join-us.mp3",
+                        "length": 2160,
+                        "modifiedDate": "2019-08-01 20:47:09"
+                    },
+                    {
+                        "id": "42930588",
+                        "title": "Maelle Kids Radio: Media 11",
+                        "description": "Maelle Kids Radio is a family-friendly radio network. Renaldo interview amazing people kids, teens, and parents, and talks about current events. On this episode, Renaldo interviews tween models Sarah and Kimi. They talk about their career, goals and more. \n\n\n\tGet our latest issue at https://www.maellekids.com/magazines.  \n\n\t\tAdvertise: maellekids.com/ads\n\t\tModel Submission maellekids.com/sm\n\t\tMagazines: maellekids.com/magazines",
+                        "airDate": "2019-08-03 23:24:49",
+                        "imageUrl": null,
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/08/03/maelle-kids-radio-media-11.mp3",
+                        "length": 2760,
+                        "modifiedDate": "2021-06-22 11:43:44"
+                    },
+                    {
+                        "id": "26674147",
+                        "title": "Maelle Kids Radio: Atlanta based Mom, Wife and Boutique owner Tina Foy",
+                        "description": "One this episode of Maelle Kids Radio, Tee, and Dee talks to Mom and businesswoman Tina Foy. They talk about parenting, Toys\"R\"US, Maelle Kids Magazine Issue 1 and more.\n\nShare With your friends, family, co-workers and classmates.\n\nMagazines: www.maellekids.com/magazines\n\nAdvertise With Us:www.maellekids.com/ads\n\nSubmission: www.maellekids.com/sm\n\nRadio: www.maellekids.com/radio\n\nFollow Us  @maellekids\n",
+                        "airDate": "2018-03-18 18:41:11",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2018/03/18/maelle-kids-radio-atlanta-based-mom-wife-and-boutique-owner-tina-foy.mp3",
+                        "length": 2100,
+                        "modifiedDate": "2021-10-08 18:37:50"
+                    },
+                    {
+                        "id": "42961087",
+                        "title": "Episode 11:  Twin Cover Girls and Horror Movie Stars  Sarah and Kimi Freeman",
+                        "description": "On this episode, Renaldo interviews tween cover models and Horror Movie stars Sarah and Kimi. The ladies talk about growing up in New Jersey, How they got started in modeling, dancing, favorite superheroes, Tia and Tamera Mowry's \"Sister Sister\" TV Show, Marvel Movies, goals, and much more. Plus Renaldo plays music from Peyton Z Basnight, Aria Brooks of the Brooks Sisters, Renaldo Creative and more. \n\nListen to Maelle Kids Radio show archive click here. Subscribe to Apple Podcast, iHeart Radio | TuneIn Radio, and Stitcher.\n\nGet our latest issue at www.maellekids.com/magazines.  \nAdvertise: www.maellekids.com/adsKids Submission www.maellekids.com/sm",
+                        "airDate": "2019-08-03 23:00:00",
+                        "imageUrl": "https://dasg7xwmldix6.cloudfront.net/episodes/1318045_VHgbx0Jk.jpg",
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/08/03/episode-11-twin-cover-girls-and-horror-movie-stars-sarah-and-kimi-freeman.mp3",
+                        "length": 3000,
+                        "modifiedDate": "2019-08-05 05:51:33"
+                    },
+                    {
+                        "id": "42940442",
+                        "title": "Exclusive Teen Cover Girls and Horror Movie Stars  Sarah and Kimi Freeman",
+                        "description": "Maelle Kids Radio is a family-friendly radio network. Renaldo interview amazing people kids, teens, and parents, and talks about current events. On this episode, Renaldo interviews tween cover models and Horror Movie stars Sarah and Kimi Freeman. They talk about their life, favorite music, favorite super heros, career, goals and more. \n\nGet our latest issue at https://www.maellekids.com/magazines.  \nAdvertise: maellekids.com/adsModel Submission maellekids.com/smMagazines: maellekids.com/magazines",
+                        "airDate": "2019-08-03 23:00:00",
+                        "imageUrl": "https://dasg7xwmldix6.cloudfront.net/episodes/1318045_VHgbx0Jk.jpg",
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/08/03/exclusive-teen-cover-girls-and-horror-movie-stars-sarah-and-kimi-freeman.mp3",
+                        "length": 3060,
+                        "modifiedDate": "2020-07-09 12:17:46"
+                    },
+                    {
+                        "id": "54246553",
+                        "title": "Maelle Kids Radio End of Black History Month",
+                        "description": "This episode of Maelle Kids Radio, Renaldo gives updates to what going on in the community and plays family-friendly music.\nwww.maellekids.comwww.maellekids.com/adswww.maellekids.com/music ",
+                        "airDate": "2020-02-27 23:30:00",
+                        "imageUrl": "https://dasg7xwmldix6.cloudfront.net/episodes/1163003_6PsWEcXV.jpg",
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2020/02/27/maelle-kids-radio-end-of-black-history-month.mp3",
+                        "length": 1980,
+                        "modifiedDate": "2021-04-18 03:32:11"
+                    },
+                    {
+                        "id": "42807082",
+                        "title": "Maelle Kids Radio: The Maelle Kids Morning Show Tuesday",
+                        "description": "Maelle Kids Radio is a family-friendly radio show powered by Maelle Kids Magazine. On this episode, Renaldo plays the best new music and talks about new events and more. Plus talks about amazing kids from all over the world. \n\nAdvertise: https://www.maellekids.com/ads \n\nModel Submission: https://www.maellekids.com/sm \n\nMagazines: https://www.maellekids.com/magazines  \n\n ",
+                        "airDate": "2019-07-30 12:30:00",
+                        "imageUrl": "https://dasg7xwmldix6.cloudfront.net/episodes/1318045_Lg36kdO7.jpg",
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/07/30/maelle-kids-radio-the-maelle-kids-morning-show-tuesday.mp3",
+                        "length": 1860,
+                        "modifiedDate": "2021-11-19 22:37:54"
+                    },
+                    {
+                        "id": "26664627",
+                        "title": "Maelle Kids Magazine Episode 1",
+                        "description": "One this episode of Maelle Kids Radio, Tee, and Dee talks about the Maelle Kids Magazine, Top 5 Tips for new parents, Maelle Kids social network and more.\n\nBuy Maelle Kids Magazine Issue 1 https://www.maellekids.com/go/magazines\n\nBuy Ad Space: https://www.maellekids.com/go/ads\n\n ",
+                        "airDate": "2018-03-15 22:00:00",
+                        "imageUrl": null,
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2018/03/15/maelle-kids-magazine-episode-1.mp3",
+                        "length": 1560,
+                        "modifiedDate": "2019-08-30 08:03:18"
+                    },
+                    {
+                        "id": "42930594",
+                        "title": "Maelle Kids Radio: With Tween Models Sarah and Kimi Freeman from New York",
+                        "description": "Maelle Kids Radio is a family-friendly radio network. Renaldo interview amazing people kids, teens, and parents, and talks about current events. On this episode, Renaldo interviews tween models Sarah and Kimi. They talk about their career, goals and more. \n\n\n\tGet our latest issue at https://www.maellekids.com/magazines.  \n\n\t\tAdvertise: maellekids.com/ads\n\t\tModel Submission maellekids.com/sm\n\t\tMagazines: maellekids.com/magazines",
+                        "airDate": "2019-08-03 23:00:00",
+                        "imageUrl": null,
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/08/03/maelle-kids-radio-with-tween-models-sarah-and-kimi-freeman-from-new-york.mp3",
+                        "length": 1440,
+                        "modifiedDate": "2023-03-25 19:11:22"
+                    },
+                    {
+                        "id": "42940443",
+                        "title": "16 Year old High School Athlete Ta'Nyi from South Bend, Indiana Join Us",
+                        "description": "Maelle Kids Radio is a family-friendly radio network. Renaldo interview amazing people kids, teens, and parents, and talks about current events. On this episode, Renaldo interviews teen model and athlete Ta'nyi from South Bend, Indiana. \n\nGet our latest issue at https://www.maellekids.com/magazines.  \nAdvertise: maellekids.com/adsModel Submission maellekids.com/smMagazines: maellekids.com/magazines\n ",
+                        "airDate": "2019-08-01 12:30:00",
+                        "imageUrl": "https://dasg7xwmldix6.cloudfront.net/episodes/1318045_Xc51GOC5.jpg",
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/08/01/16-year-old-high-school-athlete-tanyi-from-south-bend-indiana-join-us.mp3",
+                        "length": 2160,
+                        "modifiedDate": "2019-08-04 08:21:28"
+                    },
+                    {
+                        "id": "35362534",
+                        "title": "Maelle Kids Radio: Featuring teen model and recording artist Peyton Z Basnight",
+                        "description": " Maelle Kids Radio: Featuring teen model and recording artist Peyton Z Basnight.\n",
+                        "airDate": "2019-01-05 22:00:00",
+                        "imageUrl": "",
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/01/05/maelle-kids-radio-featuring-teen-model-and-recording-artist-peyton-z-basnight.mp3",
+                        "length": 2520,
+                        "modifiedDate": "2021-10-08 18:37:50"
+                    },
+                    {
+                        "id": "42807084",
+                        "title": "Maelle Kids Radio: Featuring 11 Year Old Kid Model and Actress Precious Rose",
+                        "description": "Maelle Kids Radio is a family-friendly radio show powered by Maelle Kids Magazine. On this episode, Renaldo interviews 11-Year-old model Precious Rose. She talks about the runway, modeling and who inspire her. Follow Precious on Instagram @it_preciousrose. Get our latest issue at https://www.maellekids.com/magazines.  \nAdvertise: maellekids.com/adsModel Submission maellekids.com/smMagazines: maellekids.com/magazines\n ",
+                        "airDate": "2019-07-27 21:00:00",
+                        "imageUrl": "https://dasg7xwmldix6.cloudfront.net/episodes/1318045_GjI9OScd.jpg",
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/07/27/maelle-kids-radio-featuring-11-year-old-kid-model-and-actress-precious-rose-1.mp3",
+                        "length": 2820,
+                        "modifiedDate": "2021-12-02 07:20:00"
+                    },
+                    {
+                        "id": "26664619",
+                        "title": "Maelle Kids Magazine Episode 1 with Tina Foy",
+                        "description": "One this episode of Maelle Kids Radio, Tee, and Dee talks to Mom and businesswoman Tina Foy. They talk about parenting, Toys\"R\"US, Maelle Kids Magazine Issue 1 and more.\n\nShare it, follow, rate it and leave a review. Even if you can't listen to the entire episode.\n\nBuy Maelle Kids Magazine Issue 1 https://www.maellekids.com/go/magazines\n\nBuy Ad Space: https://www.maellekids.com/go/ads",
+                        "airDate": "2018-03-17 22:00:00",
+                        "imageUrl": null,
+                        "audioUrl": "http://www.blogtalkradio.com/maellekids/2018/03/17/maelle-kids-magazine-episode-1-with-tina-foy.mp3",
+                        "length": 2700,
+                        "modifiedDate": "2018-03-18 14:49:00"
+                    },
+                    {
+                        "id": "42970224",
+                        "title": "Episode 05:   9 year old Jayden Perez",
+                        "description": "On this episode of Maelle Kids Radio, Renaldo interviews  9-year-old philanthropist Jayden Perez. ",
+                        "airDate": "2019-01-12 22:00:00",
+                        "imageUrl": null,
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2019/01/12/episode-05--9-year-old-jayden-perez.mp3",
+                        "length": 1680,
+                        "modifiedDate": "2019-08-05 05:51:38"
+                    },
+                    {
+                        "id": "42970226",
+                        "title": "Episode 03:  Featuring four year old Atlanta Based Child model Princess Nylah",
+                        "description": "Maelle Kids Radio is a family friendly weekly radio show powered by Maelle Kids Magazine. On this episode of Maelle Kids Radio, We talk to Atlanta bases child model Princess Nylah about her modeling career, goals and more. Plus we share industry news and play music from all over the world. Find Princess Nylah in Maelle Kids Magazine Issue #2, on sale at https://www.maellekids.com/go/milan\n\nFollow Princess Nylah on Instagram: @miss_princessnylah \nAdvertise: maellekids.com/go/adsModel Submission Kids Age 1-12 Teens Age 13-18 maellekids.com/go/smMagazines: maellekids.com/go/magazinesBuy Magazines: maellekids.com/go/shopUpdates: maellekids.com/go/updatesWholesale maellekids.com/go/wholesale",
+                        "airDate": "2018-07-21 22:00:00",
+                        "imageUrl": null,
+                        "audioUrl": "https://www.blogtalkradio.com/maellekids/2018/07/21/episode-03-featuring-four-year-old-atlanta-based-child-model-princess-nylah.mp3",
+                        "length": 2520,
+                        "modifiedDate": "2019-08-05 05:51:40"
+                    }
+                ]
+            }
+        },
+    
+     {
+            "id": "528642",
+            "title": "The Patriarchs",
+            "description": "The Patriarch is a show about fatherhood. Greg Browning, a brand new father, gets advice and talks about being a father with veteran fathers Dan, Adam, and Jim.",
+            "imageUrl": "http://patriarchsmedia.com/wp-content/uploads/powerpress/The-Patriarchs.jpg",
+            "modifiedDate": "2023-06-01 19:16:46",
+            "numberOfEpisodes": 30,
+            "episodes": {
+                "data": [
+                    {
+                        "id": "18267252",
+                        "title": "SHOW #23: Parents, Feeling Like You’re Having A Nervous Breakdown?",
+                        "description": "Saw a recent article on signs you might be having a nervous break down. As a new parent, I can say my wife Jenni and I have certainly been pushed to the limit, but thankfully have helped each other through it. In this episode, we talk about the signs of a nervous breakdown…and Patriarch Adam Ritz talks with NFL standout, Chris Jones, about fatherhood as a professional athlete.\nhttp://patriarchsmedia.com/wp-content/uploads/2017/03/PAT_MARCH32017.mp3\n\n ",
+                        "airDate": "2017-03-04 14:42:07",
+                        "imageUrl": "http://patriarchsmedia.com/wp-content/uploads/powerpress/The-Patriarchs.jpg",
+                        "audioUrl": "http://patriarchsmedia.com/wp-content/uploads/2017/03/PAT_MARCH32017.mp3",
+                        "length": 2122,
+                        "modifiedDate": "2020-06-19 23:08:05"
+                    },
+                    {
+                        "id": "36817377",
+                        "title": "Show #46: Fatherly Advice From Star Trek’s Captain Kirk!",
+                        "description": "Incredible opportunity to catch up backstage and talk with Mr. William Shatner recently…and he gave me some advice on parenting. One thing he said ABSOLUTELY shocked my wife! Find out what it was in this episode…",
+                        "airDate": "2019-02-16 15:00:35",
+                        "imageUrl": "http://patriarchsmedia.com/wp-content/uploads/powerpress/The-Patriarchs.jpg",
+                        "audioUrl": "http://media.blubrry.com/the_patriarchs/patriarchsmedia.com/wp-content/uploads/2019/02/PAT021719.mp3",
+                        "length": 1925,
+                        "modifiedDate": "2022-01-06 10:32:23"
+                    },
+                    {
+                        "id": "18267246",
+                        "title": "SHOW #29: Entering The Biting Stage With My 13 Month Old…OUCH!",
+                        "description": "In this episode, I talk with fellow Patriarchs, Jim Burrows & Adam Ritz, about the ‘Biting Stage’. My 13 month old, Reed, surprised me the other night by trying to gnaw a hunk of flesh from my stomach!!\n",
+                        "airDate": "2017-06-09 21:30:35",
+                        "imageUrl": "http://patriarchsmedia.com/wp-content/uploads/powerpress/The-Patriarchs.jpg",
+                        "audioUrl": "http://patriarchsmedia.com/wp-content/uploads/2017/06/PAT_JUNE0617.mp3",
+                        "length": 2597,
+                        "modifiedDate": "2020-06-19 22:07:20"
+                    },
+                    {
+                        "id": "18267254",
+                        "title": "SHOW #22: “No Birthday Presents…Unless You’re Bringing Cash”",
+                        "description": "\nMy son Reed will be turning 1 year old come April of this year. So in this episode, I talk with Adam Ritz and Jim Burrows about the birthday party plans: is it socially acceptable to ask guests to not give Reed a ‘toy’ as a gift, but instead, make a financial contribution to his college fund? Adam thinks that’s ridiculous and calls me out. -Greg Browning",
+                        "airDate": "2017-02-17 22:02:02",
+                        "imageUrl": "http://patriarchsmedia.com/wp-content/uploads/powerpress/The-Patriarchs.jpg",
+                        "audioUrl": "http://patriarchsmedia.com/wp-content/uploads/2017/02/PAT_FEB172017.mp3",
+                        "length": 2081,
+                        "modifiedDate": "2023-03-24 02:18:32"
+                    },
+                    {
+                        "id": "35995997",
+                        "title": "Show #44: Gillette Commercial Asks Men To Be The Best They Can Be",
+                        "description": "Gillette has created a firestorm with their latest commercial. They played off their tagline, “The best a man can get”, asking instead men to be “The best a man can be”. (Take a look at the ad here: https://www.youtube.com/watch?v=koPmuEyP3a0 ) But it has divided men, some so upset that they are boycotting the razor maker. While others, including yours truly, get the message. In this week’s episode, co-host Adam Ritz and I examine the Gillette commercial. Plus we hear from a Super Bowl champ and former Colt about being a dad. ",
+                        "airDate": "2019-01-24 00:59:08",
+                        "imageUrl": "http://patriarchsmedia.com/wp-content/uploads/powerpress/The-Patriarchs.jpg",
+                        "audioUrl": "http://media.blubrry.com/the_patriarchs/patriarchsmedia.com/wp-content/uploads/2019/01/PAT012319.mp3",
+                        "length": 1815,
+                        "modifiedDate": "2021-12-20 00:32:54"
+                    },
+                    {
+                        "id": "19402506",
+                        "title": "SHOW #31: Summer Vaca Dilemma – Let Teens Bring Their Boyfriend/Girlfriend?",
+                        "description": "\nSummertime means family vacations, and on this show, the dads talk about what to do when your teenager wants to bring their boyfriend/girlfriend along. Also, we discuss how kids can be apart of servie projects at an early age. Hear the story of why one 12 year old wears a pink backpack to school. And our quote from this show on the matter of talking with your kids when they want something: “It’s only a conversation if you continue speaking” -Patriarch host Adam Ritz",
+                        "airDate": "2017-07-16 15:53:25",
+                        "imageUrl": "http://patriarchsmedia.com/wp-content/uploads/powerpress/The-Patriarchs.jpg",
+                        "audioUrl": "http://patriarchsmedia.com/wp-content/uploads/2017/07/PAT071617.mp3",
+                        "length": 2103,
+                        "modifiedDate": "2022-01-24 23:23:44"
+                    },
+                    {
+                        "id": "18267248",
+                        "title": "SHOW #27: Only The Love Of A Mother",
+                        "description": "Paying tribute to our moms on this show…we think back to our childhood: Greg Browning recalls his mom comforting him after dropping a pizza, TWICE! Jim Burrows thinks back to his mom playing “dirty scrabble” and Adam Ritz recalls the time his mother taught him to fight. Happy Mother’s Day~",
+                        "airDate": "2017-05-11 23:51:38",
+                        "imageUrl": "http://patriarchsmedia.com/wp-content/uploads/powerpress/The-Patriarchs.jpg",
+                        "audioUrl": "http://patriarchsmedia.com/wp-content/uploads/2017/05/PAT_MAY112017.mp3",
+                        "length": 2469,
+                        "modifiedDate": "2020-06-19 20:12:47"
+                    },
+                    {
+                        "id": "18267249",
+                        "title": "SHOW #26: Celebrating My Son’s First Birthday!",
+                        "description": "In our latest show, Patriarch host Adam Ritz talks with host Greg Browning and his wife Jenni about their son Reed’s first birthday.\nhttp://patriarchsmedia.com/wp-content/uploads/2017/04/PAT_APRIL13-2017.mp3\n",
+                        "airDate": "2017-04-19 16:34:34",
+                        "imageUrl": "http://patriarchsmedia.com/wp-content/uploads/powerpress/The-Patriarchs.jpg",
+                        "audioUrl": "http://patriarchsmedia.com/wp-content/uploads/2017/04/PAT_APRIL13-2017.mp3",
+                        "length": 3252,
+                        "modifiedDate": "2022-01-01 06:11:42"
+                    },
+                    {
+                        "id": "24295288",
+                        "title": "SHOW #40: Merry Christmas & Happy New Year!",
+                        "description": "\nSpecial guest Patriarch, comedian and voice-over artist Artie Widgery joins us on this episode. You may have heard his incredible voice in a radio or TV commercial, perhaps even in a video game! The Patriarchs also discuss Christmas memories and bullies in the headlines in our last show of the year. Merry Christmas from The Patriarchs! See you in 2018!\n\nhttp://patriarchsmedia.com/wp-content/uploads/2017/12/PAT122817.mp3\n",
+                        "airDate": "2017-12-28 17:44:44",
+                        "imageUrl": "http://patriarchsmedia.com/wp-content/uploads/powerpress/The-Patriarchs.jpg",
+                        "audioUrl": "http://media.blubrry.com/the_patriarchs/patriarchsmedia.com/wp-content/uploads/2017/12/PAT122817.mp3",
+                        "length": 2673,
+                        "modifiedDate": "2019-01-24 17:57:13"
+                    },
+                    {
+                        "id": "36505978",
+                        "title": "Show #45: How To Ditch Your Toddler’s Pacifier Without Losing Your Mind!",
+                        "description": "My soon to be 3 year old HAS to stop using his pacifier, or as he affectionately refers to it, his BAA-BAA. Of course you can’t “reason” with a toddler, so I turn to my fellow radio dads for advice in this week’s episode.",
+                        "airDate": "2019-02-07 18:38:49",
+                        "imageUrl": "http://patriarchsmedia.com/wp-content/uploads/powerpress/The-Patriarchs.jpg",
+                        "audioUrl": "http://media.blubrry.com/the_patriarchs/patriarchsmedia.com/wp-content/uploads/2019/02/PAT020719.mp3",
+                        "length": 1783,
+                        "modifiedDate": "2022-01-03 09:42:53"
+                    }
+                ]
+            }
+        },
+    {
 	"id": "4753899",
 	"title": "Bellied Up",
 	"description": "Podcast with Charlie Berens and Myles The You Betcha Guy",
@@ -113,8 +650,171 @@
 }
 
   ],
-  "search": [
-    {"id": "149954512",
-            "title": "#15 Matchmaking For Moms"}
-  ]
+  "search": [],
+  "categories":
+	[{"id":"family","data":[
+                {
+                    "id": "528642",
+                    "title": "The Patriarchs",
+                    "description": "The Patriarch is a show about fatherhood. Greg Browning, a brand new father, gets advice and talks about being a father with veteran fathers Dan, Adam, and Jim.",
+                    "numberOfEpisodes": 30,
+                    "imageUrl": "http://patriarchsmedia.com/wp-content/uploads/powerpress/The-Patriarchs.jpg",
+                    "modifiedDate": "2023-06-01 19:16:46"
+                },
+                {
+                    "id": "642374",
+                    "title": "Maelle Kids Radio",
+                    "description": "Weekly entertainment and modeling podcast for kids, teens, and parents. Exclusive interviews, family-friendly music, entertainment news and more.",
+                    "numberOfEpisodes": 42,
+                    "imageUrl": "https://dasg7xwmldix6.cloudfront.net/hostpics/retina/91f4739e-77d0-4170-8b40-59c180669eb0_maelle-radio-logo-01.jpg",
+                    "modifiedDate": "2023-06-01 22:06:52"
+                },
+                {
+                    "id": "910373",
+                    "title": "The Allergy Today Podcast - Classic Episodes",
+                    "description": "Living with allergies, asthma and eczema. Real people, real experiences, real conversations. Quentin, Ruth, Alice and guests just itching to talk",
+                    "numberOfEpisodes": 15,
+                    "imageUrl": "https://pbcdn1.podbean.com/imglogo/image-logo/5671410/AllergyTodayPodcastLogo1.png",
+                    "modifiedDate": "2023-06-02 05:24:54"
+                },
+                {
+                    "id": "776423",
+                    "title": "Les Poésies d’Héloïse",
+                    "description": "Découvrez – ou re-découvrez – les poésies récitées par Héloïse.",
+                    "numberOfEpisodes": 119,
+                    "imageUrl": "https://lespoesiesdheloise.cdn.castopod.com/media/podcasts/heloise/cover_feed.jpg",
+                    "modifiedDate": "2023-07-06 07:01:55"
+                },
+                {
+                    "id": "717259",
+                    "title": "Insight Says",
+                    "description": "A podcast about mental health and counseling featuring therapists, psychologists, nurse practitioners and other clinicians from Insight Counseling LLC in Ridgefield, Connecticut.",
+                    "numberOfEpisodes": 22,
+                    "imageUrl": "https://insightcounselingllc.com/wp-content/uploads/powerpress/Insight_Says_Podcast_Logo_Finalpng.png",
+                    "modifiedDate": "2023-07-06 05:27:39"
+                },
+                {
+                    "id": "531412",
+                    "title": "Wisecracks Radio Hour!",
+                    "description": "Join Chuck and Wagoner as they begin their adventure in the past! \nThis pair of scientists were transported through time from the year 2017 to 1947.\nForced to pay the bills, they find themselves restoring old radio programs, and we get to listen in as they make Wisecracks over the programs as they try to find their way back to their home in 2017.\n\nFor fans of Mystery Science Theater 3000 (MST3K)",
+                    "numberOfEpisodes": 40,
+                    "imageUrl": "https://cdn.captivate.fm/artwork/b3f3b45c-90cf-4796-87d1-1bce975e42f2/mainlogo.jpeg",
+                    "modifiedDate": "2023-07-08 09:39:02"
+                },
+                {
+                    "id": "750886",
+                    "title": "Magnificent Mothers",
+                    "description": "In the Magnificent Mothers Podcast, Vanessa Kanbi interviews mums who have inspirational stories to share. Discussing the challenges that come with being a mother along with the Joys! The mums on this podcast have experienced extraordinary situations which will inspire any listener!",
+                    "numberOfEpisodes": 30,
+                    "imageUrl": "https://ssl-static.libsyn.com/p/assets/a/1/d/3/a1d3e2ff73aafdb1/Magnificent_Mothers_CoverArt_Final.jpg",
+                    "modifiedDate": "2023-07-08 06:08:35"
+                },
+                {
+                    "id": "1153101",
+                    "title": "Mack Meets History",
+                    "description": "A humorous and thrilling “fictional podcast adventure” with a Christian worldview. It features two teenage boys – Mack, an impulsive and enterprising host, and Lewis, his loyal, behind-the-scenes sidekick and best friend. The boys have figured out a way to build a makeshift time machine that transports them back in time to interview famous heroes of the past.",
+                    "numberOfEpisodes": 2,
+                    "imageUrl": "https://storage.buzzsprout.com/variants/nlq80ncgpisxf1l9pydsc6z62v9z/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad?.jpg=",
+                    "modifiedDate": "2023-07-08 06:44:29"
+                },
+                {
+                    "id": "1758822",
+                    "title": "Babycakes",
+                    "description": "Two workin’ moms talking about the beautiful mess that’s parenting. Support this podcast: https://podcasters.spotify.com/pod/show/babycakespodcast/support",
+                    "numberOfEpisodes": 5,
+                    "imageUrl": "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/4991476/4991476-1611875707795-dd285746ed09c.jpg",
+                    "modifiedDate": "2023-07-08 06:18:40"
+                },
+                {
+                    "id": "5087182",
+                    "title": "Harlee’s Real Vybez Podcast",
+                    "description": "I am looking to communicate with my followers to create a family ambiance we all may need. So let’s have a good time and enjoy REAL VYBEZ!!",
+                    "numberOfEpisodes": 10,
+                    "imageUrl": "https://deow9bq0xqvbj.cloudfront.net/image-logo/15773118/Real_Vybez_w_Harlee_iccfvy.jpg",
+                    "modifiedDate": "2023-07-11 11:08:33"
+                },
+                {
+                    "id": "663705",
+                    "title": "In The Trenches with the Toulons",
+                    "description": "Every week join Touly and Ralph as they jump into the trenches discussing the good, bad and humorous side of marriage & relationships. The couple also invite guests to discuss their personal journey pertaining to the weekly topic.\n\nTouly and Ralph are newlyweds trying to make this their best and last marriage by pulling the veil back, exposing the other sides of marriage.\n\nPlease subscribe, rate and comment.",
+                    "numberOfEpisodes": 98,
+                    "imageUrl": "https://ssl-static.libsyn.com/p/assets/3/b/c/a/3bca16769e8f179a/itunes_avatar.jpg",
+                    "modifiedDate": "2023-07-10 00:38:59"
+                },
+                {
+                    "id": "802908",
+                    "title": "Vet Candy on Pet Life Radio (PetLifeRadio.com)",
+                    "description": "Vet Candy is a veterinary talk show that showcases dynamic and relatable veterinary professionals. Unfiltered and always entertaining, hosts Dr. Jenifer Chatfield, Dr. Jason Chatfield, and Dr. Jill Lopez and their guests present unique and amusing points of view on literally everything related to vet life.",
+                    "numberOfEpisodes": 49,
+                    "imageUrl": "https://www.petliferadio.com/VetCandy1400.jpg",
+                    "modifiedDate": "2023-07-09 14:45:00"
+                },
+                {
+                    "id": "622709",
+                    "title": "d20 Dames",
+                    "description": "d20 Dames is a storytelling podcast powered by Dungeons & Dragons. Every other week a group of four daring friends comes together to solve mysteries, befriend monsters, and explore a fantastic realm.",
+                    "numberOfEpisodes": 203,
+                    "imageUrl": "https://ssl-static.libsyn.com/p/assets/7/7/d/c/77dc27b2c9530b5540be95ea3302a6a1/Wanderleaf_Logo_Flat_2500px.png",
+                    "modifiedDate": "2023-07-10 12:58:37"
+                },
+                {
+                    "id": "3818",
+                    "title": "The Boss Mom Podcast",
+                    "description": "Welcome AMAZING BOSS MOM\nWe are so glad you found us because that means you have a burning desire to create something in this world...something that positively impacts people AND also makes you money.\n\nYou are in the right place.\n\nHere at Boss Mom, we know all too well the challenges of raising babies and businesses at the same time and you need more than just great resources (which we have) you also need a strong support system (we have that too).\n\nJust like all moms you need a simple business because life is complex and you should never have to apologize for having a sometimes unpredictable schedule. You can build a really successful (and profitable) business in 15 hours a week, you just have to know how (and we are going to show you).\n\nWe interview amazing ladies who share their struggles and successes as well as solo episodes where I guide you through our Nurture to Convert System designed to help Boss Moms raise their business and babies at the same time. \n\nI'm Dana Malstaff, founder and CEO of Boss Mom LLC, and I'll be your host.",
+                    "numberOfEpisodes": 516,
+                    "imageUrl": "https://ssl-static.libsyn.com/p/assets/9/8/e/5/98e5ed85ae53b49b/Boss_Mom_Podcast_Cover_2021.png",
+                    "modifiedDate": "2023-07-10 15:27:16"
+                },
+                {
+                    "id": "28116",
+                    "title": "Mom and Dad Are Fighting | Slate's parenting show",
+                    "description": "Jamilah Lemieux, Zak Rosen, and Elizabeth Newcamp share triumphs and fails and offer advice on parenting kids from toddler to teens.",
+                    "numberOfEpisodes": 504,
+                    "imageUrl": "https://megaphone.imgix.net/podcasts/31ef271a-8289-11e5-b42a-27d2fd35eff7/image/uploads_2F1516905010671-cxg36pv3386-d18113fe889804ff329c98b9aded52fd_2F01_Slate_Redux_Podcast_Cover_MADAF.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format%2Ccompress",
+                    "modifiedDate": "2023-07-10 13:15:16"
+                },
+                {
+                    "id": "934037",
+                    "title": "History or His Story?",
+                    "description": "Can you figure out which of these 3 history stories is fake?! Play along each week as Dan tries to fool you in figuring out if it's History or His Story!New Episodes: Every Monday @ 3am EST. Listen ad-free at bramblejamplus.comThis show is part of the Spreaker Prime Network, if you are interested in advertising on this podcast, contact us at https://www.spreaker.com/show/4438182/advertisement",
+                    "numberOfEpisodes": 72,
+                    "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/8a1c97cf06e4c44bd79f07ff1bf038a9.jpg",
+                    "modifiedDate": "2023-07-10 13:05:47"
+                },
+                {
+                    "id": "855656",
+                    "title": "Parenting Without Power Struggles",
+                    "description": "Susan Stiffelman is a family therapist, parent coach, and one of the country's premiere parenting experts, and the author of Parenting Without Power Struggles and Parenting With Presence (an Eckhart Tolle edition.) \n\nSusan's podcasts feature conversations with guests including Dr. Dan Siegel, Janet Lansbury, Dr. Kristen Neff, Dr. Mona Delahooke, Glennon Doyle, Dr. Jane Goodall, Jack Kornfield, Martha Beck, and many others.",
+                    "numberOfEpisodes": 117,
+                    "imageUrl": "https://ssl-static.libsyn.com/p/assets/6/5/a/d/65adb7461ebd9246/podcast-cover-art_1400x1400-1.jpeg",
+                    "modifiedDate": "2023-07-10 13:08:07"
+                },
+                {
+                    "id": "894065",
+                    "title": "Disney Grown Up",
+                    "description": "Disney movies mean a lot of things to a lot of people; happiness, childhood, fun, happily ever after and, most of all, magic. But, what does it mean now that we are all grown up? Hosted on Acast. See acast.com/privacy for more information.",
+                    "numberOfEpisodes": 50,
+                    "imageUrl": "https://assets.pippa.io/shows/610be76674807531bb9721ac/show-cover.png",
+                    "modifiedDate": "2023-07-10 13:07:31"
+                },
+                {
+                    "id": "1538989",
+                    "title": "Le guide de survie des Débrouillards",
+                    "description": "Ce balado scientifique se permet d'aller là où personne d'autre n'ose s'aventurer. Raphaëlle Derome et Massi Mahiou nous donnent des trucs pour faire face à toutes sortes de situations : comment survivre à sa chambre en désordre, aux bruits, aux variations de température, au web, à ses frères et sœurs, à une tempête et à bien d'autres grands ou petits périls de notre quotidien. Le savais-tu? Cette année, le mouvement éducatif des Débrouillards célèbre son 40e anniversaire. Et 40 ans d'expériences, ça se fête!",
+                    "numberOfEpisodes": 24,
+                    "imageUrl": "https://images.radio-canada.ca/w_1400,h_1400/v1/audio/balado/1x1/le-guide-de-survie-des-debrouillards-visuel-moteur-molecule.jpg",
+                    "modifiedDate": "2023-07-10 09:50:32"
+                },
+                {
+                    "id": "2049",
+                    "title": "The Birth Hour - A Birth Story Podcast",
+                    "description": "Whether you are pregnant and looking for inspirational birth stories through your pregnancy, trying to conceive, breastfeeding, or postpartum; if you're a first time mom or a veteran parent of multiple children, you can learn, laugh and maybe even cry a little at these moving childbirth stories from those willing to share one of the most intimate moments of their lives.",
+                    "numberOfEpisodes": 867,
+                    "imageUrl": "https://ssl-static.libsyn.com/p/assets/b/5/8/7/b587dc47cd3ef04c/birth-hour-logo.jpg",
+                    "modifiedDate": "2023-07-10 09:54:17"
+                }
+            ]}]
+  
+
+  
 }

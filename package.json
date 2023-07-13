@@ -5,7 +5,7 @@
   "scripts": {
     "android": "react-native run-android",
     "android:production": "cross-env ENVFILE=.env.production react-native run-android",
-    "mock-server": "json-server --host 192.168.1.213 --watch db.json",
+    "mock-server": "json-server --host 192.168.0.105 --watch db.json",
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
@@ -53,16 +53,15 @@
     "metro-react-native-babel-preset": "0.73.9",
     "prettier": "^2.4.1",
     "react-native-dotenv": "^3.4.9",
+    "react-native-flipper": "^0.203.0",
     "react-test-renderer": "18.2.0",
+    "redux-flipper": "^2.0.2",
     "typescript": "4.8.4"
   },
   "jest": {
     "preset": "react-native"
-  }
-  ,
+  },
   "overrides": {
-     "react-devtools-core": "~4.25.0"
+    "react-devtools-core": "~4.25.0"
   }
-
-  
 }

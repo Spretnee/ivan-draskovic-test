@@ -1,7 +1,6 @@
 import { ActivityIndicator, Pressable, View } from 'react-native';
 import React from 'react';
 import { FlatList } from 'react-native-gesture-handler';
-import { usePlayerContext } from '../../providers/PlayerProvider';
 import { Text } from '../../components/Text';
 import { FONT_DARK1, GREEN } from '../../constants/colors';
 import { SliderMinimized } from '../HomeScreen/SliderMinimized';
@@ -13,12 +12,19 @@ import { Image } from '../PlayerScreen/Image/Image';
 import { useControls } from '../../hooks/useControls';
 import { useSelectPlayerState } from '../../store/playerSlice';
 import TrackPlayer from 'react-native-track-player';
+import { MOCK_PODCAST_ID } from '../../api/constants';
+import { useGetPodcast } from '../../hooks/useGetPodcast';
+import { useLoadPlaylist } from '../../hooks/useLoadPlaylist';
 
 //TODO: refactor screen
 
-const GreetingsScreen = () => {
+export const PodcastsScreen = ({ route }: any) => {
   const { isBuffering, isConnecting, isPlaying } = useCustomPlaybackState();
   const controls = useControls();
+
+  const data = useGetPodcast(MOCK_PODCAST_ID);
+
+  useLoadPlaylist(data.data);
 
   const {
     queue,
@@ -33,10 +39,22 @@ const GreetingsScreen = () => {
       <FlatList
         data={queue}
         ListHeaderComponent={() => (
-          <View>
-            <Text type={'H2'}>{podcastMetadata?.title}</Text>
+          <View style={{ padding: 8 }}>
+            <Text
+              type={'H2'}
+              style={{
+                marginVertical: 10,
+                justifyContent: 'center',
+              }}
+            >
+              {podcastMetadata?.title}
+            </Text>
             <Text type={'H3'}>{podcastMetadata?.description}</Text>
-            <Image url={podcastMetadata?.imageUrl} />
+            <Image
+              url={podcastMetadata?.imageUrl}
+              style={{ marginVertical: 20 }}
+            />
+            <Text type={'H2'}>All Episodes</Text>
           </View>
         )}
         renderItem={({ item, index }) => {
@@ -47,9 +65,19 @@ const GreetingsScreen = () => {
                   paddingVertical: 13,
                   flexDirection: 'row',
                   justifyContent: 'space-between',
+                  width: '100%',
                 }}
               >
-                <View>
+                <View style={{ alignItems: 'flex-start', width: '85%' }}>
+                  <Image
+                    url={
+                      item.artwork ? item.artwork : podcastMetadata?.imageUrl
+                    }
+                    style={{
+                      width: 60,
+                      height: 60,
+                    }}
+                  />
                   <Text
                     type={'H3'}
                     style={{
@@ -92,7 +120,11 @@ const GreetingsScreen = () => {
 
                 {(isBuffering || isConnecting) &&
                 currentTrack.id === item.id ? (
-                  <ActivityIndicator size={'large'} color={GREEN} />
+                  <ActivityIndicator
+                    size={'large'}
+                    color={GREEN}
+                    style={{ padding: 10, justifyContent: 'flex-end' }}
+                  />
                 ) : (
                   <Pressable
                     onPress={
@@ -106,7 +138,10 @@ const GreetingsScreen = () => {
                             TrackPlayer.play();
                           }
                     }
-                    style={{ padding: 10 }}
+                    style={{
+                      padding: 10,
+                      alignSelf: 'flex-end',
+                    }}
                   >
                     <SvgXml
                       xml={
@@ -133,5 +168,3 @@ const GreetingsScreen = () => {
     </View>
   );
 };
-
-export default GreetingsScreen;

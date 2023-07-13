@@ -1,4 +1,4 @@
-import TrackPlayer, {Event} from 'react-native-track-player';
+import TrackPlayer, { Event } from 'react-native-track-player';
 
 module.exports = async function () {
   TrackPlayer.addEventListener('remote-play', () => TrackPlayer.play());
@@ -20,3 +20,4 @@ module.exports = async function () {
     TrackPlayer.RemoteJumpForward(),
   );
 };
+// TODO:playbackerror

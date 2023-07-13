@@ -1,5 +1,5 @@
-import {StyleSheet} from 'react-native';
-import {GRAY} from '../../../constants/colors';
+import { StyleSheet } from 'react-native';
+import { GRAY } from '../../constants/colors';
 
 const styles = StyleSheet.create({
   title: {

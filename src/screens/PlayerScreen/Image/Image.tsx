@@ -1,14 +1,13 @@
 import { View, Image as RNImage, StyleProp, ImageStyle } from 'react-native';
 import React from 'react';
 import { styles } from './Image.styles';
-import { Episode } from '../../../api/types';
-import { ViewProps } from 'react-native-svg/lib/typescript/fabric/utils';
 
 export const Image = ({
+  // TODO:refactor image and optimize
   url,
   style,
 }: {
-  url: string | undefined;
+  url: string | number | undefined;
   style?: StyleProp<ImageStyle>;
 }) => {
   return (
@@ -23,7 +22,7 @@ export const Image = ({
             style,
           ]}
           source={{
-            uri: url,
+            uri: typeof url === 'number' ? '' : url,
           }}
         />
       ) : (

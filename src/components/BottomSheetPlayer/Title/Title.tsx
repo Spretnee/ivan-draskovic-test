@@ -1,10 +1,10 @@
-import {View} from 'react-native';
+import { View } from 'react-native';
 import React from 'react';
-import {styles} from './Title.styles';
-import {Text} from '../../Text';
-import {TitleProps} from './types';
+import { styles } from './Title.styles';
+import { Text } from '../../Text';
+import { TitleProps } from './types';
 
-export const Title = ({title, author}: TitleProps) => {
+export const Title = ({ title, author }: TitleProps) => {
   return (
     <View>
       <View style={styles.podcastInfo}>
@@ -12,9 +12,11 @@ export const Title = ({title, author}: TitleProps) => {
           {author}
         </Text>
       </View>
-      <Text type={'H4'} style={styles.title}>
-        {title}
-      </Text>
+      <View style={{ width: '80%', paddingHorizontal: 4 }}>
+        <Text type={'H4'} style={styles.title} numberOfLines={1}>
+          {title}
+        </Text>
+      </View>
     </View>
   );
 };
