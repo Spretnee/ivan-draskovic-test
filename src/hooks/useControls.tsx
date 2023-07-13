@@ -13,6 +13,7 @@ export const useControls = () => {
 
   const skip = async (id: number, initialPosition?: number) => {
     await TrackPlayer.skip(id, initialPosition);
+    await TrackPlayer.play();
   };
 
   const jumpForward30 = async () => {

@@ -1,5 +1,5 @@
 import { ActivityIndicator, Pressable, SafeAreaView, View } from 'react-native';
-import React from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { FlatList } from 'react-native-gesture-handler';
 import { Text } from '../../components/Text';
 import { BACKGROUND, FONT_DARK1, GREEN } from '../../constants/colors';
@@ -10,30 +10,26 @@ import { PAUSE, PLAY_BUTTON } from '../../assets/images/svg';
 import { formatDate } from '../PlayerScreen/Slider/utils/formatDate';
 import { Image } from '../PlayerScreen/Image/Image';
 import { useControls } from '../../hooks/useControls';
-import { useSelectPlayerState } from '../../store/playerSlice';
-import TrackPlayer from 'react-native-track-player';
-import { MOCK_PODCAST_ID } from '../../api/constants';
+import { useSelectPlayerStore } from '../../store/playerSlice';
 import { useGetPodcast } from '../../hooks/useGetPodcast';
+import { loadTracks } from '../../utils/player/loadTracks';
 import { useLoadPlaylist } from '../../hooks/useLoadPlaylist';
-import { styles } from '../SearchScreen/SearchScreen.styles';
 
 //TODO: refactor screen
 
 export const PodcastsScreen = ({ route }: any) => {
-  const {
-    isBuffering,
-    isConnecting,
-    isPlaying,
-    isLoading: isPlayerLoading,
-  } = useCustomPlaybackState();
+  const { isPlaying, isLoading: isPlayerLoading } = useCustomPlaybackState();
   const controls = useControls();
 
   const { data, isLoading: isDataLoading } = useGetPodcast(route.params.id);
 
-  useLoadPlaylist(data);
-
   const { currentTrack, currentTrackIndex, multiTrackProgress } =
-    useSelectPlayerState();
+    useSelectPlayerStore();
+
+  const isQueueLoaded = useMemo(
+    () => data?.episodes.data[currentTrackIndex!].id === currentTrack.id,
+    [data],
+  );
 
   if (isDataLoading) {
     return (
@@ -141,11 +137,13 @@ export const PodcastsScreen = ({ route }: any) => {
                       isPlaying && currentTrack.id === item.id
                         ? controls.pause
                         : () => {
+                            if (!isQueueLoaded) {
+                              loadTracks(data);
+                            }
                             controls.skip(
                               index,
                               multiTrackProgress[item.id] || 0,
                             );
-                            TrackPlayer.play();
                           }
                     }
                     style={{

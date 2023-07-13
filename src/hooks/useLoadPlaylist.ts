@@ -3,7 +3,6 @@ import TrackPlayer, { Track } from 'react-native-track-player';
 import { Podcast } from '../api/types';
 import { formatPlaylist } from '../utils/player/formatPlaylist';
 import { addTrack } from '../utils/player/addTrack';
-import { useAppDispatch } from '../store/hooks';
 
 export const useLoadPlaylist = (podcast: Podcast | undefined) => {
   const setPlaylist = async () => {

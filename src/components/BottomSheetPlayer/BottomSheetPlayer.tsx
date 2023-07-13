@@ -16,9 +16,12 @@ export const BottomSheetPlayer = ({
 }: BottomSheetPlayerProps) => {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
-  const { isIdle, isReady, isPlaying, isPaused } = state;
+  const { isIdle, isReady, isLoading, isPlaying, isPaused } = state;
 
-  if (!isIdle && !isReady && !isPlaying && !isPaused) {
+  if (
+    (!isIdle && !isReady && !isPlaying && !isPaused) ||
+    currentTrack.id === ''
+  ) {
     bottomSheetRef.current?.close();
   } else {
     bottomSheetRef.current?.snapToIndex(0);

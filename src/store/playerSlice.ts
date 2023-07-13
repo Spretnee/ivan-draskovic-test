@@ -110,7 +110,7 @@ export const selectPlayerState = createSelector(
   },
 );
 
-export const useSelectPlayerState = () => useAppSelector(selectPlayerState);
+export const useSelectPlayerStore = () => useAppSelector(selectPlayerState);
 
 export const {
   setCurrentTrack,

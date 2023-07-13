@@ -12,7 +12,7 @@ import { BACKGROUND } from '../../constants/colors';
 import { DismissChevron } from './DismissChevron';
 import { useCustomPlaybackState } from '../../hooks/useCustomPlaybackState';
 import { useControls } from '../../hooks/useControls';
-import { useSelectPlayerState } from '../../store/playerSlice';
+import { useSelectPlayerStore } from '../../store/playerSlice';
 import { Image } from '../../screens/PlayerScreen/Image/Image';
 import { Slider } from '../../screens/PlayerScreen/Slider';
 import { EpisodeTitle } from '../../screens/PlayerScreen/EpisodeTitle';
@@ -21,7 +21,7 @@ const { height } = Dimensions.get('screen');
 export const ModalPlayer = () => {
   const bottomSheetModalRef = useRef<BottomSheetModal>(null);
 
-  const { currentTrack, podcastMetadata } = useSelectPlayerState();
+  const { currentTrack, podcastMetadata } = useSelectPlayerStore();
   const controls = useControls();
   const { handlePresentModalPress, dismissModal } =
     useHandlePresentModal(bottomSheetModalRef);

@@ -17,7 +17,6 @@ export const checkPlayerIsSetup = async () => {
     await TrackPlayer.setupPlayer({
       minBuffer: 0,
       playBuffer: 0,
-      maxCacheSize: 5000,
     });
     isSetup = true;
     await TrackPlayer.updateOptions({
