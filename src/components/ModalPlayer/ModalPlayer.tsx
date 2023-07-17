@@ -1,5 +1,10 @@
 import React, { useMemo, useRef } from 'react';
-import { View, SafeAreaView, Dimensions } from 'react-native';
+import {
+  View,
+  SafeAreaView,
+  Dimensions,
+  KeyboardAvoidingView,
+} from 'react-native';
 import { BottomSheetModal } from '@gorhom/bottom-sheet';
 import { BottomSheetPlayer } from '../BottomSheetPlayer/BottomSheetPlayer';
 import { styles } from './ModalPlayer.styles';
@@ -33,6 +38,7 @@ export const ModalPlayer = () => {
   return (
     <>
       <BottomSheetModal
+        keyboardBehavior="fillParent"
         ref={bottomSheetModalRef}
         index={0}
         enablePanDownToClose={false}

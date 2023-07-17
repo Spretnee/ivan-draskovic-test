@@ -1,4 +1,4 @@
-import {Text as RNText, TextStyle} from 'react-native';
+import { Text as RNText, TextStyle } from 'react-native';
 import React from 'react';
 import styles from './Text.styles';
 
@@ -18,8 +18,9 @@ export const Text = ({
 }: CustomTextProps) => (
   <RNText
     numberOfLines={numberOfLines}
-    style={[styles.default, styles[type], {...style}]}
-    {...restProps}>
+    style={[styles.default, styles[type], { ...style }]}
+    {...restProps}
+  >
     {children}
   </RNText>
 );

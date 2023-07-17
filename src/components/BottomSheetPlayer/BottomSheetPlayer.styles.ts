@@ -1,11 +1,7 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  contentContainer: {
-    // borderColor: 'red',
-    // borderStyle: 'solid',
-    // borderWidth: 1,
-  },
+  contentContainer: {},
   backgroundStyle: {
     borderColor: 'green',
     // borderStyle: 'solid',
@@ -37,5 +33,5 @@ export const styles = StyleSheet.create({
     alignContent: 'center',
     margin: -10,
   },
-  image: {width: 40, height: 40, borderRadius: 4},
+  image: { width: 40, height: 40, borderRadius: 4 },
 });

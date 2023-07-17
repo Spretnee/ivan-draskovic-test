@@ -1,5 +1,5 @@
-import { Pressable, TouchableOpacity } from 'react-native';
-import React, { useCallback, useMemo, useRef } from 'react';
+import { KeyboardAvoidingView, Pressable } from 'react-native';
+import React, { useRef, useState } from 'react';
 import BottomSheet, { BottomSheetModal } from '@gorhom/bottom-sheet';
 import { BottomSheetPlayerProps } from './types';
 import { styles } from './BottomSheetPlayer.styles';
@@ -19,14 +19,13 @@ export const BottomSheetPlayer = ({
   const { isIdle, isReady, isLoading, isPlaying, isPaused } = state;
 
   if (
-    (isIdle && !isReady && !isPlaying && !isPaused) ||
+    (!isIdle && !isReady && !isPlaying && !isPaused && isLoading) ||
     currentTrack.id === ''
   ) {
     bottomSheetRef.current?.close();
   } else {
     bottomSheetRef.current?.snapToIndex(0);
   }
-
   return (
     <BottomSheet
       ref={bottomSheetRef}
@@ -36,7 +35,7 @@ export const BottomSheetPlayer = ({
       backgroundStyle={styles.backgroundStyle}
       handleIndicatorStyle={{ display: 'none' }}
       snapPoints={snapPoints}
-      containerStyle={styles.contentContainer}
+      containerStyle={[styles.contentContainer]}
       style={styles.sheetContainer}
     >
       <Pressable onPress={onPress} style={styles.pressableStyle}>

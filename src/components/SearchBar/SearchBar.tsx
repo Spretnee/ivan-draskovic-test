@@ -1,6 +1,7 @@
 import { Controller, FieldValues, useForm } from 'react-hook-form';
 import { Button, SafeAreaView, TextInput } from 'react-native';
 import { FONT_DARK1, FONT_DARK2, GREEN } from '../../constants/colors';
+import { useNavigation } from '@react-navigation/native';
 
 type SearchBarProps = {
   onSearch: (searchText: FieldValues) => void;
@@ -8,6 +9,7 @@ type SearchBarProps = {
 
 export const SearchBar = ({ onSearch }: SearchBarProps) => {
   const { control, handleSubmit } = useForm();
+  const { navigate } = useNavigation<any>();
 
   const onSubmit = (data: FieldValues) => {
     onSearch(data.searchText);
@@ -19,10 +21,12 @@ export const SearchBar = ({ onSearch }: SearchBarProps) => {
         control={control}
         render={({ field: { onChange, value } }) => (
           <TextInput
+            onPressIn={() => navigate('SearchOptions')}
+            onFocus={() => navigate('SearchOptions')}
             onChangeText={text => onChange(text)}
             value={value}
             style={{ color: FONT_DARK1 }}
-            placeholder="Search"
+            placeholder="What would you want to listen to?"
             placeholderTextColor={FONT_DARK2}
           />
         )}

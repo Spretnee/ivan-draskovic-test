@@ -1,7 +1,12 @@
-import axios, {AxiosResponse} from 'axios';
-import {MOCK_PODCAST_ENDPOINT, MOCK_PODCAST_ID} from './constants';
-import {AxiosPodcastResponse, Podcast} from './types';
-import {apiClient} from './axios';
+import axios, { AxiosResponse } from 'axios';
+import {
+  MOCK_PODCAST_ENDPOINT,
+  MOCK_PODCAST_ID,
+  MOCK_POPULAR_ENDPOINT,
+  MOCK_REGION_ENDPOINT,
+} from './constants';
+import { AxiosPodcastResponse, Podcast } from './types';
+import { apiClient } from './axios';
 import Config from 'react-native-config';
 
 type getPodcastProps = {
@@ -53,3 +58,21 @@ const getPodcastMock = async (query: string) => {
 
 export const handleGetPodcast = (query: string) =>
   Config.ENV === 'development' ? getPodcastMock(query) : getPodcast(query);
+
+export const getRegionalPodcastMock = async () => {
+  try {
+    const response = await apiClient.get<Podcast[]>(`${MOCK_REGION_ENDPOINT}`);
+    return response.data;
+  } catch (e) {
+    console.error(e);
+  }
+};
+
+export const getPopularPodcastMock = async () => {
+  try {
+    const response = await apiClient.get<Podcast[]>(`${MOCK_POPULAR_ENDPOINT}`);
+    return response.data;
+  } catch (e) {
+    console.error(e);
+  }
+};

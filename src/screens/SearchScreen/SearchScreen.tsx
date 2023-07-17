@@ -5,12 +5,19 @@ import { GREEN } from '../../constants/colors';
 import { CATEGORIES, PodcastCategories } from '../../constants/podchaserApi';
 import { Text } from '../../components/Text/Text';
 import { SearchBar } from '../../components/SearchBar/SearchBar';
+import { WhatToListenButton } from './WhatToListenButton';
 
 export const SearchScreen = ({ navigation }: any) => {
   return (
     // TODO:navigaion type safety
     <View style={styles.title}>
-      <SearchBar onSearch={() => {}} />
+      <Text style={{ padding: 8 }} type={'H2'}>
+        Search
+      </Text>
+      <WhatToListenButton />
+      <Text style={{ padding: 8 }} type={'H2'}>
+        Browse all
+      </Text>
       <FlatList
         data={CATEGORIES}
         numColumns={2}

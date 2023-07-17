@@ -1,5 +1,5 @@
-import {StyleSheet} from 'react-native';
-import {BACKGROUND} from '../../constants/colors';
+import { StyleSheet } from 'react-native';
+import { BACKGROUND } from '../../constants/colors';
 
 const styles = StyleSheet.create({
   container: {
@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: BACKGROUND,
   },
-  title: {flex: 1},
+  title: {},
   bottomSection: {
     flexDirection: 'row',
     justifyContent: 'space-between',

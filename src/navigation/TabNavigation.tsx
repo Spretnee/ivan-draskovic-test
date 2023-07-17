@@ -8,6 +8,8 @@ import { SvgXml } from 'react-native-svg';
 import { HOME, PODCAST_LIBRARY, SEARCH } from '../assets/images/svg';
 import { HomeScreen } from '../screens/HomeScreen';
 import { SearchStackNavigator } from './SearchStackNavigator';
+import { KeyboardAvoidingView } from 'react-native';
+import { PodcastsScreen } from '../screens/PodcastsScreen/PodcastsScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -54,7 +56,7 @@ export const TabNavigation = () => {
         headerShown: false,
       })}
     >
-      <Tab.Screen name="Home" options={{}} component={HomeScreen} />
+      <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Search" component={SearchStackNavigator} />
       <Tab.Screen name="Your Library" component={YourPodcastsScreen} />
     </Tab.Navigator>

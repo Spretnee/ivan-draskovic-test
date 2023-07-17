@@ -14,6 +14,7 @@ import { useSelectPlayerStore } from '../../store/playerSlice';
 import { useGetPodcast } from '../../hooks/useGetPodcast';
 import { loadTracks } from '../../utils/player/loadTracks';
 import { useLoadPlaylist } from '../../hooks/useLoadPlaylist';
+import { MOCK_PODCAST_ID } from '../../api/constants';
 
 //TODO: refactor screen
 
@@ -64,7 +65,9 @@ export const PodcastsScreen = ({ route }: any) => {
             >
               {data?.title}
             </Text>
-            <Text type={'H3'}>{data?.description}</Text>
+            <Text type={'H3'} numberOfLines={4}>
+              {data?.description}
+            </Text>
             <Image url={data?.imageUrl} style={{ marginVertical: 20 }} />
             <Text type={'H2'}>All Episodes</Text>
           </View>
@@ -122,9 +125,14 @@ export const PodcastsScreen = ({ route }: any) => {
                           : FONT_DARK1,
                     }}
                   >
-                    {`${Math.round(
-                      (item.length - multiTrackProgress[item.id] || 0) / 60,
-                    )} mins left`}
+                    {`${
+                      multiTrackProgress[item.id]
+                        ? Math.round(
+                            (item.length - multiTrackProgress[item.id] || 0) /
+                              60,
+                          )
+                        : Math.round(item.length / 60)
+                    } mins left`}
                   </Text>
                 </View>
 
